@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emails>
+	<RejectApplicant>
+		<subject>
+			[ {BASE_URL} ] - Job Application Rejected
+		</subject>
+		<message>
+			<![CDATA[
+			<h1>{BASE_URL}</h1>
+			<h2>Job application rejected</h2>
+
+			<table border="0" cellpadding="0" cellspacing="0" width="75%" >
+				<tr>
+					<div>
+					 Hello,
+					</div><br />
+					<div>Recently you have applied to the following vacancy:</div><br />
+					<div><a href="{JOB_URL}" target="_blank">{JOB_TITLE}</a> @ {COMPANY}</div><br />
+					<div>We would like to inform you that your job application has been rejected, as the company founded a better suitable candidate. We are working hard and looking for another role that you might be interested in.</div><br />
+					<hr />
+				</tr>
+			</table>
+			<br />
+			<div>{BASE_URL} &#169; 2016. All&nbsp;rights&nbsp;reserved.</div>
+			]]>
+		</message>
+	</RejectApplicant>
+	<ReviewApplicant>
+		<subject>
+			[ {BASE_URL} ] - Job Application Under Review
+		</subject>
+		<message>
+			<![CDATA[
+			<h1>{BASE_URL}</h1>
+			<h2>Job application under review</h2>
+
+			<table border="0" cellpadding="0" cellspacing="0" width="75%" >
+				<tr>
+					<div>
+					 Hello,
+					</div><br />
+					<div>Recently you have applied to the following vacancy:</div><br />
+					<div><a href="{JOB_URL}" target="_blank">{JOB_TITLE}</a> @ {COMPANY}</div><br />
+					<div>We would like to inform you that employer is interested in your profile and put your application under review. You will be contacted soon.</div><br />
+					<hr />
+				</tr>
+			</table>
+			<br />
+			<div>{BASE_URL} &#169; 2016. All&nbsp;rights&nbsp;reserved.</div>
+			]]>
+		</message>
+	</ReviewApplicant>
+	<notifyDeletedCandidate>
+		<subject>
+			[ {BASE_URL} ] - Your account has been deleted
+		</subject>
+		<message>
+			<![CDATA[
+			Dear {CANDIDATE_NAME},<br /><br />
+
+your account has been deleted and is no longer available on our website. If you are not aware of this and think this was an accident, please contact our administration team on your site.<br /><br />
+
+Thank you for understanding.<br />
+			]]>
+		</message>
+	</notifyDeletedCandidate>
+	<Applied>
+		<subject>
+			[ {BASE_URL} ] - your job application
+		</subject>
+		<message>
+			<![CDATA[
+			<h1>{BASE_URL}</h1>
+			<h2>Job application</h2>
+
+			<table border="0" cellpadding="0" cellspacing="0" width="75%" >
+				<tr>
+					<div>
+					Hey!
+					</div><br />
+					<div>You have applied for the following vacancy:</div><br />
+					<div><strong>{JOB_TITLE}</strong> @ {COMPANY}</div><br />
+					<div>We notified the employer. In case of interest you will be contacted. We wish you a good luck!</div><br />
+					<hr />
+				</tr>
+			</table>
+			<br />
+			<div>{BASE_URL} &#169; 2016. All&nbsp;rights&nbsp;reserved.</div>
+			]]>
+		</message>
+	</Applied>
+	<confirmationRequestApplicant>
+		<subject>
+			[ {BASE_URL} ] - Confirmation request
+		</subject>
+		<message>
+			<![CDATA[
+			<h1>Welcome to {BASE_URL}</h1>
+			<h2>Confirm your account</h2>
+			<div>After you can apply to jobs with a single click and your profile will be visible to the recruiters.</div>
+
+			<table border="0" cellpadding="10" cellspacing="0" width="500" >
+				<tr>&nbsp;</tr>
+				<tr>
+					<td style="padding-top:0;" align="left" valign="top" width="500" >
+						<table border="0" cellpadding="0" cellspacing="0" width="50%" style="background-color: #3498db;background-color:#205478; border-collapse:separate;">
+							<tr>
+								<td align="center" valign="middle" class="buttonContent" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">
+									<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="http://{BASE_URL_LINK}{URL_APPLICANT_ACCOUNT_CONFIRMATION}/{HASH}" target="_blank">Confirmation</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>			
+
+			<br />
+			<div>{BASE_URL} &#169; 2016. All&nbsp;rights&nbsp;reserved.</div>
+			]]>
+		</message>
+	</confirmationRequestApplicant>
+	<confirmationRequest>
+		<subject>
+			[ {BASE_URL} ] - Confirmation request
+		</subject>
+		<message>
+			<![CDATA[
+			<h1>Welcome to {BASE_URL}</h1>
+			<h2>Confirm your account</h2>
+			<div>After you are ready to post your jobs and track statistics</div>
+
+			<table border="0" cellpadding="10" cellspacing="0" width="500" >
+				<tr>&nbsp;</tr>
+				<tr>
+					<td style="padding-top:0;" align="left" valign="top" width="500" >
+						<table border="0" cellpadding="0" cellspacing="0" width="50%" style="background-color: #3498db;background-color:#205478; border-collapse:separate;">
+							<tr>
+								<td align="center" valign="middle" class="buttonContent" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">
+									<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="http://{BASE_URL_LINK}{URL_RECRUITER_ACCOUNT_CONFIRMATION}/{HASH}" target="_blank">Confirmation</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>			
+
+			<br />
+			<div>{BASE_URL} &#169; 2016. All&nbsp;rights&nbsp;reserved.</div>
+			]]>
+		</message>
+	</confirmationRequest>
+	
+
+	<welcomeSubscriber>
+		<subject>
+			[ {BASE_URL} ] - Welcome! 
+		</subject>
+		<message>
+			<![CDATA[
+			<h1>Welcome to {BASE_URL}</h1>
+
+			<table border="0" cellpadding="0" cellspacing="0" width="500">
+				<tr>
+					<td style="padding-top:0;" align="left" valign="top" width="500" >
+						<table border="0" cellpadding="0" cellspacing="0" width="75%" >
+							<tr>
+								<div>To confirm your subscription, please click the following link</div><br />
+								<div><a href="http://{BASE_URL_LINK}{URL_SUBSCRIBE_CONFIRMATION}/{HASH}" target="_blank">{BASE_URL_LINK}{URL_SUBSCRIBE_CONFIRMATION}/{HASH}</a></div><br />
+								<div>You can change the categories of your interest on <a href="http://{BASE_URL_LINK}{URL_SUBSCRIBE}" target="_blank">{BASE_URL_LINK}{URL_SUBSCRIBE}</a></div><br />
+								<div>Later you can always unsubscribe</div><br />
+								<div>Wish you a happy searching</div>
+								<hr />
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+
+			<br />
+			<div>{BASE_URL} &#169; 2016. All&nbsp;rights&nbsp;reserved.</div>
+			]]>
+		</message>
+	</welcomeSubscriber>
+
+	<goodbyeSubscriber>
+		<subject>
+			Goodbye from [ {BASE_URL} ]
+		</subject>
+		<message>
+			<![CDATA[
+			<h1>Goodbye from {BASE_URL}</h1>
+
+			<table border="0" cellpadding="0" cellspacing="0" width="500" >
+				<tr>
+					<td style="padding-top:0;" align="left" valign="top" width="500" >
+						<table border="0" cellpadding="0" cellspacing="0" width="75%" >
+							<tr>
+								<div>We would like to thank you for using our services. You have unsubscribed from our newsletter. If you decide to subscribe again, just go to</div><br />
+								<div><a href="http://{BASE_URL_LINK}{URL_SUBSCRIBE}" target="_blank">{BASE_URL_LINK}{URL_SUBSCRIBE}</a></div><br />
+								<div>Good luck</div><br />
+								<hr />
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+
+			<br />
+			<div>{BASE_URL} &#169; 2016. All&nbsp;rights&nbsp;reserved.</div>
+			]]>
+		</message>
+	</goodbyeSubscriber>
+
+	<tellAfriend>
+		<subject>
+			Your friend is sharing with you a job offer
+		</subject>
+		<message>
+			<![CDATA[
+			<h2>Your friend is sharing with you a job offer</h2>
+
+			<table border="0" cellpadding="0" cellspacing="0" width="500" >
+				<tr>
+					<td style="padding-top:0;" align="left" valign="top" width="500" >
+						<table border="0" cellpadding="0" cellspacing="0" width="75%"  >
+							<tr>
+								<div>{MSG}</div><br />
+								<div>This message has been forwarded from {FROM}</div><br />
+								<hr />
+							</tr>
+						</table>
+
+					</td>
+				</tr>
+			</table>
+
+			<br />
+			<div>{BASE_URL} &#169; 2016. All&nbsp;rights&nbsp;reserved.</div>
+			]]>
+		</message>
+	</tellAfriend>
+
+	<subscriberNotConfirmedEmail>
+		<subject>
+			Your subscription for the [ {BASE_URL} ] website has still not been confirmed
+		</subject>
+		<message>
+			<![CDATA[
+			<h1>{BASE_URL}</h1>
+			<h2>Awaiting confirmation for your subscription</h2>
+
+			<table border="0" cellpadding="0" cellspacing="0" width="500" >
+				<tr>
+					<td style="padding-top:0;" align="left" valign="top" width="500" >
+
+						<table border="0" cellpadding="0" cellspacing="0" width="75%" >
+							<tr>
+								<div>You have not confirmed your subscription yet. To recieve new job opportunities, please click the following link</div><br />
+								<div><a href="http://{BASE_URL_LINK}{URL_SUBSCRIBE_CONFIRMATION}/{HASH}" target="_blank">{BASE_URL_LINK}{URL_SUBSCRIBE_CONFIRMATION}/{HASH}</a></div><br />
+								<div>Thank you.</div><br />
+								<div>Wish you happy searching</div><br />
+								<hr />
+							</tr>
+						</table>
+
+					</td>
+				</tr>
+			</table>
+
+			<br />
+			<div>{BASE_URL} &#169; 2016. All&nbsp;rights&nbsp;reserved.</div>
+			]]>
+		</message>
+	</subscriberNotConfirmedEmail>
+
+	<passwordRecovery>
+		<subject>
+			Your password recovery for [ {BASE_URL} ]
+		</subject>
+		<message>
+			<![CDATA[
+			<h1>{BASE_URL}</h1>
+			<h2>Password recovery</h2>
+
+			<table border="0" cellpadding="0" cellspacing="0" width="500" >
+				<tr>
+					<td style="padding-top:0;" align="left" valign="top" width="500" >
+
+						<table border="0" cellpadding="0" cellspacing="0" width="75%"  >
+							<tr>
+								<div>You requested a password recovery. To reset your password, please click the following link</div><br />
+								<div><a href="http://{BASE_URL_LINK}{RESET_URL}/{HASH}" target="_blank">{BASE_URL_LINK}{RESET_URL}/{HASH}</a></div><br />
+								<div>Have a nice day</div><br />
+								<hr />
+							</tr>
+						</table>
+
+					</td>
+				</tr>
+			</table>
+
+			<br />
+			<div>{BASE_URL} &#169; 2016. All&nbsp;rights&nbsp;reserved.</div>
+			]]>
+		</message>
+	</passwordRecovery>
+
+	<SubscriptionUpdated>
+		<subject>
+			Your subscription on [ {BASE_URL} ] has been updated
+		</subject>
+		<message>
+			<![CDATA[
+			<h1>{BASE_URL}</h1>
+			<h2>Subscription updated</h2>
+
+			<table border="0" cellpadding="0" cellspacing="0" width="500" >
+				<tr>
+					<td style="padding-top:0;" align="left" valign="top" width="500">
+						<table border="0" cellpadding="0" cellspacing="0" width="75%" >
+							<tr>
+								<div>Your subscription settings has changed. To manage them please visit</div><br />
+								<div><a href="http://{BASE_URL_LINK}{URL_SUBSCRIBE}" target="_blank">{BASE_URL_LINK}{URL_SUBSCRIBE}</a></div><br />
+								<div>Thank you.</div><br />
+								<div>Wish you happy searching</div><br />
+								<hr />
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+
+			<br />
+			<div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:left;line-height:120%;">
+			<div>{BASE_URL} &#169; 2016. All&nbsp;rights&nbsp;reserved.</div>
+			<div>If you do not want to recieve emails from us, you can <a href="{BASE_URL_LINK}{URL_UNSUBSCRIBE}/{HASH}" target="_blank" style="text-decoration:none;color:#828282;"><strong><span style="color:#828282;">{URL_UNSUBSCRIBE}</strong></span></a>.</div>
+			</div><br />
+			]]>
+		</message>
+	</SubscriptionUpdated>
+
+	<PublishToUser>
+		<subject>
+			Your ad on [ {BASE_URL} ] has been approved
+		</subject>
+		<message>
+			<![CDATA[
+			<h1>{BASE_URL}</h1>
+			<h2>Your ad has been activated</h2>
+
+			<table border="0" cellpadding="0" cellspacing="0" width="500" >
+				<tr>
+					<td style="padding-top:0;" align="left" valign="top" width="500">
+						<table border="0" cellpadding="0" cellspacing="0" width="75%" >
+							<tr>
+								<div>Good day, Your ad <strong>{JOB_TITLE}</strong> has been approved and is available at </div><br />
+								<div><a href="http://{JOB_URL}" target="_blank">{JOB_URL}</a></div><br />
+								<div>Manage your listing: <a href="http://{JOB_MANAGE_URL}" target="_blank">{JOB_MANAGE_URL}</a></div><br />
+								<div>Manage your applications: <a href="http://{JOB_APPLICANTS_URL}" target="_blank">{JOB_APPLICANTS_URL}</a></div><br />
+								<div>See performance of your ad:<a href="http://{STATISTICS_URL}" target="_blank"> {STATISTICS_URL}</a></div><br />
+								<div>Thank you for using our service</div><br />
+								<hr />
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+
+			<br />
+			<div>{BASE_URL} &#169; 2016. All&nbsp;rights&nbsp;reserved.</div>
+			]]>
+		</message>
+	</PublishToUser>
+
+	<contactEmail>
+		<subject>
+			Contact request from {NAME} / {EMAIL}
+		</subject>
+		<message>
+			<![CDATA[
+			<h1>{BASE_URL}</h1>
+			<h2>Contact request</h2>
+
+		  <table border="0" cellpadding="10" cellspacing="0" width="500" >
+				<tr>
+					<td style="padding-top:0;" align="left" valign="top" width="500" >
+						<table border="0" cellpadding="0" cellspacing="0" width="75%"  >
+							<tr>
+								<h4 style="color: #3C8039">Contact request from website: </h4>
+								<div>
+								{MSG}
+								</div>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+
+			<br />
+			<div>{BASE_URL} &#169; 2016. All&nbsp;rights&nbsp;reserved.</div>
+			]]>
+		</message>
+	</contactEmail>
+
+	<WelcomeApplicant>
+		<subject>
+			[ {BASE_URL} ] -  Congratulations on creating your profile
+		</subject>
+		<message>
+			<![CDATA[
+			<h1>{BASE_URL}</h1>
+			<h2>Congratulations on creating your profile</h2>
+
+		  <table border="0" cellpadding="0" cellspacing="0" width="500" >
+				<tr>
+					<td style="padding-top:0;" align="left" valign="top" width="500" >
+						<table border="0" cellpadding="0" cellspacing="0" width="75%"  >
+							<tr>
+								<div>
+								You have successfully created your application profile. Now employers will be able to find you more easily. If you wish to change your details or deactivate it, please log in using our website.
+								</div>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+
+			<br />
+			<div>{BASE_URL} &#169; 2016. All&nbsp;rights&nbsp;reserved.</div>
+			]]>
+		</message>
+	</WelcomeApplicant>
+
+	<EmployerNewApplication>
+		<subject>
+			[ {BASE_URL} ] - You have a new job application!
+		</subject>
+		<message>
+			<![CDATA[
+			<h1>{BASE_URL}</h1>
+			<h2>New application</h2>
+
+			<table border="0" cellpadding="0" cellspacing="0" width="500" >
+				<tr>
+					<td style="padding-top:0;" align="center" valign="top" width="500" >
+						<table border="0" cellpadding="0" cellspacing="0" width="100%" >
+							<tr>
+								<h4 style="color: #3C8039">You have received new job application for your ad {JOB_ROLE}</h4>
+								<div>Here are the details: </div><br />
+								<div>Applicant : <strong>{NAME}</strong></div><br />
+								<div>Email : <strong>{EMAIL}</strong></div><br />
+								<div>Phone: <strong>{PHONE}</strong></div><br />
+								<div>Location: <strong>{LOCATION}</strong></div><br />
+                                <div>Skills: <strong>{SKILLS}</strong></div><br />
+								<div>Portfolio: <strong>{PORTFOLIO}</strong></div><br />
+								<div>Application message: <strong>{MSG}</strong></div><br />
+								<div>You can manage your job applications by logging into: <a href="{MANAGE_URL}" target="_blank">{MANAGE_URL}</a></div><br /><hr /><br />
+								<div style="font-style: italic">{BASE_URL} team wishes you to hire the best talent</div>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+
+			<br />
+			<div>{BASE_URL} &#169; 2016. All&nbsp;rights&nbsp;reserved.</div>
+			]]>
+		</message>
+	</EmployerNewApplication>
+
+	<weeklyNewsletter>
+		<jobtpl>
+			<![CDATA[
+			<table border="0" cellpadding="0" cellspacing="0" width="90" style="max-width:100%;">
+				<tr>
+					<td align="left" >
+					<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">
+						<img src="{JOB_LOGO}" width="73" style="max-width:100%;" alt="Text" title="Text" /></a>
+					</td>
+				</tr>
+			</table>
+			<table border="0" cellpadding="0" cellspacing="0" width="350" style="max-width:100%;">
+				<tr>
+					<td align="left" class="textContent">
+						<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">
+						<h3 style="color:#5E5EB5;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:17px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;"><strong>{JOB_TITLE}</strong></h3></a>
+						<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">
+						<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:13px;margin-bottom:0;color:#5F5F5F;line-height:135%;">{JOB_DESC}</div>
+						</a>
+					</td>
+				</tr>
+			</table>
+			]]>
+		</jobtpl>
+		<subject>
+			Checkout this week jobs on {WEBSITE}
+		</subject>
+		<message>
+			<![CDATA[
+			<h1>This week jobs</h1>
+			<h2>Click to view the detail. You can apply online on our pages.</h2>
+
+			{JOBS_CONTENT}
+
+			<br /><br />
+			<!-- need to specify absolute url in here! CHANGE IT -->
+			<table border="0" cellpadding="0" cellspacing="0" width="50%" style="background-color: #3498db;">
+				<tr>
+					<td align="center" valign="middle" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">
+						<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{BASE_URL_JOBS}" target="_blank">View all jobs</a>
+					</td>
+				</tr>
+			</table>
+
+			<br />
+			<div>{BASE_URL} &#169; 2016. All&nbsp;rights&nbsp;reserved.</div><br />
+			]]>
+		</message>
+	</weeklyNewsletter>
+
+</emails>

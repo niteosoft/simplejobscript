@@ -1,0 +1,404 @@
+
+
+pre {
+  border-radius: 3px !important;
+}
+
+::-moz-selection {
+  background: #990033 !important;
+  color: #fff !important;
+}
+
+::selection {
+  background: #990033 !important;
+  color: #fff !important;
+}
+
+::-moz-selection {
+  background: #990033 !important;
+  color: #fff !important;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0) !important;
+  }
+  40% {
+    -webkit-transform: translateY(-16px) !important;
+  }
+  60% {
+    -webkit-transform: translateY(-7px) !important;
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0) !important;
+            transform: translateY(0) !important;
+  }
+  40% {
+    -webkit-transform: translateY(-16px) !important;
+            transform: translateY(-16px) !important;
+  }
+  60% {
+    -webkit-transform: translateY(-7px) !important;
+            transform: translateY(-7px) !important;
+  }
+}
+.bounce {
+  -webkit-animation-name: bounce !important;
+          animation-name: bounce !important;
+}
+
+#forkongithub a {
+  background: #990033 !important;
+  color: #fff !important;
+}
+
+.project_container a {
+  color: #000 !important;
+}
+
+.clearfix:before, .clearfix:after {
+  display: block !important;
+  content: "" !important;
+  line-height: 0 !important;
+  clear: both !important;
+}
+
+.taggle_list {
+  float: left !important;
+  width: 100% !important;
+  padding-top: 10px !important;
+  padding-left: 30px !important;
+}
+
+.taggle_input {
+  border: none !important;
+  outline: none !important;
+  font-size: 16px !important;
+  font-weight: 300 !important;
+}
+
+.taggle_list li {
+  float: left !important;
+  display: inline-block !important;
+  white-space: nowrap !important;
+  font-weight: 500 !important;
+  margin-bottom: 10px !important;
+  margin-left: -25px !important;
+  height: 15px;
+}
+
+.taggle_list .taggle {
+  height: 45px;
+  color: #fff;
+  margin-right: 35px !important;
+  background: #46CAC6 !important;
+  padding: 15px 20px !important;
+  border: solid 1px #fff !important;
+  border-radius: 5px !important;
+  position: relative !important;
+  cursor: pointer !important;
+  transition: all .3s !important;
+  -webkit-animation-duration: 1s !important;
+          animation-duration: 1s !important;
+  -webkit-animation-fill-mode: both !important;
+          animation-fill-mode: both !important;
+}
+
+.taggle_list .taggle_hot {
+  background: #cac8c4 !important;
+}
+
+.taggle_list .taggle .close {
+  font-size: 1.1rem !important;
+  position: absolute !important;
+  top: 5px !important;
+  right: 5px !important;
+  text-decoration: none !important;
+  padding-left: 2px !important;
+  padding-top: 3px !important;
+  line-height: 0.5 !important;
+  color: red !important;
+  opacity: 0.25 !important;
+  padding-bottom: 4px !important;
+  display: none !important;
+  border: 0 !important;
+  background: none !important;
+  cursor: pointer !important;
+}
+
+.taggle_list .taggle:hover {
+  background: #fff !important;
+  color: #46CAC6 !important;
+  border: solid 1px #46CAC6 !important;
+}
+
+.taggle_list .taggle:hover > .close {
+  display: block !important;
+}
+
+.taggle_list .taggle .close:hover {
+  /*color: #990033 !important;*/
+}
+
+.taggle_placeholder {
+  position: absolute !important;
+  color: #CCC !important;
+  top: 12px !important;
+  left: 15px !important;
+  transition: opacity, .25s !important;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+      -ms-user-select: none !important;
+          user-select: none !important;
+}
+
+.taggle_input {
+  padding: 8px !important;
+  padding-left: 20px !important;
+  float: left !important;
+  margin-top: -5px !important;
+  background: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.taggle_sizer {
+  padding: 0 !important;
+  margin: 0 !important;
+  position: absolute !important;
+  top: -500px !important;
+  z-index: -1 !important;
+  visibility: hidden !important;
+}
+
+/*container styles*/
+textarea.input,
+.textarea.input {
+  border: none !important;
+  border-radius: 25px !important;
+
+}
+
+.textarea.input:focus,
+.textarea.input.active,
+textarea.input:focus,
+textarea.input.active {
+/*  background: #fff !important;
+  transition: all .25s !important;*/
+}
+
+.textarea.input,
+textarea.input {
+  height: auto !important;
+}
+
+.textarea.tags {
+  position: relative !important;
+}
+
+.textarea.tags * {
+  box-sizing: content-box !important;
+}
+
+.placeholder_input {
+  position: relative !important;
+}
+
+.placeholder_input span {
+  position: absolute !important;
+  color: #AAA !important;
+  top: 50% !important;
+  margin-top: -11px !important;
+  left: 10px !important;
+}
+
+.placeholder_input input {
+  width: 120px !important;
+}
+
+.ui-autocomplete {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+.ui-menu {
+  list-style: none !important;
+  padding: 2px !important;
+  margin: 0 !important;
+  display: block !important;
+  outline: none !important;
+}
+
+.ui-widget-content {
+  background: #fff !important;
+  color: #990033 !important;
+}
+
+.ui-menu .ui-menu-item {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+.ui-menu .ui-menu-item a {
+  text-decoration: none !important;
+  display: block !important;
+  padding: 2px .4em !important;
+  line-height: 1.5 !important;
+  min-height: 0 !important;
+  font-weight: normal !important;
+  color: #8a8a8a !important;
+  cursor: pointer !important;
+}
+.ui-menu .ui-menu-item a:hover {
+  color: #fff !important;
+  background: #990033 !important;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+  background: #990033 !important;
+  color: #fff !important;
+}
+
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited {
+  color: #fff !important;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+  border: 1px solid #aaaaaa !important;
+  background: #ffffff !important;
+  font-weight: normal !important;
+  color: #212121 !important;
+}
+
+.ui-helper-hidden {
+  display: none !important;
+}
+
+.ui-helper-hidden-accessible {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+}
+
+.autocomplete {
+  max-height: 200px !important;
+  overflow: scroll !important;
+  position: absolute !important;
+  top: 66px !important;
+  background: white !important;
+  width: 99.5% !important;
+  left: 0.25% !important;
+  z-index: 2 !important;
+}
+
+.autocomplete ul li {
+  display: block !important;
+  padding: 6px 8px !important;
+}
+
+.autocomplete ul li.selected, .autocomplete ul li:hover {
+  background: #ff6633 !important;
+  color: #fff !important;
+  cursor: pointer !important;
+}
+
+.ui-autocomplete {
+  max-height: 200px !important;
+  overflow: auto !important;
+  width: 99% !important;
+  z-index: 999 !important;
+}
+
+.custom.textarea {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.custom.textarea .taggle {
+  border-radius: 0 !important;
+  padding: 5px !important;
+  padding-right: 20px !important;
+}
+.custom.textarea .taggle .close {
+  display: inline-block !important;
+  right: 3px !important;
+}
+
+.custom.delicious {
+  background-image: linear-gradient(top, #eee 1%, #fff 15%) !important;
+  border: 1px solid #AAA !important;
+  min-height: 50px !important;
+}
+.custom.delicious.active {
+  border-color: #3274D1 !important;
+  background-image: linear-gradient(top, #eee 1%, #fff 15%) !important;
+}
+.custom.delicious .taggle {
+  color: #444 !important;
+  border-radius: 0 !important;
+  border-top-left-radius: 1.5rem !important;
+  border-bottom-left-radius: 1.5rem !important;
+  background-color: #ddd !important;
+  font-family: sans-serif !important;
+  font-size: 0.8rem !important;
+  padding: 5px !important;
+  padding-left: 20px !important;
+}
+.custom.delicious .taggle .close {
+  color: #aaa !important;
+  font-size: 0.9rem !important;
+  height: 0.7rem !important;
+  width: 0.7rem !important;
+  line-height: .1rem !important;
+  margin-top: 3px !important;
+  right: auto !important;
+  left: 5px !important;
+}
+.custom.delicious .taggle .close:hover {
+  color: #888 !important;
+}
+
+.custom.stackoverflow {
+  border: 1px solid #ccc !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.custom.stackoverflow .taggle {
+  color: #3E6D8E !important;
+  border-radius: 0 !important;
+  background-color: #E0EAF1 !important;
+  font-weight: 200 !important;
+}
+.custom.stackoverflow .taggle.taggle_hot {
+  background: #BDD0DD !important;
+}
+.custom.stackoverflow .taggle .close {
+  color: #aaa !important;
+  border-radius: 0.7rem !important;
+  font-size: 0.9rem !important;
+  height: 0.7rem !important;
+  width: 0.7rem !important;
+  line-height: .1rem !important;
+  margin-top: 3px !important;
+}
+.custom.stackoverflow .taggle .close:hover {
+  background: #C03434 !important;
+  color: #fff !important;
+}

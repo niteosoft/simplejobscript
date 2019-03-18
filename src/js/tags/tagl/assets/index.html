@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html style="background:url(images/bg.png) repeat" class="no-js" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+<title>Sean Coker | Taggle.js</title>
+
+<meta charset="utf-8">
+<link type="text/css" href="css/twilight.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/projects.min.css">
+<link rel="stylesheet" type="text/css" href="css/taggle.css">
+<!--[if lte IE 8]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body style="">
+<span id="forkongithub"><a href="https://github.com/okcoker/taggle.js" target="_blank">Fork me on GitHub</a></span>
+<div class="container">
+</div>
+<section id="wrapper" style="min-height: 108px; "><header>
+<h1>Taggle.js</h1>
+<p>
+    Form-ready, Delicious style tagging made easy.
+</p>
+</header>
+<div class="project" role="main">
+    <header>
+        <a href="https://github.com/okcoker/taggle.js" class="btn">Github</a>
+    </header>
+    <section>
+        <article class="block">
+            <h5>Example 1 - Creating a basic Taggle</h5>
+            <div class="input textarea clearfix example1"></div>
+            <p>
+                This example is as simple as it gets. Duplicate tags are prevented by default. You can also delete tags by pressing backspace or hovering and clicking with your mouse.
+            </p>
+        </article>
+        <article class="block">
+            <h6>HTML:</h6>
+            <pre data-language="html">
+<div id="example1"></div>
+            </pre>
+            <h6>JavaScript:</h6>
+            <pre data-language="javascript">
+new Taggle('example1');
+            </pre>
+        </article></section><section><article class="block">
+            <h5>Example 2 - Prefilled tags</h5>
+            <div class="input textarea clearfix example2"></div>
+            <p>It's easy to prepopulate the text field as well. Just pass an array of tags as displayed below.</p>
+        </article>
+        <article class="block">
+            <h6>HTML:</h6>
+            <pre data-language="html">
+<div id="example2"></div>
+            </pre>
+            <h6>JavaScript:</h6>
+            <pre data-language="javascript">
+new Taggle('example2', {
+    tags: ['These', 'are', 'prefilled', 'tags']
+});
+            </pre>
+        </article></section><section><article class="block">
+            <h5>Example 3 - Duplicate tag alert</h5>
+            <div class="input textarea clearfix example3"></div>
+            <p>This example takes advantage of how much CSS control Taggle.js allows you to have. Specify your own duplicate CSS class by using the <code>duplicateTagClass</code> option. Try entering one of the already existing tags to see a subtle alert notifying you of the tag.</p>
+            <blockquote>Note: the bounce animation happens as a result of the css class being added. Not javascript. Therefore you will not see the animation in IE9 and below.</blockquote>
+        </article>
+        <article class="block">
+            <h6>HTML:</h6>
+            <pre data-language="html">
+<div id="example3"></div>
+            </pre>
+            <h6>JavaScript:</h6>
+            <pre data-language="javascript">
+new Taggle('example3', {
+    tags: ['Try', 'entering', 'one', 'of', 'these', 'tags'],
+    duplicateTagClass: 'bounce'
+});
+            </pre>
+        </article></section><section><article class="block">
+            <h4>Example 4 - Autocomplete</h4>
+            <p>Taggle.js just provides the basic functionality to add tags to a field but it also provides a basic API so you can wrap it for additional functionality with other libraries such as <a href="http://jqueryui.com/autocomplete/" target="_blank">jQueryUI Autocomplete</a>. Same HTML. Just a little bit more javascript code.</p>
+            <div class="input textarea clearfix example4"></div>
+            <h6>HTML:</h6>
+            <pre data-language="html">
+<div id="example4"></div>
+            </pre>
+            <h6>JavaScript:</h6>
+            <pre data-language="javascript">
+var example4 = new Taggle('example4');
+var container = example4.getContainer();
+var input = example4.getInput();
+
+$(input).autocomplete({
+    source: faux,
+    appendTo: container,
+    position: { at: "left bottom", of: container },
+    select: function(event, data) {
+        event.preventDefault();
+        //Add the tag if user clicks
+        if (event.which === 1) {
+            example4.add(data.item.value);
+        }
+    }
+});
+            </pre>
+        </article>
+    </section>
+    <section>
+        <article class="block">
+            <h4>Example 5 - onBeforeTagAdd/onTagAdd &amp; onBeforeTagRemove/onTagRemove</h4>
+            <p>Want to hook into before a tag is added or removed? Okay. Want to call a callback function after a tag has been added or removed? Fine.</p>
+            <blockquote> I'm using innerHTML for simplicity however you should look into <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node.textContent?redirectlocale=en-US&redirectslug=DOM%2FNode.textContent" rel="nofollow">innerText or textContent</a> depending on what browser you're supporting.</blockquote>
+            <div class="input textarea clearfix example5"></div>
+            <p class="example5-event" style="color: #990000"></p>
+            <h6>HTML:</h6>
+            <pre data-language="html">
+<div id="example5"></div>
+<p id="example5-event"></p>
+            </pre>
+            <h6>JavaScript:</h6>
+            <pre data-language="javascript">
+var text = document.getElementById('example5-event');
+
+// Make sure to return true or false in onBeforeTagAdd and onBeforeTagRemove
+new Taggle('example5', {
+    onBeforeTagAdd: function(event, tag) {
+        return confirm('You really wanna add ' + tag + '?');
+    },
+    onTagAdd: function(event, tag) {
+        text.innerHTML = 'You just added ' + tag;
+    },
+    onBeforeTagRemove: function(event, tag) {
+        return confirm('You really wanna remove ' + tag + '?');
+    },
+    onTagRemove: function(event, tag) {
+        text.innerHTML = 'You just removed ' + tag;
+    }
+});
+            </pre>
+        </article>
+    </section>
+
+    <section>
+        <article class="block">
+            <h4>Example 6 - add / remove</h4>
+            <p>You can programatically add and remove tags as well.</p>
+            <div class="input textarea clearfix example6"></div>
+            <h6>HTML:</h6>
+            <pre data-language="html">
+<div id="example6"></div>
+            </pre>
+            <h6>JavaScript:</h6>
+            <pre data-language="javascript">
+var taggle = new Taggle('example6');
+
+taggle.add('one');
+taggle.add(['two', 'three', 'four', 'four', 'five', 'five']);
+taggle.remove('five');
+taggle.remove('four', true);
+            </pre>
+        </article>
+    </section>
+
+    <section>
+        <article class="block">
+            <h4>Example 7a - Allowed tags</h4>
+            <p>Sometimes you'll want to restrict the users to adding only certain tags.</p>
+            <div class="input textarea clearfix example7a"></div>
+            <h6>HTML:</h6>
+            <pre data-language="html">
+<div id="example7a"></div>
+            </pre>
+            <h6>JavaScript:</h6>
+            <pre data-language="javascript">
+var taggle = new Taggle('example7a', {
+    placeholder: 'Type your favorite type of juice... (hint: orange)',
+    allowDuplicates: true,
+    allowedTags: ['orange']
+});
+            </pre>
+        </article>
+        <article class="block">
+            <h4>Example 7b - Disallowed tags</h4>
+            <p>Conversely, you'll want to restrict the users from adding certain tags.</p>
+            <div class="input textarea clearfix example7b"></div>
+            <h6>HTML:</h6>
+            <pre data-language="html">
+<div id="example7b"></div>
+            </pre>
+            <h6>JavaScript:</h6>
+            <pre data-language="javascript">
+var taggle = new Taggle('example7b', {
+    placeholder: 'Type your favorite type of juice... (hint: apple)',
+    allowDuplicates: true,
+    disallowedTags: ['apple']
+});
+            </pre>
+        </article>
+    </section>
+
+    <section>
+    <article class="block">
+    <h4>Misc - Tags around the web</h4>
+    <p>
+        Tag fields can be really useful because it makes it easy for your users to provide the type of data values you need without having to worry about if they submitted values with trailing spaces, extra commas, etc.
+    </p>
+    <p>
+        As you can see below, it's easy to style Taggle.js with just a little bit of css.
+    </p>
+    <h6>Delicious</h6>
+    <div class="input textarea clearfix custom delicious">
+    </div>
+    <h6>Stack Overflow</h6>
+    <div class="input textarea clearfix custom stackoverflow">
+    </div>
+    </article>
+    </section>
+    <section>
+        <article class="block">
+            <h4>Options</h4>
+            <div class="option">
+                <p>
+                    additionalTagClasses: <code>[String='']</code>
+                </p>
+                <p>
+                    By default a class of <code>taggle</code> will be assigned to each tag. If you need more, add them in one string separated by spaces.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    allowDuplicates: <code>[Boolean=false]</code>
+                </p>
+                <p>
+                    Set to true if you want to allow duplicate tags to be entered in the taggle field.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    preserveCase: <code>[Boolean=false]</code>
+                </p>
+                <p>
+                    Set to true if you want to allow tags to retain case as entered in the taggle field (lowercased by default).
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    saveOnBlur: <code>[Boolean=false]</code>
+                </p>
+                <p>
+                    Allow the saving of a tag on blur, rather than it being removed by default.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    clearOnBlur: <code>[Boolean=true]</code>
+                </p>
+                <p>
+                    Clear the input element on blur if there is a text value.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    duplicateTagClass: <code>[String='']</code>
+                </p>
+                <p>
+                    The class name that will be set onto duplicate tag.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    containerFocusClass: <code>[String='active']</code>
+                </p>
+                <p>
+                    This will be the class added to the taggle field div when focused.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    focusInputOnContainerClick: <code>[Boolean=true]</code>
+                </p>
+                <p>
+                    If <code>true</code> then <code>input</code> will be focused when <code>container</code> receives a click event.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    hiddenInputName: <code>[String='taggles[]']</code>
+                </p>
+                <p>
+                    Since a hidden input is appended for each tag added, you might need a name for them when submitting to the server.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    placeholder: <code>[String='Enter tags...']</code>
+                </p>
+                <p>
+                    A placeholder.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    submitKeys: <code>[188, 9, 13]</code>
+                </p>
+                <p>
+                    Keycodes that will add a tag. Comma, Tab, and Enter are the recommended and default keyCodes.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    tabIndex: <code>[Number=1]</code>
+                </p>
+                <p>
+                    If your taggle field is within a form, it might be useful to specify a tabIndex so that a user can still tab through form fields like normal.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    tags: <code>[Array=[]]</code>
+                </p>
+                <p>
+                    These will be the tags that should be preloaded in the taggle field when the plugin loads.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    delimeter: <code>[',']</code>
+                </p>
+                <p>
+                    The default delimeter character to split tags on.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    attachTagId: <code>[Boolean=false]</code>
+                </p>
+                <p>
+                    Add an ID to each of the tags that will be available in onTagAdd, onBeforeTagRemove, &amp; onTagRemove.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    allowedTags: <code>[Array=[]]</code>
+                </p>
+                <p>
+                    Tags that the user will be restricted to.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    inputFormatter(inputElement)
+                </p>
+                <p>
+                    Function hook called with the to-be-added input DOM element.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    tagFormatter(element)
+                </p>
+                <p>
+                    Hook fired before the tag li element is appended to the DOM. This gives the author a chance to edit the list item before it is added. Must return an li element.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    onBeforeTagAdd(event, tag)
+                </p>
+                <p>
+                    Hook fired before a tag is added. Provides the event and tag text. Return false to prevent the tag from being added.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    onBeforeTagRemove(event, tag [, callback])
+                </p>
+                <p>
+                    Hook fired before a tag is removed. Provides the event and tag text. Return a falsy value to prevent the tag from being removed. The callback argument can be called to remove the tag.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    onTagAdd(event, tag)
+                </p>
+                <p>
+                    Callback fired whenever a tag is added. Provides the event and tag text.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    onTagRemove(event, tag)
+                </p>
+                <p>
+                    Callback fired whenever a tag is removed. Provides the event and tag text.
+                </p>
+            </div>
+            </article><article class="block">
+            <h4>Methods</h4>
+             <div class="option">
+                <p>setOptions(options)</p>
+                <p>Set options at runtime. This should be an object with the taggle options as keys</p>
+            </div>
+            <div class="option">
+                <p>add(tag(s))</p>
+                <p>Pass an array of strings or just one string to programatically add tags.</p>
+            </div>
+            <div class="option">
+                <p>remove(tag, remove_all=false)</p>
+                <p>Pass a string to remove the most recent occurance of the tag. Pass true to the second argument to remove all occurances of the tag.</p>
+            </div>
+            <div class="option">
+                <p>removeAll()</p>
+                <p>Remove all tags at once, including duplicates.</p>
+            </div>
+            <div class="option">
+                <p>
+                    getTags() <code>Returns {Object}</code>
+                </p>
+                <p>
+                    Get an object with an array of the tag text and an array of tag list elements.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    getTagElements() <code>Returns {Array}</code>
+                </p>
+                <p>
+                    Get an object with an array of the tag list elements.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    getTagValues() <code>Returns {Array}</code>
+                </p>
+                <p>
+                    Get an array of the tag text.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    getInput() <code>Returns {Element}</code>
+                </p>
+                <p>
+                    Get the actual text input.
+                </p>
+            </div>
+            <div class="option">
+                <p>
+                    getContainer() <code>Returns {Element}</code>
+                </p>
+                <p>
+                    Get the original textarea container.
+                </p>
+            </div>
+        </article>
+    </section>
+</div>
+</section><footer id="footer">
+<div class="container">
+    <p class="grid12 text_center">© 2015<a href="http://sean.is">Sean Coker</a></p><p class="grid12 text_center">Some, if not all and/or most rights reserved.</p>
+</div>
+</footer>
+<script src="js/jquery-1.10.1.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/rainbow-custom.min.js"></script>
+<script src="js/taggle.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

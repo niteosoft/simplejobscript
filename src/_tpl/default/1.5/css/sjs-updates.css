@@ -1,0 +1,77 @@
+
+
+.detail-font {
+	overflow: visible !important;
+}
+
+.modal-body-fix {
+	padding: 5% 5% 0% 4% !important;
+}
+
+.bh50 {
+	height: 50px !important;
+}
+
+.mb10 {
+	margin-bottom: 10px !important;
+}
+
+
+#search_by_name {  
+	width: 105px !important;
+	margin-top: 0px !important;
+    background: #39b6b3 !important;
+    border-radius: 25px !important;
+    color: white !important;
+}
+
+@media only screen and (min-width: 768px) {
+	/*for desktop*/
+	.by_name input#search {
+		width: 45% !important;
+		float: right !important;
+		margin-right: 10px !important;
+	}
+	.by_name {
+	    padding-top: 30px !important;
+	}
+
+	input#search_company {
+	    width: 20% !important;
+	}
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 768px) { 
+	/*tablet */
+	.by_name{
+		padding: 8px 0px !important;
+	}	
+	.by_name input#search {
+		width: 100% !important;	
+		margin-right: 0px !important;	
+	}
+	.inputsearch {
+	    right:10px !important;
+	    padding-bottom: 15px !important;
+	}
+	input#search_company {
+	    width: 50% !important;
+	    /*border-radius: 20px;*/
+	}
+}
+
+
+@media only screen and (max-width: 500px) {
+	.by_name{
+		padding: 8px 0px;
+	}
+	.inputsearch {
+	    right: 10px;
+	    padding-bottom: 15px;
+	}
+	input#search_company {
+	    width: 100%;
+	    /*border-radius: 20px;*/
+	}
+} 

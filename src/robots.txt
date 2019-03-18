@@ -1,0 +1,11 @@
+
+User-agent: *
+Disallow: /_lib
+Disallow: /_lib/smarty
+Disallow: /_tools
+Disallow: /_config
+Disallow: /js
+Disallow: /uploads
+Disallow: /sjs-admin
+
+# add your URL and sitemap here -> Sitemap: http://yourjobboard.com/sitemap.xml
