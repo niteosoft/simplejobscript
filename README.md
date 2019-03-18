@@ -1,12 +1,14 @@
 # Simplejobscript - free job board software
 
-Allows to create a feature rich job board website with ease. More info at [simplejobscript.com](simplejobscript.com).
+Scripts allows users to create out of the box working job board website. More info at [simplejobscript.com](simplejobscript.com).
 
 ![Product screenshot](https://simplejobscript.com/wp-content/uploads/free/sjs_screen.png)
+
 
 ## Features
 
 installation module, clean and modern mobile responsive design, easy color / theme customization with color picker, job posting, moderation & statistics, company profiles & dashboard, job applications & management (review / reject job seekers),  job alerts & cron job newsletter script, built in widely used PHP & MySQL + HTML / CSS / JS, lightweight extendable source code, custom job types, categories and locations, admin CMS module / content management system, AJAX filters & search, template caching system, RSS & Sitemap generator, static pages CMS, captcha anti-spam module, database cleaner module, data feeder module, SEO manager, social media share buttons, report job feature,  landing page, contact page with Google Maps integrated.
+
 
 ## Product versions
 
@@ -16,13 +18,16 @@ Complete version includes premium plugins that have been developed: Job seeker p
 
 Base version that resides here on Github is a complete out of the box working job board that can be downloaded and used forever completely free. This version does not includes the premium plugins. Premium plugins and complete product have been developed to generate some revenue needed to keep the project alive so we can work and improve it.
 
+
 ## Getting started
 
 All you need is a domain name and hosting for a standard website.
 
+
 ## Technical requirements
 
 PHP 5+, mod_rewrite, mbstring and GD modules, MySQL 4.1+ or MariaDB, Apache or Nginx web server.
+
 
 ## Installation
 
@@ -34,6 +39,7 @@ b) Install from site
 
 Download the software from [product pages](https://simplejobscript.com/downloads/simplejobscript-base/) and install it by following our [guide](https://simplejobscript.com/docs/installation-guide/).
 
+
 ### General install steps
 
 1. Copy content of "upload" folder to your server
@@ -42,17 +48,21 @@ Download the software from [product pages](https://simplejobscript.com/downloads
 
 3. Create database for your site and finish the installation in the browser
 
+
 ## License
 
 This project is licensed under the [MIT License](https://github.com/Microsoft/calculator/blob/master/LICENSE) - see the [LICENSE](LICENSE) file for details.
+
 
 ## Current version
 
 Simplejobscript Version 1.64
 
+
 ## Source code structure
 
 Project is built with PHP & MySQL running in backend and HTML/CSS/Javascript running in frontened. For templating [SMARTY](https://www.smarty.net/) has been used. It runs on it's own small MVC (Model-View-Controller) PHP structure. More details can be found at our [pages](https://simplejobscript.com/code-structure/).
+
 
 ## Contributing
 

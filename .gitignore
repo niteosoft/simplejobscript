@@ -1,0 +1,15 @@
+/*.~
+/src/_cache/
+/src/_tpl/default/_cache
+/src/sjs-admin/_tpl/_cache
+/src/uploads/
+/src/blog/
+/src/js/tinymce
+/src/js/owlcarousel
+/src/js/bootstrap
+/src/_lib/CacheLite
+/src/_lib/external
+/src/_lib/smarty
+/src/_config/config.envs.php
+/src/_tools/maintenance.log
+/src/_tools/import/
