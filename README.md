@@ -1,6 +1,6 @@
 # Simplejobscript - free job board software
 
-Scripts allows users to create out of the box working job board website. More info at [simplejobscript.com](simplejobscript.com).
+Scripts allows users to create out of the box working job board website. More info at [simplejobscript.com](https://simplejobscript.com).
 
 ![Product screenshot](https://simplejobscript.com/wp-content/uploads/free/sjs_screen.png)
 
