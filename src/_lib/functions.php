@@ -7,7 +7,7 @@
 	*  @license    MIT
 	*  @website    simplejobscript.com
 	*
-	*  There are no license limitations, modifications nor restrictions placed upon 
+	*  There are no license limitations, modifications nor restrictions placed upon
 	*  and no rights have been transfered to all third-party software parts of this product. You are granted to use these libraries
 	*  and sub-parts while following their individual license specifications and terms of service
 	*
@@ -40,7 +40,7 @@ function requestSjsApi($url) {
 	    curl_setopt($ch, CURLOPT_URL, $url);
 	    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 	    $data = curl_exec($ch);
-	    curl_close($ch);	
+	    curl_close($ch);
 	}
 
 	return $data;
@@ -68,14 +68,14 @@ function get_client_ip() {
 
 
 function deconstructSMlink($link) {
-		
+
 		$exp = explode("_", $link);
 		$SM_ID = intval($exp[0]);
 		$SM_URL = $exp[1];
 
 		$obj = new stdClass();
 		$obj->linkToSave = $link;
-		
+
 		$sm_data = getSMdataById($SM_ID);
 		$obj->smId = $sm_data['id'];
 
@@ -137,36 +137,36 @@ function tagglesToString($taggles) {
 	return $skills;
 }
 
-function replaceTinyMceBreaks($text) { 
-   return strtr($text, array("<p>&nbsp;</p>" => '')); 
-} 
+function replaceTinyMceBreaks($text) {
+   return strtr($text, array("<p>&nbsp;</p>" => ''));
+}
 
-function stripLineBreaks($text) { 
-   return strtr($text, array("\r\n" => '<br />', "\r" => '<br />', "\n" => '<br />', "\\r\\n" => '<br />')); 
-} 
+function stripLineBreaks($text) {
+   return strtr($text, array("\r\n" => '<br />', "\r" => '<br />', "\n" => '<br />', "\\r\\n" => '<br />'));
+}
 
-function convertLineBreaks($text) { 
-   return strtr($text, array("<br />" => '&#13;&#10;')); 
-} 
+function convertLineBreaks($text) {
+   return strtr($text, array("<br />" => '&#13;&#10;'));
+}
 
-function formatBytes($bytes, $precision = 2) { 
-    $units = array('B', 'KB', 'MB', 'GB', 'TB'); 
+function formatBytes($bytes, $precision = 2) {
+    $units = array('B', 'KB', 'MB', 'GB', 'TB');
 
-    $bytes = max($bytes, 0); 
-    $pow = floor(($bytes ? log($bytes) : 0) / log(1024)); 
-    $pow = min($pow, count($units) - 1); 
+    $bytes = max($bytes, 0);
+    $pow = floor(($bytes ? log($bytes) : 0) / log(1024));
+    $pow = min($pow, count($units) - 1);
 
     // Uncomment one of the following alternatives
     // $bytes /= pow(1024, $pow);
-    $bytes /= (1 << (10 * $pow)); 
+    $bytes /= (1 << (10 * $pow));
 
-    return round($bytes, $precision) . ' ' . $units[$pow]; 
-} 
+    return round($bytes, $precision) . ' ' . $units[$pow];
+}
 
-function add_single_quotes($arg) 
+function add_single_quotes($arg)
 {
-	/* single quote and escape single quotes and backslashes */ 
-	return "'" . addcslashes($arg, "'\\") . "'"; 
+	/* single quote and escape single quotes and backslashes */
+	return "'" . addcslashes($arg, "'\\") . "'";
 }
 
 function format_currency($currency_sign, $amount) {
@@ -225,25 +225,25 @@ function get_cities_cloud()
 {
 	global $db;
 	$city_array = array();
- 
+
 	$sql = 	'SELECT c.id, c.name, c.ascii_name, COUNT(*) AS nr
-			 FROM '.DB_PREFIX.'cities c 
-			 INNER JOIN '.DB_PREFIX.'jobs j ON (j.city_id = c.id ) 
-			 WHERE j.is_active = 1 
+			 FROM '.DB_PREFIX.'cities c
+			 INNER JOIN '.DB_PREFIX.'jobs j ON (j.city_id = c.id )
+			 WHERE j.is_active = 1
 			 GROUP BY c.name';
- 
+
 	$cities = $db->QueryArray($sql);
- 
+
 	foreach ($cities as $city)
 	{
 		$numberOfJobs = $city['nr'];
- 
+
 		$city_array[] = array('name' => $city['name'],
 		                     'varname' => $city['ascii_name'],
 		                     'count' => $numberOfJobs,
 		                     'tag_height' => get_cloud_tag_height($numberOfJobs));
 	}
- 
+
 	return $city_array;
 }
 
@@ -273,7 +273,7 @@ function get_cloud_tag_height($numberOfItems)
 	{
 		$tag_height = 6;
 	}
-	
+
 	return $tag_height;
 }
 
@@ -296,7 +296,7 @@ function get_articles()
 {
 	global $db;
 	$articles = array();
-	$sql = 'SELECT id, title, page_title, url 
+	$sql = 'SELECT id, title, page_title, url
 	               FROM '.DB_PREFIX.'pages
 	               ORDER BY title ASC';
 	$result = $db->query($sql);
@@ -335,20 +335,20 @@ function get_navigation($menu = null)
 function get_cities()
 {
 	global $db;
-	
+
 	$cities = array();
-	
+
 	$sql = 'SELECT id, name, ascii_name
 	               FROM '.DB_PREFIX.'cities
 	               ORDER BY name ASC';
-	
+
 	$result = $db->query($sql);
-	
+
 	while ($row = $result->fetch_assoc())
 	{
 		$cities[] = array('id' => $row['id'], 'name' => $row['name'], 'ascii_name' => $row['ascii_name']);
 	}
-	
+
 	return $cities;
 }
 
@@ -372,35 +372,35 @@ function get_categ_name_by_varname($var_name)
 
 function getIndeedFilterNameByVar($var_name) {
 	global $db;
-	
+
 	$city = null;
-	
+
 	$sql = 'SELECT name
 	               FROM '.DB_PREFIX.'indeed_search_options
 	               WHERE value = "' . $var_name . '"';
 
 	$result = $db->query($sql);
 	$row = $result->fetch_assoc();
-		
+
 	return $row['name'];
 }
 
 function get_city_id_by_asciiname($ascii_name)
 {
 	global $db;
-	
+
 	$city = null;
-	
+
 	$sql = 'SELECT id, name
 	               FROM '.DB_PREFIX.'cities
 	               WHERE ascii_name = "' . $ascii_name . '"';
 
 	$result = $db->query($sql);
 	$row = $result->fetch_assoc();
-	
+
 	if ($row)
 		$city = array('id' => $row['id'], 'name' => $row['name']);
-		
+
 	return $city;
 }
 
@@ -416,31 +416,31 @@ function iniSectionsToJSON($iniSections)
 {
 	$translationsJson = "{";
 	$sectionsCount = 0;
-		
+
 	foreach ($iniSections as $section => $sectionMessages)
 	{
 		$translationsJson = $translationsJson . "\"" . $section . "\": {";
 		$sectionMessagesCount = 0;
-		
+
 		foreach ($sectionMessages as $messageKey => $messageText)
 		{
 			$translationsJson = $translationsJson . "\"".$messageKey . "\":\"" . preg_replace("/\r?\n/", "\\n", addslashes($messageText)) . "\"";
-			
+
 			$sectionMessagesCount++;
-			
+
 			if ($sectionMessagesCount < count($sectionMessages))
 				$translationsJson .= ",";
 		}
 		$translationsJson .= "}";
-		
+
 		$sectionsCount++;
 
 		if ($sectionsCount < count($iniSections))
 			$translationsJson .= ",";
 	}
-	
+
 	$translationsJson = $translationsJson."}";
-	
+
 	return $translationsJson;
 }
 
@@ -449,25 +449,25 @@ function iniSectionsToJSON($iniSections)
  * if the city was not found.
  *
  * @param $cityID
- * @return 
+ * @return
  */
 function get_city_by_id($cityID)
 {
 	global $db;
-	
+
 	$city = null;
-	
+
 	$sql = 'SELECT id, name
 	               FROM '.DB_PREFIX.'cities
 	               WHERE id = ' . $cityID;
 	$result = $db->query($sql);
-	
+
 	$row = $result->fetch_assoc();
-	
+
 	if ($row)
 		$city = array('id' => $row['id'], 'name' => $row['name']);
-		
-	return $city;  
+
+	return $city;
 }
 
 function clear_main_cache() {
@@ -564,14 +564,14 @@ function get_types()
 	$types = array();
 	$cache = new Cache(APP_PATH . '_cache/', null, USE_CACHE);
 
-	if ($cache->testCache('SIDEBAR_JOBTYPES_CACHE')) 
+	if ($cache->testCache('SIDEBAR_JOBTYPES_CACHE'))
 	{
 	   $types = $cache->loadCache('SIDEBAR_JOBTYPES_CACHE');
 	} else {
 		$sql = 'SELECT id, name, var_name
 				FROM '.DB_PREFIX.'types ';
 		$result = $db->query($sql);
-		
+
 		while($row = $result->fetch_assoc())
 		{
 			$s = 'SELECT COUNT(id) as job_count FROM jobs WHERE is_active = 1 AND UNIX_TIMESTAMP(expires) > UNIX_TIMESTAMP(NOW()) AND type_id = ' . $row['id'];
@@ -598,7 +598,7 @@ function get_types_admin()
 	$sql = 'SELECT id, name, var_name
 			FROM '.DB_PREFIX.'types ';
 	$result = $db->query($sql);
-	
+
 	while($row = $result->fetch_assoc())
 	{
 		$s = 'SELECT COUNT(id) as job_count FROM jobs WHERE is_active = 1 AND UNIX_TIMESTAMP(expires) > UNIX_TIMESTAMP(NOW()) AND type_id = ' . $row['id'];
@@ -607,18 +607,18 @@ function get_types_admin()
 
 		$types[] = array('id' => $row['id'], 'name' => $row['name'], 'var_name' => $row['var_name'], 'job_count' => $innerRow['job_count']);
 	}
-	
+
 	return $types;
 }
 
 function get_type_id_by_varname($var_name)
 {
 	global $db;
-	$sql = 'SELECT id FROM '.DB_PREFIX.'types WHERE 
+	$sql = 'SELECT id FROM '.DB_PREFIX.'types WHERE
 		var_name = "'.$var_name.'"';
 	$result = $db->query($sql);
 	$row = $result->fetch_assoc();
-	
+
 	if ($row)
 		return $row['id'];
 	return false;
@@ -627,11 +627,11 @@ function get_type_id_by_varname($var_name)
 function get_type_varname_by_id($id)
 {
 	global $db;
-	$sql = 'SELECT var_name FROM '.DB_PREFIX.'types WHERE 
+	$sql = 'SELECT var_name FROM '.DB_PREFIX.'types WHERE
 		id = '.$id;
 	$result = $db->query($sql);
 	$row = $result->fetch_assoc();
-	
+
 	if ($row)
 		return $row['var_name'];
 	return false;
@@ -641,17 +641,17 @@ function get_category_by_var_name($var_name)
 {
 	global $db;
 	$category = null;
-	
+
 	$sql = 'SELECT *
 	               FROM '.DB_PREFIX.'categories
 	               WHERE var_name = "' . $var_name . '"';
-	
+
 	$result = $db->query($sql);
 	$row = $result->fetch_assoc();
-	
+
 	if ($row)
 		$category = build_category_from_result_set_row($row);
-	
+
 	return $category;
 }
 
@@ -659,21 +659,21 @@ function get_category_by_id($id)
 {
 	global $db;
 	$category = null;
-	
+
 	$sql = 'SELECT *
 	               FROM '.DB_PREFIX.'categories
 	               WHERE id = ' . $id;
-	
+
 	$result = $db->query($sql);
 	$row = $result->fetch_assoc();
-	
+
 	if ($row)
 		$category = build_category_from_result_set_row($row);
-	
+
 	return $category;
 }
 
-function processUrlForEmail($url) 
+function processUrlForEmail($url)
 {
 
 	if (strpos($url, "http://") !== false)
@@ -685,7 +685,7 @@ function processUrlForEmail($url)
 	return $url;
 }
 
-function processUrlForEmailTrimEnd($url) 
+function processUrlForEmailTrimEnd($url)
 {
 
 	if (strpos($url, "http://") !== false)
@@ -699,7 +699,7 @@ function processUrlForEmailTrimEnd($url)
 
 function build_category_from_result_set_row($row)
 {
-	return array('id' => $row['id'], 'name' => $row['name'], 'var_name' => $row['var_name'], 
+	return array('id' => $row['id'], 'name' => $row['name'], 'var_name' => $row['var_name'],
 			     'title' => $row['title'], 'description' => $row['description'],
 			     'keywords' => $row['keywords'], 'category_order' => $row['category_order']);
 }
@@ -712,7 +712,7 @@ function generate_indeed_feed()
     $sanitizer = new Sanitizer;
 
 	$jobs = array();
-	
+
 	$sql = 'SELECT id
 	               FROM '.DB_PREFIX.'jobs
 	               WHERE UNIX_TIMESTAMP(expires) > UNIX_TIMESTAMP(NOW()) AND is_tmp = 0  AND is_active = 1 ORDER BY created_on DESC';
@@ -734,15 +734,15 @@ function generate_indeed_feed()
 		$cityname = $db->query('SELECT name FROM '.DB_PREFIX.'cities where id=' . $JOB["city_id"]);
 		$cityname = $cityname->fetch_assoc();
 
-		$url = PROTOCOL . MAIN_URL . 'job/' . $row['id'] . '/' . $sanitizer->sanitize_title_with_dashes($JOB['title']);
+		$url = PROTOCOL . MAIN_URL . 'job/' . $sanitizer->sanitize_title_with_dashes($JOB['title']) . '/' . $row['id'];
 
-		echo '<job>'; 
+		echo '<job>';
 		echo '<title><![CDATA[' . $JOB["title"] . ']]></title>';
-        echo '<date><![CDATA[' . date($DATE_FORMAT, $JOB["created_on_timestamp"]) . ']]></date>';
+        echo '<date><![CDATA[' . date($DATE_FORMAT, $JOB["created_on_ts"]) . ']]></date>';
 		echo '<referencenumber><![CDATA['. 'dj_' . $row['id'] . ']]></referencenumber>';
 		echo '<url><![CDATA[' . $url . ']]></url>';
         echo '<company><![CDATA['. $JOB["company"] . ']]></company>';
-        echo '<country><![CDATA[' . $cityname["name"] . ']]></country>';			
+        echo '<country><![CDATA[' . $cityname["name"] . ']]></country>';
 		echo '<description><![CDATA[' . $JOB["description"] . ']]></description>';
 		echo '<salary><![CDATA[' . $JOB["salary"] . ']]></salary>';
 		echo '<jobtype><![CDATA[' . $JOB["type_name"]. ']]></jobtype>';
@@ -750,7 +750,7 @@ function generate_indeed_feed()
         echo '</job>';
     }
     echo '</source>';
-   
+
 }
 
 function generate_sitemap($type)
@@ -764,8 +764,8 @@ function generate_sitemap($type)
 
     // Get all custom pages
     $result = $db->query('SELECT url FROM '.DB_PREFIX.'pages');
-    while ($row = $result->fetch_assoc()) $sitemap[$row['url'] . '/'] = 1; 
-    
+    while ($row = $result->fetch_assoc()) $sitemap[$row['url'] . '/'] = 1;
+
     //my custom routes
     $sitemap[URL_COMPANIES] = 1;
     $sitemap[URL_LOGIN_RECRUITERS] = 1;
@@ -784,7 +784,7 @@ function generate_sitemap($type)
     // Get all companies
     $result = $db->query('SELECT company FROM '.DB_PREFIX.'jobs WHERE is_active = 1 GROUP BY company');
     while ($row = $result->fetch_assoc()) $sitemap[URL_JOBS_AT_COMPANY . '/' . $sanitizer->sanitize_title_with_dashes($row['company']) . '/'] = 1;
-        
+
     // Get all active Jobs
     $result = $db->query('SELECT j.id as "jid", j.title as "jtitle", j.company as "jcompany", c.ascii_name as "cascii" FROM '.DB_PREFIX.'jobs j, cities c WHERE j.is_active = 1 AND j.city_id=c.id');
     while ($row = $result->fetch_assoc()) $sitemap[URL_JOB .'/' . $sanitizer->sanitize_title_with_dashes($row['jtitle']) . '-' . $row['cascii'] . '/' . $row['jid']] = 1;
@@ -793,10 +793,10 @@ function generate_sitemap($type)
     if ($type == 'xml')
     {
         header('Content-Type: text/xml; charset="utf-8"');
-        
+
         echo '<?xml version="1.0" encoding="UTF-8"?>';
         echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
-        
+
         foreach ($sitemap as $url => $value)
         {
             echo '<url><loc>'. PROTOCOL . MAIN_URL . $url.'</loc></url>';
@@ -808,7 +808,7 @@ function generate_sitemap($type)
         foreach ($sitemap as $url => $value)
         {
             echo PROTOCOL . MAIN_URL . $url.'<br />';
-        }        
+        }
     }
 
 }
