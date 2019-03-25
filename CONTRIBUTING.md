@@ -16,7 +16,7 @@ We are interested in hearing any feedback for improvement and we consider every 
 
 ## Submitting a pull request
 
-Writing a good description for your pull request is crucial to help us understand your change. We use the standard [Github workflow](https://guides.github.com/introduction/flow/) where most of the development happens on the `master` branch.
+Writing a good description for your pull request is crucial to help us understand your change. We use the standard [Github workflow](https://guides.github.com/introduction/flow/) where most of the development happens on the `master` branch. Please see and use IDE settings from .editorconfig file to keep the consistency between text editors during development.
 
 ## Contributor License Agreement
 
