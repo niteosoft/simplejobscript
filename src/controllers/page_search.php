@@ -77,7 +77,9 @@
 	{ 
 		$keywords = trim($keywords);
 		
-		$smarty->assign('jobs', $job->Search($keywords, $url_query, $start_page));
+		//$smarty->assign('jobs', $job->Search($keywords, $url_query, $start_page));
+		$smarty->assign('jobs', $job->SearchSimplified($keywords, $url_query, $start_page));
+		
 	}
 	// if user hit enter after entering a search query, we know this causes a 
 	// synchronous HTTP redirect, so apply a different template
