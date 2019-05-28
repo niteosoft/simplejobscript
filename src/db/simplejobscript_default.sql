@@ -1,7 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.5.4.1deb2ubuntu2.1
--- http://www.phpmyadmin.net
---
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -97,15 +93,15 @@ CREATE TABLE `applicant` (
 --
 
 INSERT INTO `applicant` (`id`, `fullname`, `occupation`, `email`, `phone`, `message`, `weblink`, `cv_path`, `public_profile`, `password`, `last_activity`, `location`, `skills`, `confirmed`, `sm_link_1`, `sm_link_2`, `sm_link_3`, `sm_link_4`) VALUES
-(105, 'Linda Patricks', 'SEO Consultant', 'linda.patricks@gmail.com', '77651513', 'Good day,\r\n\r\nI would like to apply.\r\n\r\nRegards', 'port.com', '', 1, 'e10adc3949ba59abbe56e057f20f883e', '2017-04-23 22:57:38', 'New York', 'wordpress,seo,ppc,analytics', 1, '1_fake-link.com/user-id/7899', '2_fake-link.com/user-id/7899', '11_+4415419841', ''),
-(104, 'Steven Grahams', 'Swift Developer', 'steven.grahams@gmail.com', '7765415616', 'Good day,\r\n\r\niOS Engineer here.\r\n\r\nRegards', 'steven.com', '', 1, 'e10adc3949ba59abbe56e057f20f883e', '2017-01-25 01:56:50', 'San Fransisco', 'ios,swift,cordova,unity', 1, '10_fake-link.com/user-id/7899', '12_fake-link.com/user-id/7899', '13_fake-link.com/user-id/7899', '14_fake-link.com/user-id/7899'),
-(102, 'Robert Simons', 'Frontend Developer', 'robert.simons@gmail.com', '77546151', 'Good day,\r\n\r\nSenior Ruby developer here.\r\nI would like to discuss the role.\r\n\r\nRegards', 'robert.com', '', 1, 'e10adc3949ba59abbe56e057f20f883e', '2017-04-23 22:52:09', 'Prague', 'ruby,sass,compass,nginx', 1, '7_fake-link.com/user-id/7899', '8_fake-link.com/user-id/7899', '9_fake-link.com/user-id/7899', '10_fake-link.com/user-id/7899'),
-(103, 'Norbert Williams', 'NodeJS Engineer', 'norbert.williams@gmail.com', '775645123', 'Good day,\r\n\r\nI would like to discuss remote position.\r\n\r\nRegards', 'port.com', '', 1, 'e10adc3949ba59abbe56e057f20f883e', '2017-04-23 22:54:18', 'Los Angeles', 'nodejs,bootstrap,wireframes', 1, '2_fake-link.com/user-id/7899', '3_fake-link.com/user-id/7899', '4_fake-link.com/user-id/7899', '5_fake-link.com/user-id/7899'),
-(100, 'Liam Goatbook', 'Backend Developer', 'liam.goatbook@gmail.com', '7748786152', 'Good day,\r\n\r\nI am senior Back - end engineer and I believe\r\nI perfectly qualify for the role.\r\n\r\nRegards,\r\nLiam Goatbook', 'liam.com', 'uploads/cvs/cv_example_58148c990bdf8.pdf', 1, 'e10adc3949ba59abbe56e057f20f883e', '2017-04-23 22:48:41', 'Bristol', 'php,laravel,mysql', 1, '9_fake-link.com/user-id/7899', '14_fake-link.com/user-id/7899', '13_fake-link.com/user-id/7899', '12_fake-link.com/user-id/7899'),
-(101, 'Terry Hogan', 'PS Guru', 'terry.hogan@gmail.com', '7798456412', 'Good day,\r\n\r\nI would like to apply.\r\n\r\nRegards', 'terry.com', 'uploads/cvs/cv_templ_58148d1400b6e.doc', 1, 'e10adc3949ba59abbe56e057f20f883e', '2017-04-23 22:50:44', 'Edinborough', 'illustrator,photoshop,css', 1, '1_fake-link.com/user-id/7899', '10_fake-link.com/user-id/7899', '', ''),
-(86, 'Patrick Bale', 'Graduate', 'patrick.bale@gmail.com', '+44 907 512 446', 'Application message', 'patrik.com', 'uploads/cvs/example_5783877ec3fb3.pdf', 1, 'e10adc3949ba59abbe56e057f20f883e', '2015-11-18 02:48:15', '', 'word,excel', 1, '6_fake-link.com/user-id/7899', '11_+44465465165', '13_fake-link.com/user-id/7899', '14_fake-link.com/user-id/7899'),
-(67, 'John Seth', 'Mobile Engineer', 'support@niteosoft.co.uk', '44987812', 'Application message', 'simplejobscript.com', 'uploads/cvs/samplepdf_5a43a41d6a0c7.pdf', 1, 'e10adc3949ba59abbe56e057f20f883e', '2017-04-23 20:27:18', 'London', 'ionic,react.js,firebase', 1, '1_A.com/1', '2_B.com/2', '3_Clink/4', '11_+446516515'),
-(72, 'Patrick Bay', 'iOS Developer', 'support@niteosoft.co.uk', '44907 512 447', 'In eget lacus augue. In nec risus dignissim, maximus quam eget, consectetur urna. Nam ut odio quis erat accumsan auctor id quis quam. Donec eu dolor non lorem ornare fermentum sit amet ut odio. Praesent aliquet eros ac lacus malesuada, sit amet sodales lacus malesuada.', 'simplejobscript.com', '', 1, 'e10adc3949ba59abbe56e057f20f883e', '2017-04-24 16:46:22', 'Paris', 'android,ios,nosql', 1, '6_fake-link.com/user-id/7899', '5_fake-link.com/user-id/7899', '10_fake-link.com/user-id/7899', '11_+446516515');
+(105, 'Linda Patricks', 'SEO Consultant', 'linda.patricks@gmail.com', '77651513', 'Good day,\r\n\r\nI would like to apply.\r\n\r\nRegards', 'port.com', '', 1, 'e10adc3949ba59abbe56e057f20f883e', '2017-04-24 00:57:38', 'New York', 'wordpress,seo,ppc,analytics', 1, '1_fake-link.com/user-id/7899', '2_fake-link.com/user-id/7899', '11_+4415419841', ''),
+(104, 'Steven Grahams', 'Swift Developer', 'steven.grahams@gmail.com', '7765415616', 'Good day,\r\n\r\niOS Engineer here.\r\n\r\nRegards', 'steven.com', '', 1, 'e10adc3949ba59abbe56e057f20f883e', '2017-01-25 02:56:50', 'San Fransisco', 'ios,swift,cordova,unity', 1, '10_fake-link.com/user-id/7899', '12_fake-link.com/user-id/7899', '13_fake-link.com/user-id/7899', '14_fake-link.com/user-id/7899'),
+(102, 'Robert Simons', 'Frontend Developer', 'robert.simons@gmail.com', '77546151', 'Good day,\r\n\r\nSenior Ruby developer here.\r\nI would like to discuss the role.\r\n\r\nRegards', 'robert.com', '', 1, 'e10adc3949ba59abbe56e057f20f883e', '2017-04-24 00:52:09', 'Prague', 'ruby,sass,compass,nginx', 1, '7_fake-link.com/user-id/7899', '8_fake-link.com/user-id/7899', '9_fake-link.com/user-id/7899', '10_fake-link.com/user-id/7899'),
+(103, 'Norbert Williams', 'NodeJS Engineer', 'norbert.williams@gmail.com', '775645123', 'Good day,\r\n\r\nI would like to discuss remote position.\r\n\r\nRegards', 'port.com', '', 1, 'e10adc3949ba59abbe56e057f20f883e', '2017-04-24 00:54:18', 'Los Angeles', 'nodejs,bootstrap,wireframes', 1, '2_fake-link.com/user-id/7899', '3_fake-link.com/user-id/7899', '4_fake-link.com/user-id/7899', '5_fake-link.com/user-id/7899'),
+(100, 'Liam Goatbook', 'Backend Developer', 'liam.goatbook@gmail.com', '7748786152', 'Good day,\r\n\r\nI am senior Back - end engineer and I believe\r\nI perfectly qualify for the role.\r\n\r\nRegards,\r\nLiam Goatbook', 'liam.com', 'uploads/cvs/cv_example_58148c990bdf8.pdf', 1, 'e10adc3949ba59abbe56e057f20f883e', '2017-04-24 00:48:41', 'Bristol', 'php,laravel,mysql', 1, '9_fake-link.com/user-id/7899', '14_fake-link.com/user-id/7899', '13_fake-link.com/user-id/7899', '12_fake-link.com/user-id/7899'),
+(101, 'Terry Hogan', 'PS Guru', 'terry.hogan@gmail.com', '7798456412', 'Good day,\r\n\r\nI would like to apply.\r\n\r\nRegards', 'terry.com', 'uploads/cvs/cv_templ_58148d1400b6e.doc', 1, 'e10adc3949ba59abbe56e057f20f883e', '2017-04-24 00:50:44', 'Edinborough', 'illustrator,photoshop,css', 1, '1_fake-link.com/user-id/7899', '10_fake-link.com/user-id/7899', '', ''),
+(86, 'Patrick Bale', 'Graduate', 'patrick.bale@gmail.com', '+44 907 512 446', 'Application message', 'patrik.com', 'uploads/cvs/example_5783877ec3fb3.pdf', 1, 'e10adc3949ba59abbe56e057f20f883e', '2015-11-18 03:48:15', '', 'word,excel', 1, '6_fake-link.com/user-id/7899', '11_+44465465165', '13_fake-link.com/user-id/7899', '14_fake-link.com/user-id/7899'),
+(67, 'John Seth', 'Mobile Engineer', 'support@niteosoft.co.uk', '44987812', 'Application message', 'simplejobscript.com', 'uploads/cvs/samplepdf_5a43a41d6a0c7.pdf', 1, 'e10adc3949ba59abbe56e057f20f883e', '2017-04-23 22:27:18', 'London', 'ionic,react.js,firebase', 1, '1_A.com/1', '2_B.com/2', '3_Clink/4', '11_+446516515'),
+(72, 'Patrick Bay', 'iOS Developer', 'support@niteosoft.co.uk', '44907 512 447', 'In eget lacus augue. In nec risus dignissim, maximus quam eget, consectetur urna. Nam ut odio quis erat accumsan auctor id quis quam. Donec eu dolor non lorem ornare fermentum sit amet ut odio. Praesent aliquet eros ac lacus malesuada, sit amet sodales lacus malesuada.', 'simplejobscript.com', '', 1, 'e10adc3949ba59abbe56e057f20f883e', '2017-04-24 18:46:22', 'Paris', 'android,ios,nosql', 1, '6_fake-link.com/user-id/7899', '5_fake-link.com/user-id/7899', '10_fake-link.com/user-id/7899', '11_+446516515');
 
 -- --------------------------------------------------------
 
@@ -164,12 +160,12 @@ CREATE TABLE `campaign` (
 --
 
 INSERT INTO `campaign` (`id`, `area_id`, `name`, `created_on`, `active`, `banner_path`, `url`, `clicks`) VALUES
-(2, 2, 'Campaign A', '2016-02-10 10:18:04', 0, 'uploads/ads/1455097592_banner_a.png', 'www.google.com', 1),
-(3, 3, 'Campaign B', '2016-02-10 10:18:33', 0, 'uploads/ads/banner_b.png', 'www.yahoo.com', 0),
-(12, 1, 'Campaign C', '2016-02-09 10:46:32', 0, 'uploads/ads/banner_c.png', 'www.niteosoft.co.uk', 0),
-(14, 4, 'Campaign D', '2017-05-15 07:14:12', 0, 'uploads/ads/1494846851_banner_D.png', 'www.simplejobscript.com', 0),
-(15, 5, 'Campaign E', '2017-05-15 07:57:06', 0, 'uploads/ads/1494849426_banner_E.png', 'www.simplejobscript.com', 0),
-(19, 6, 'Campaign F', '2017-05-15 10:14:06', 0, 'uploads/ads/1494857646_banner_F.png', 'www.simplejobscript.com', 0);
+(2, 2, 'Campaign A', '2016-02-10 11:18:04', 0, 'uploads/ads/1455097592_banner_a.png', 'www.google.com', 1),
+(3, 3, 'Campaign B', '2016-02-10 11:18:33', 0, 'uploads/ads/banner_b.png', 'www.yahoo.com', 0),
+(12, 1, 'Campaign C', '2016-02-09 11:46:32', 0, 'uploads/ads/banner_c.png', 'www.niteosoft.co.uk', 0),
+(14, 4, 'Campaign D', '2017-05-15 09:14:12', 0, 'uploads/ads/1494846851_banner_D.png', 'www.simplejobscript.com', 0),
+(15, 5, 'Campaign E', '2017-05-15 09:57:06', 0, 'uploads/ads/1494849426_banner_E.png', 'www.simplejobscript.com', 0),
+(19, 6, 'Campaign F', '2017-05-15 12:14:06', 0, 'uploads/ads/1494857646_banner_F.png', 'www.simplejobscript.com', 0);
 
 -- --------------------------------------------------------
 
@@ -345,15 +341,7 @@ INSERT INTO `confirmed_recruiters` (`user_id`, `hash`) VALUES
 (9009, '6d56d1dc66374f4f780ad124fd8e827a06e927c9'),
 (9010, '62a2298a28d6f96ed21a520b0a1ffcb79ddfe194'),
 (9012, 'b5fa37a8ee8eeda1784e544fe5cc5775d7560635'),
-(9017, '4fbbb5d37baa86b844362fa019732f0b03958376'),
-(9022, 'db1272dd5e0f6d88ed4c4f673ad63ef606581e7f'),
-(9028, '00032d3a507cc4132231b7269283692c04610fb5'),
-(9029, 'ddfdc19ad20b42438222f77202491e012b3f6a23'),
-(9030, '957a6b2574f7a074e9949be380f7856ea16bbe4b'),
-(9031, '359ee00a2961f35e2773f49d22774a0e12b83384'),
-(9032, 'ba0d4dbb3285c35473b994d1af4e1ec7bb356c79'),
-(9037, '9e91e59fb922dc909165a1dba86c596e7cd7ff6a'),
-(9038, 'e18bf87cdd3c757e3ed7b8b5881a674f81ce16f6');
+(9017, '4fbbb5d37baa86b844362fa019732f0b03958376');
 
 -- --------------------------------------------------------
 
@@ -483,9 +471,8 @@ INSERT INTO `employer` (`id`, `package_id`, `name`, `email`, `password`, `ip`, `
 (112, 1, 'Samantha Fox', 'office@niteosoft.co.uk', 'e10adc3949ba59abbe56e057f20f883e', '188.123.106.84', 1, 0, 30, 10, 50),
 (114, 1, 'Bob Axwell', 'bob.axwell@hotmail.com', 'e10adc3949ba59abbe56e057f20f883e', '188.123.106.84', 1, 0, 30, 10, 50),
 (115, 3, 'Steven Bolt', 'steven.bolt@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', '188.123.106.84', 1, 1, 30, 30, 1000),
-(127, 1, 'John Black', 'john.black@facebook.com', 'e10adc3949ba59abbe56e057f20f883e', '188.123.106.84', 1, 1, 30, 10, 50),
-(144, 1, 'Admin', 'info@yourcompany.com', 'e10adc3949ba59abbe56e057f20f883e', '::1', 1, 1, 30, 5000, 5000),
-(9024, 0, 'First Last', 'hiltweb.mamta@gmail.com', '3f5b9a17314e241a8fad421d20f1cc8a', '182.77.51.16', 1, 0, 0, 0, 0);
+(127, 1, 'John Black', 'john.black@facebook.com', 'e10adc3949ba59abbe56e057f20f883e', '188.123.106.84', 1, 1, 30, 10, 49),
+(144, 1, 'Admin', 'info@yourcompany.com', 'e10adc3949ba59abbe56e057f20f883e', '::1', 1, 1, 30, 5000, 5000);
 
 -- --------------------------------------------------------
 
@@ -736,19 +723,15 @@ INSERT INTO `hits` (`job_id`, `created_on`, `ip`) VALUES
 (193, '2018-12-09 05:47:56', '::1'),
 (193, '2019-01-07 10:50:30', '::1'),
 (193, '2019-01-07 10:51:45', '::1'),
-(195, '2019-01-25 03:45:08', '162.158.79.59'),
-(195, '2019-01-25 03:45:10', '162.158.79.59'),
-(352, '2019-01-25 03:45:10', '162.158.78.166'),
-(352, '2019-01-25 03:45:12', '162.158.78.166'),
-(193, '2019-01-25 03:45:13', '172.69.62.214'),
-(193, '2019-01-25 03:45:14', '172.69.62.214'),
-(199, '2019-01-25 03:45:22', '172.69.62.58'),
-(199, '2019-01-25 03:45:23', '172.69.62.58'),
-(207, '2019-01-25 03:45:24', '172.69.62.226'),
-(207, '2019-01-25 03:45:25', '172.69.62.226'),
-(197, '2019-01-25 03:45:30', '172.69.62.22'),
-(197, '2019-01-25 03:45:30', '172.69.62.22'),
-(198, '2019-01-30 13:46:57', '172.68.51.220');
+(193, '2019-01-30 15:01:07', '::1'),
+(193, '2019-02-02 14:01:57', '::1'),
+(193, '2019-02-02 14:06:09', '::1'),
+(352, '2019-03-25 12:33:47', '::1'),
+(206, '2019-04-02 11:10:21', '::1'),
+(193, '2019-05-15 08:56:09', '::1'),
+(193, '2019-05-15 09:01:13', '::1'),
+(352, '2019-05-15 10:11:51', '::1'),
+(352, '2019-05-15 10:12:33', '::1');
 
 -- --------------------------------------------------------
 
@@ -948,6 +931,8 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (339, 0, 1, 'email_SubscriptionUpdated', '', ''),
 (340, 339, 1, 'subject', 'Your subscription on [ {BASE_URL} ] has been updated', ''),
 (341, 339, 1, 'message', '<h1>{BASE_URL}</h1>\n<h2>Subscription updated</h2>\n\n<table border="0" cellpadding="0" cellspacing="0" width="500" >\n  <tr>\n    <td style="padding-top:0;" align="left" valign="top" width="500">\n      <table border="0" cellpadding="0" cellspacing="0" width="75%" >\n        <tr>\n          <div>Your subscription settings has changed. To manage them please visit:</div><br />\n          <div><a href="http://{BASE_URL_LINK}{URL_SUBSCRIBE}" target="_blank">{BASE_URL_LINK}{URL_SUBSCRIBE}</a></div><br />\n          <div>Thank you.</div><br />\n          <div>Wish you a happy searching.</div><hr /><br />\n          <div>{BASE_URL} Team</div>\n        </tr>\n      </table>\n    </td>\n  </tr>\n</table>\n\n<br />\n<div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:left;line-height:120%;">\n	<div>{BASE_URL} &#169; {CUR_YEAR}. All&nbsp;rights&nbsp;reserved.</div>\n	<div>If you do not want to recieve emails from us, you can <a href="{BASE_URL_LINK}{URL_UNSUBSCRIBE}/{HASH}" target="_blank" style="text-decoration:none;color:#828282;"><strong><span style="color:#828282;">{URL_UNSUBSCRIBE}</strong></span></a>.\n	</div>\n</div><br />', 'textarea'),
+(8115, 6328, 23, 'searchbar_text', 'HLEDAT', ''),
+(8116, 7252, 24, 'searchbar_text', 'HLADAT', ''),
 (342, 291, 1, 'quit_msg', 'By confirmation we will remove your email address from our newsletter.', ''),
 (343, 291, 1, 'unsubscribe', 'Unsubscribe', ''),
 (344, 291, 1, 'stay', 'no change', ''),
@@ -1573,6 +1558,8 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (3154, 3153, 16, 'all_categories', 'Alle Kategorien', ''),
 (3155, 3153, 16, 'intro', 'Alle Job Anzeigen werden im RSS-Format unter unten aufgeführten Kategorien . Sie können unsere Inhalte in Ihre Website einbinden , stellen Sie bitte sicher, dass auf die ursprüngliche Quelle zu verbinden zurück', ''),
 (3152, 3149, 15, 'jobtpl', '<table border="0" cellpadding="0" cellspacing="0" width="350" style="max-width:100%;">\n  <tr>\n    <td align="left" style="width: 100px;">\n    <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <img src="{JOB_LOGO}" width="73" style="max-width:100%;" alt="Text" title="Text" /></a>\n    </td>\n\n    <td align="left" class="textContent">\n      <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <h3 style="color:#5E5EB5;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:17px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;"><strong>{JOB_TITLE}</strong></h3></a>\n      <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:13px;margin-bottom:0;color:#5F5F5F;line-height:135%;">{JOB_DESC}</div>\n      </a>\n    </td>\n  </tr>\n</table>', 'textarea'),
+(8105, 6297, 23, 'hired_label', 'PŘIJAT', ''),
+(8106, 7218, 24, 'hired_label', 'PRIJATÁ', ''),
 (3149, 0, 15, 'email_weeklyNewsletter', '', ''),
 (3150, 3149, 15, 'subject', 'Pedido esta semana los trabajos de {WEBSITE}', ''),
 (3151, 3149, 15, 'message', '<h1>Esta semana los trabajos</h1>\n			<h2>Haga clic para ver el detalle. Usted puede solicitar en línea en nuestras páginas.</h2>\n\n			{JOBS_CONTENT}\n\n			<br /><br />\n			<!-- need to specify absolute url in here! CHANGE IT -->\n			<table border="0" cellpadding="0" cellspacing="0" width="50%" style="background-color: #3498db;">\n				<tr>\n					<td align="center" valign="middle" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">\n						<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{BASE_URL_JOBS}" target="_blank">Ver todos los empleos</a>\n					</td>\n				</tr>\n			</table>\n\n			<br />\n			<div>{BASE_URL} &#169; 2016. Todas&nbsp;derechos&nbsp;reservado</div><br />', 'textarea'),
@@ -1779,9 +1766,9 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (2947, 2939, 15, '404_msg', 'PAGE DOES NOT EXIST', ''),
 (2945, 2939, 15, 'top_menu_blog', 'Blog', ''),
 (2944, 2939, 15, 'top_menu_companies', 'Compañías', ''),
-(2943, 2939, 15, 'top_menu_jobs', 'Trabajos', ''),
-(2942, 2939, 15, 'top_menu_applicants', 'Candidatos', '');
+(2943, 2939, 15, 'top_menu_jobs', 'Trabajos', '');
 INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, `field_type`) VALUES
+(2942, 2939, 15, 'top_menu_applicants', 'Candidatos', ''),
 (2941, 2939, 15, 'top_menu_recruiters', 'Reclutadores', ''),
 (2940, 2939, 15, 'text_save', 'Salvar', ''),
 (2939, 0, 15, 'website_general', '', ''),
@@ -2042,6 +2029,8 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (2687, 2684, 15, 'title', 'Rss Agregador', ''),
 (2688, 0, 15, 'indeed', '', ''),
 (2683, 2680, 14, 'jobtpl', '<table border="0" cellpadding="0" cellspacing="0" width="350" style="max-width:100%;">\n  <tr>\n    <td align="left" style="width: 100px;">\n    <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <img src="{JOB_LOGO}" width="73" style="max-width:100%;" alt="Text" title="Text" /></a>\n    </td>\n\n    <td align="left" class="textContent">\n      <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <h3 style="color:#5E5EB5;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:17px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;"><strong>{JOB_TITLE}</strong></h3></a>\n      <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:13px;margin-bottom:0;color:#5F5F5F;line-height:135%;">{JOB_DESC}</div>\n      </a>\n    </td>\n  </tr>\n</table>', 'textarea'),
+(8103, 5040, 20, 'hired_label', 'Contratado', ''),
+(8104, 5568, 21, 'hired_label', '雇用', ''),
 (2680, 0, 14, 'email_weeklyNewsletter', '', ''),
 (2681, 2680, 14, 'subject', 'Checkout Ce semaine emplois sur {WEBSITE}', ''),
 (2682, 2680, 14, 'message', '<h1>Cette semaine emplois</h1>\n			<h2>Cliquez ici pour voir le détail. Vous pouvez postuler en ligne sur nos pages.</h2>\n\n			{JOBS_CONTENT}\n\n			<br /><br />\n			<!-- need to specify absolute url in here! CHANGE IT -->\n			<table border="0" cellpadding="0" cellspacing="0" width="50%" style="background-color: #3498db;">\n				<tr>\n					<td align="center" valign="middle" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">\n						<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{BASE_URL_JOBS}" target="_blank">Voir tous les emplois</a>\n					</td>\n				</tr>\n			</table>\n\n			<br />\n			<div>{BASE_URL} &#169; 2016. Tous&nbsp;droits&nbsp;réservé.</div><br />', 'textarea'),
@@ -2266,9 +2255,9 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (2460, 2449, 14, 'newsletter_about', 'Notre politique', ''),
 (2459, 2449, 14, 'newsletter_text', 'Nous promettons que nous ne serons pas spam de votre boîte de réception. Chaque abonné recevrez un annonce d emploi chaque semaine, avec une possibilité de se désinscrire à tout moment. Choisissez les catégories de votre intérêt, et ne manquez jamais une occasion unique à nouveau! Nous vous souhaitons, que vous trouverez ce que vous cherchez.', ''),
 (2458, 2449, 14, 'subscribe_desc', 'Choisissez les catégories de votre intérêt et de nous laisser votre email. Une fois par semaine, nous vous envoyons nouvelles offres d emploi pertinentes. Vous pouvez vous désinscrire à tout moment', ''),
-(2457, 2449, 14, 'confirmed_msg', 'Votre souscription a été comleted succès! Nous vous souhaitons de trouver ce que vous cherchez!', ''),
-(2456, 2449, 14, 'positive_feedback', 'Nous vous avons envoyé un e-mail, s il vous plaît confirmer votre abonnement!', '');
+(2457, 2449, 14, 'confirmed_msg', 'Votre souscription a été comleted succès! Nous vous souhaitons de trouver ce que vous cherchez!', '');
 INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, `field_type`) VALUES
+(2456, 2449, 14, 'positive_feedback', 'Nous vous avons envoyé un e-mail, s il vous plaît confirmer votre abonnement!', ''),
 (2454, 2449, 14, 'confirmed_msg_fail', 'Ce lien de confirmation est plus actif! S il vous plaît, abonnez-vous à nouveau!', ''),
 (2455, 2449, 14, 'subscribe_submit', 'Souscrire', ''),
 (2453, 2449, 14, 'subscribe_message_cat', 'Envoyez-moi des emplois de cette catégorie', ''),
@@ -2799,6 +2788,9 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (3619, 3618, 16, 'subject', 'Checkout an Dieser Woche Jobs auf {WEBSITE}', ''),
 (3620, 3618, 16, 'message', '<h1>Dieser Woche Jobs</h1>\n			<h2>Klicken Sie in die Detailansicht. Sie können online auf unseren Seiten gelten.</h2>\n\n			{JOBS_CONTENT}\n\n			<br /><br />\n			<!-- need to specify absolute url in here! CHANGE IT -->\n			<table border="0" cellpadding="0" cellspacing="0" width="50%" style="background-color: #3498db;">\n				<tr>\n					<td align="center" valign="middle" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">\n						<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{BASE_URL_JOBS}" target="_blank">Alle Stellenangebote</a>\n					</td>\n				</tr>\n			</table>\n\n			<br />\n			<div>{BASE_URL} &#169; 2016. Alle&nbsp;rechte&nbsp;reserviert.</div><br />', 'textarea'),
 (3621, 3618, 16, 'jobtpl', '<table border="0" cellpadding="0" cellspacing="0" width="350" style="max-width:100%;">\n  <tr>\n    <td align="left" style="width: 100px;">\n    <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <img src="{JOB_LOGO}" width="73" style="max-width:100%;" alt="Text" title="Text" /></a>\n    </td>\n\n    <td align="left" class="textContent">\n      <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <h3 style="color:#5E5EB5;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:17px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;"><strong>{JOB_TITLE}</strong></h3></a>\n      <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:13px;margin-bottom:0;color:#5F5F5F;line-height:135%;">{JOB_DESC}</div>\n      </a>\n    </td>\n  </tr>\n</table>', 'textarea'),
+(8112, 4254, 19, 'searchbar_text', 'खोज', ''),
+(8113, 5071, 20, 'searchbar_text', 'PROCURAR', ''),
+(8114, 5599, 21, 'searchbar_text', '搜索', ''),
 (3812, 3740, 18, 'jobs_headline', 'Мои вакансии', ''),
 (3813, 3740, 18, 'jobs_about_tag', 'Здесь вы можете управлять списком объявлений.', ''),
 (3814, 3740, 18, 'editjob_headline', 'Изменить объявление', ''),
@@ -3273,6 +3265,8 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (4127, 4126, 18, 'subject', 'Оцените объявления недели на {WEBSITE}', ''),
 (4128, 4126, 18, 'message', '<h1>Объявления недели</h1>\n			<h2>Нажмите, чтобы увидеть детали.</h2>\n\n			{JOBS_CONTENT}\n\n			<br /><br />\n			<!-- need to specify absolute url in here! CHANGE IT -->\n			<table border="0" cellpadding="0" cellspacing="0" width="50%" style="background-color: #3498db;">\n				<tr>\n					<td align="center" valign="middle" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">\n						<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{BASE_URL_JOBS}" target="_blank">View all jobs</a>\n					</td>\n				</tr>\n			</table>\n\n			<br />\n			<div>{BASE_URL} &#169; 2016. Все&nbsp;права&nbsp;защищены.</div><br />', 'textarea'),
 (4129, 4126, 18, 'jobtpl', '<table border="0" cellpadding="0" cellspacing="0" width="350" style="max-width:100%;">\n  <tr>\n    <td align="left" style="width: 100px;">\n    <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <img src="{JOB_LOGO}" width="73" style="max-width:100%;" alt="Text" title="Text" /></a>\n    </td>\n\n    <td align="left" class="textContent">\n      <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <h3 style="color:#5E5EB5;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:17px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;"><strong>{JOB_TITLE}</strong></h3></a>\n      <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:13px;margin-bottom:0;color:#5F5F5F;line-height:135%;">{JOB_DESC}</div>\n      </a>\n    </td>\n  </tr>\n</table>', 'textarea'),
+(8099, 2251, 14, 'hired_label', 'EMBAUCHÉ', ''),
+(8100, 3189, 16, 'hired_label', 'GEMIETET', ''),
 (4132, 4014, 18, 'submit', 'Завершить', ''),
 (4133, 4014, 18, 'name', 'Ваше имя', ''),
 (4137, 4134, 1, 'accept_message', 'Got it!', ''),
@@ -3292,13 +3286,13 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (4151, 4150, 18, 'accept_message', 'понимать', ''),
 (4152, 4150, 18, 'message', ' Данный сайт использует куки, чтобы гарантировать, что вы получите лучший опыт', ''),
 (4153, 4150, 18, 'more_info', 'Info', ''),
-(4154, 2963, 15, 'about', 'Acerca de', ''),
+(4154, 2963, 15, 'about', 'Acerca de', '');
+INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, `field_type`) VALUES
 (4155, 3432, 16, 'about', 'Info', ''),
 (4156, 2494, 14, 'about', 'Info', ''),
 (4157, 3940, 18, 'about', ' около', ''),
 (4158, 60, 1, 'favourites_label', 'Favorite jobs', ''),
-(4159, 3218, 16, 'favourites_label', 'Lieblings list', '');
-INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, `field_type`) VALUES
+(4159, 3218, 16, 'favourites_label', 'Lieblings list', ''),
 (4160, 2749, 15, 'favourites_label', 'Empleos favoritos', ''),
 (4161, 2280, 14, 'favourites_label ', 'Emplois préférés', ''),
 (4162, 3727, 18, 'favourites_label', 'избранное', ''),
@@ -3806,6 +3800,7 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (4658, 4657, 19, 'subject', 'इस सप्ताह की नौकरियों को देखें {WEBSITE}', ''),
 (4659, 4657, 19, 'message', '<h1>इस सप्ताह की नौकरियॉं</h1>\n			<h2>विस्तार से देखने के लिए क्लिक करें। आप हमारे पृष्ठों पर ऑनलाइन आवेदन कर सकते हैं।.</h2>\n\n			{JOBS_CONTENT}\n\n			<br /><br />\n			<!-- need to specify absolute url in here! CHANGE IT -->\n			<table border="0" cellpadding="0" cellspacing="0" width="50%" style="background-color: #3498db;">\n				<tr>\n					<td align="center" valign="middle" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">\n						<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{BASE_URL_JOBS}" target="_blank">सभी नौकरियां देखें</a>\n					</td>\n				</tr>\n			</table>\n\n			<br />\n			<div>{BASE_URL} &#169; 2016. सभी&nbsp;अधिकार&nbsp;आरक्षित.</div><br />', 'textarea'),
 (4660, 4657, 19, 'jobtpl', '<table border="0" cellpadding="0" cellspacing="0" width="350" style="max-width:100%;">\n  <tr>\n    <td align="left" style="width: 100px;">\n    <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <img src="{JOB_LOGO}" width="73" style="max-width:100%;" alt="Text" title="Text" /></a>\n    </td>\n\n    <td align="left" class="textContent">\n      <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <h3 style="color:#5E5EB5;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:17px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;"><strong>{JOB_TITLE}</strong></h3></a>\n      <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:13px;margin-bottom:0;color:#5F5F5F;line-height:135%;">{JOB_DESC}</div>\n      </a>\n    </td>\n  </tr>\n</table>', 'textarea'),
+(8102, 4225, 19, 'hired_label', 'किराए पर लिया', ''),
 (4661, 418, 1, 'profile_picture_label', 'Make profile public', ''),
 (4662, 418, 1, 'pp_label', 'Timeline banner', ''),
 (4663, 418, 1, 'pp_hint', '1000x450 preferably', ''),
@@ -3839,13 +3834,13 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (4691, 3740, 18, 'no_entries', 'Нет записей на данный момент', ''),
 (4692, 3740, 18, 'open_jobs ', 'Открытые вакансии', ''),
 (4693, 3740, 18, 'pp_err', 'Неправильный файл или формат', ''),
-(4694, 3740, 18, 'pp_hint', '1000x450 предпочтительно', ''),
+(4694, 3740, 18, 'pp_hint', '1000x450 предпочтительно', '');
+INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, `field_type`) VALUES
 (4695, 3740, 18, 'pp_label', 'график баннера', ''),
 (4696, 3740, 18, 'profile_picture_label', 'Сделать профиль общественности', ''),
 (4697, 418, 1, 'add_company', 'REGISTER', ''),
 (4698, 3231, 16, 'add_company', 'Neue Firma', ''),
-(4699, 2762, 15, 'add_company', 'Nueva compañía', '');
-INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, `field_type`) VALUES
+(4699, 2762, 15, 'add_company', 'Nueva compañía', ''),
 (4700, 2293, 14, 'add_company', 'Nouvelle société', ''),
 (4701, 4268, 19, 'add_company', ' नई कंपनी को जोड़ने', ''),
 (4702, 3740, 18, 'add_company', 'новую компанию', ''),
@@ -4412,11 +4407,11 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (5262, 5251, 20, 'newsletter_about', 'Nossa política', ''),
 (5263, 5251, 20, 'tab_rules_title', 'Regras do boletim informativo', ''),
 (5264, 5251, 20, 'tab_subscribe_title', 'Inscrição', ''),
-(5265, 5251, 20, 'positive_feedback_maillist', 'Se você se inscreveu, pela primeira vez, enviamos um e-mail, por favor confirmar. Se você já é assinante, as configurações de assinatura foi atualizado.', ''),
+(5265, 5251, 20, 'positive_feedback_maillist', 'Se você se inscreveu, pela primeira vez, enviamos um e-mail, por favor confirmar. Se você já é assinante, as configurações de assinatura foi atualizado.', '');
+INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, `field_type`) VALUES
 (5266, 5251, 20, 'quit_msg', 'Por confirmação, removeremos o seu endereço de e-mail do nosso boletim informativo.', ''),
 (5267, 5251, 20, 'unsubscribe', 'Cancelar subscrição', ''),
-(5268, 5251, 20, 'stay', 'Permaneceu subscrito', '');
-INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, `field_type`) VALUES
+(5268, 5251, 20, 'stay', 'Permaneceu subscrito', ''),
 (5269, 5251, 20, 'unsubscription_successful_msg', 'Você foi removido com êxito dos anúncios de emprego.', ''),
 (5270, 5251, 20, 'unsubscription_unsuccessful_msg', 'Não conseguimos remover o seu e-mail da nossa lista, por favor <a href="/contact">entre em contato conosco</a>.', ''),
 (5271, 5251, 20, 'stop_subscription', 'Não quero receber mais ofertas de emprego', ''),
@@ -4649,6 +4644,7 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (5497, 5496, 20, 'subject', 'Atenção! Ofertas de emprego disponíveis esta semana em {WEBSITE}', ''),
 (5498, 5496, 20, 'message', '<h1>Ofertas de trabalho</h1>\n			<h2>Clique para ver os detalhes. Você pode aplicar instantaneamente em nosso site.</h2>\n\n			{JOBS_CONTENT}\n\n			<br /><br />\n			<!-- need to specify absolute url in here! CHANGE IT -->\n			<table border="0" cellpadding="0" cellspacing="0" width="50%" style="background-color: #3498db;">\n				<tr>\n					<td align="center" valign="middle" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">\n						<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{BASE_URL_JOBS}" target="_blank">Ver todas as ofertas de emprego</a>\n					</td>\n				</tr>\n			</table>\n\n			<br />\n			<div>{BASE_URL} &#169; 2016. Todos&nbsp;os&nbsp;direitos&nbsp;reservados.</div><br />', 'textarea'),
 (5499, 5496, 20, 'jobtpl', '<table border="0" cellpadding="0" cellspacing="0" width="350" style="max-width:100%;">\n  <tr>\n    <td align="left" style="width: 100px;">\n    <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <img src="{JOB_LOGO}" width="73" style="max-width:100%;" alt="Text" title="Text" /></a>\n    </td>\n\n    <td align="left" class="textContent">\n      <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <h3 style="color:#5E5EB5;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:17px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;"><strong>{JOB_TITLE}</strong></h3></a>\n      <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:13px;margin-bottom:0;color:#5F5F5F;line-height:135%;">{JOB_DESC}</div>\n      </a>\n    </td>\n  </tr>\n</table>', 'textarea'),
+(8101, 3698, 18, 'hired_label', 'ПРИНЯТ НА РАБОТУ', ''),
 (5500, 0, 21, 'date', '', ''),
 (5501, 5500, 21, 'ago', '前', ''),
 (5502, 5500, 21, 'day', '天', ''),
@@ -5023,13 +5019,13 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (5869, 5863, 21, 'company_logo_label', '公司徽标（可选，但建议）', ''),
 (5870, 5863, 21, 'company_url_label', '网址', ''),
 (5871, 5863, 21, 'company_hq_label', '总部', ''),
-(5872, 5863, 21, 'company_desc', '您的公司是什么？', ''),
+(5872, 5863, 21, 'company_desc', '您的公司是什么？', '');
+INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, `field_type`) VALUES
 (5873, 5863, 21, 'company_name', '公司名称', ''),
 (5874, 5863, 21, 'recruiters_note_secondstep', '请填写贵公司的详细信息', ''),
 (5875, 5863, 21, 'hash_confirmation_failed', '确认出现问题. 请联系我们.', ''),
 (5876, 5863, 21, 'first_step', '在两个简单的步骤内注册 (1/2)', ''),
-(5877, 5863, 21, 'second_step', '完成您的注册(2/2)', '');
-INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, `field_type`) VALUES
+(5877, 5863, 21, 'second_step', '完成您的注册(2/2)', ''),
 (5878, 5863, 21, 'submit_final', '完成', ''),
 (5879, 5863, 21, 'hash_confirmation_successful', '您的帐户已成功激活.', ''),
 (5880, 5863, 21, 'registration_done_message', '您的注册已完成. 您可以登录.', ''),
@@ -5138,6 +5134,9 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (5982, 5981, 21, 'subject', '结算这周的工作 {WEBSITE}', ''),
 (5983, 5981, 21, 'message', '<h1>本週工作</h1>\n			<h2>点击查看详细信息。您可以在我们的网页上在线申请.</h2>\n\n			{JOBS_CONTENT}\n\n			<br /><br />\n			<!-- need to specify absolute url in here! CHANGE IT -->\n			<table border="0" cellpadding="0" cellspacing="0" width="50%" style="background-color: #3498db;">\n				<tr>\n					<td align="center" valign="middle" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">\n						<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{BASE_URL_JOBS}" target="_blank">查看所有工作</a>\n					</td>\n				</tr>\n			</table>\n\n			<br />\n			<div>{BASE_URL} &#169; 2016. 所有&nbsp;权利&nbsp;保留.</div>', 'textarea'),
 (5984, 5981, 21, 'jobtpl', '<table border="0" cellpadding="0" cellspacing="0" width="350" style="max-width:100%;">\n  <tr>\n    <td align="left" style="width: 100px;">\n    <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <img src="{JOB_LOGO}" width="73" style="max-width:100%;" alt="Text" title="Text" /></a>\n    </td>\n\n    <td align="left" class="textContent">\n      <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <h3 style="color:#5E5EB5;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:17px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;"><strong>{JOB_TITLE}</strong></h3></a>\n      <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:13px;margin-bottom:0;color:#5F5F5F;line-height:135%;">{JOB_DESC}</div>\n      </a>\n    </td>\n  </tr>\n</table>', 'textarea'),
+(8109, 2749, 15, 'searchbar_text', 'BUSCAR', ''),
+(8110, 2280, 14, 'searchbar_text', 'CHERCHER', ''),
+(8111, 3727, 18, 'searchbar_text', 'поиск', ''),
 (5985, 5825, 21, 'name', ' 全名 (*)', ''),
 (5986, 5825, 21, 'email', '你的邮件 (*)', ''),
 (5987, 5825, 21, 'portfolio', '网站，投资组合', ''),
@@ -5637,13 +5636,13 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (6505, 6501, 23, 'name_label', 'Vaše jméno', ''),
 (6506, 6501, 23, 'success_msg', 'Díky za váš dotaz, budeme se mu věnovat co nejdříve.', ''),
 (6507, 6501, 23, 'captcha_err', 'Anti spam kód nebyl ověřen. Opište prosím znaky, které vidíte na obrázku. Ujistěte se, že jsou zadány správně.', ''),
-(6508, 0, 23, 'subscriptions', '', ''),
+(6508, 0, 23, 'subscriptions', '', '');
+INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, `field_type`) VALUES
 (6509, 6508, 23, 'subscribe_message', 'Dostávat týdně nové nabídky volných pracovních míst', ''),
 (6510, 6508, 23, 'wrongemail_feedback', 'Neplatná emailová adresa!', ''),
 (6511, 6508, 23, 'negative_feedback', 'Vložte prosím platnou emailovou adresu', ''),
 (6512, 6508, 23, 'subscribe_message_cat', 'Chci dostávat nabídky práce z této kategorie', ''),
-(6513, 6508, 23, 'confirmed_msg_fail', 'Potvrzovací odkaz již není platný! Prosím, zvolte znovu možnost odebírat!', '');
-INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, `field_type`) VALUES
+(6513, 6508, 23, 'confirmed_msg_fail', 'Potvrzovací odkaz již není platný! Prosím, zvolte znovu možnost odebírat!', ''),
 (6514, 6508, 23, 'subscribe_submit', 'Odebírat', ''),
 (6515, 6508, 23, 'positive_feedback', 'Poslali jsme vám email, prosím potvrďte odebírání novinek!', ''),
 (6516, 6508, 23, 'confirmed_msg', 'Přihlášení odběru proběhlo úspěšně. Přejeme vám, ať najdete to, co hledáte!', ''),
@@ -5895,6 +5894,8 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (6762, 6761, 23, 'subject', 'Podívejte se na pracovní nabídky tohoto týdne {WEBSITE}', ''),
 (6763, 6761, 23, 'message', '<h1>Pracovní nabídky tohoto týdne</h1>\n			<h2>Pro podrobnosti klikněte. Žádat o pracovní pozici mùžete přímo z našich webových stránek.</h2>\n\n			{JOBS_CONTENT}\n\n			<br /><br />\n			<!-- need to specify absolute url in here! CHANGE IT -->\n			<table border="0" cellpadding="0" cellspacing="0" width="50%" style="background-color: #3498db;">\n				<tr>\n					<td align="center" valign="middle" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">\n						<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{BASE_URL_JOBS}" target="_blank">View all jobs</a>\n					</td>\n				</tr>\n			</table>\n\n			<br />\n			<div>{BASE_URL} &#169; 2016. Všechna práva&nbsp;vyhrazena.</div><br />', 'textarea'),
 (6764, 6761, 23, 'jobtpl', '<table border="0" cellpadding="0" cellspacing="0" width="350" style="max-width:100%;">\n  <tr>\n    <td align="left" style="width: 100px;">\n    <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <img src="{JOB_LOGO}" width="73" style="max-width:100%;" alt="Text" title="Text" /></a>\n    </td>\n\n    <td align="left" class="textContent">\n      <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <h3 style="color:#5E5EB5;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:17px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;"><strong>{JOB_TITLE}</strong></h3></a>\n      <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:13px;margin-bottom:0;color:#5F5F5F;line-height:135%;">{JOB_DESC}</div>\n      </a>\n    </td>\n  </tr>\n</table>', 'textarea'),
+(8107, 60, 1, 'searchbar_text', 'SEARCH', ''),
+(8108, 3218, 16, 'searchbar_text', 'SUCHE', ''),
 (6765, 6529, 23, 'top_menu_addcv', 'Přidat životopis', ''),
 (6766, 601, 1, 'account_plan', 'Account plan:', ''),
 (6767, 601, 1, 'jobs_left', 'jobs left.', ''),
@@ -6161,7 +6162,8 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (7068, 7064, 19, 'job_ads', 'नौकरी के विज्ञापन', ''),
 (7069, 7064, 19, 'job_period', 'नौकरी की अवधि', ''),
 (7070, 7064, 19, 'recommended', 'सबसे लोकप्रिय', ''),
-(7071, 7064, 19, 'resume_downloads', 'डाउनलोड फिर से शुरू करें', ''),
+(7071, 7064, 19, 'resume_downloads', 'डाउनलोड फिर से शुरू करें', '');
+INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, `field_type`) VALUES
 (7072, 7064, 19, 'subheadline', 'हमारी योजनाओं को सभी आकार के व्यवसायों के लिए डिजाइन किया गया था यदि आपको एक कस्टम पैकेज की आवश्यकता है तो कृपया हमसे संपर्क करें।', ''),
 (7073, 7064, 19, 'topup', 'ऊपर से', ''),
 (7074, 0, 20, 'packages', '', ''),
@@ -6170,8 +6172,7 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (7077, 7074, 20, 'headline', 'PLANOS DE PREÇOS', ''),
 (7078, 7074, 20, 'job_ads', 'anuncio de emprego', ''),
 (7079, 7074, 20, 'job_period', 'Período de trabalho', ''),
-(7080, 7074, 20, 'recommended', 'Mais popular', '');
-INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, `field_type`) VALUES
+(7080, 7074, 20, 'recommended', 'Mais popular', ''),
 (7081, 7074, 20, 'resume_downloads', 'Retomar downloads', ''),
 (7082, 7074, 20, 'subheadline', 'Nossos planos foram projetados para empresas de todos os tamanhos. Se você precisa de um pacote personalizado entre em contato conosco.', ''),
 (7083, 7074, 20, 'topup', 'completar', ''),
@@ -6407,7 +6408,7 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (7317, 7266, 24, 'top_menu_postajob', 'Pridať ponuku práce', ''),
 (7318, 7266, 24, 'left_menu_myaccount', 'Môj účet', ''),
 (7319, 7266, 24, 'left_menu_settings', 'Nastavenie', ''),
-(7320, 7266, 24, 'left_menu_company_details', 'Firma', ''),
+(7320, 7266, 24, 'left_menu_company_details', 'Nastavenie', ''),
 (7321, 7266, 24, 'welcome_message', 'Vítajte,', ''),
 (7322, 7266, 24, 'logout_label', 'Odhlásiť sa', ''),
 (7323, 7266, 24, 'change_password_label', 'Zmeniť heslo', ''),
@@ -6477,7 +6478,7 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (7387, 7266, 24, 'premium_text', 'Chcete vytvoriť prémiový inzerát?', ''),
 (7388, 7266, 24, 'settings_headline', 'Nastavenie účtu', ''),
 (7389, 7266, 24, 'step_1', '1. Vytvoriť inzerát', ''),
-(7390, 7266, 24, 'step_2', '2. Pusti náhľad a publikovať', ''),
+(7390, 7266, 24, 'step_2', '2. Pusti náhľad a publikova', ''),
 (7391, 7266, 24, 'step_3', '3. Hotovo', ''),
 (7392, 7266, 24, 'post_location_label', 'Miesto', ''),
 (7393, 7266, 24, 'salary_desc', '- napr. 6,- EUR/hodina, 1000,- EUR/mesiac, dohodou apod.', ''),
@@ -6573,7 +6574,7 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (7483, 7465, 24, 'jobs', 'Pracovné miesta', ''),
 (7484, 7465, 24, 'create_profile', 'Vytvoriť profil', ''),
 (7485, 7465, 24, 'talents_menu_title', 'Zručnosti', ''),
-(7486, 7465, 24, 'sign_in', 'Prihlasit sa', ''),
+(7486, 7465, 24, 'sign_in', 'Zaregistrova sa', ''),
 (7487, 7465, 24, 'postjob_desc', 'Propagujte voľné pracovné miesto zdarma a nájdite ideálneho človeka z nášho mora talentov', ''),
 (7488, 7465, 24, 'goto_account_msg', 'Môj účet', ''),
 (7489, 7465, 24, 'backbtn_label', 'Späť', ''),
@@ -6802,6 +6803,8 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (7711, 7710, 24, 'subject', 'Pozrite sa na pracovné ponuky tohto týždňa {WEBSITE}', ''),
 (7712, 7710, 24, 'message', '<h1>Pracovné ponuky tohto týždňa</h1>\n			<h2>Pre podrobnosti kliknite. Žiadať o pracovnú pozíciu môžete priamo z našich webových stránok.</h2>\n\n			{JOBS_CONTENT}\n\n			<br /><br />\n			<!-- need to specify absolute url in here! CHANGE IT -->\n			<table border="0" cellpadding="0" cellspacing="0" width="50%" style="background-color: #3498db;">\n				<tr>\n					<td align="center" valign="middle" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">\n						<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{BASE_URL_JOBS}" target="_blank">View all jobs</a>\n					</td>\n				</tr>\n			</table>\n\n			<br />\n			<div>{BASE_URL} &#169; 2016. Všetky práva&nbsp;vyhradené.</div><br />', 'textarea'),
 (7713, 7710, 24, 'jobtpl', '<table border="0" cellpadding="0" cellspacing="0" width="350" style="max-width:100%;">\n  <tr>\n    <td align="left" style="width: 100px;">\n    <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <img src="{JOB_LOGO}" width="73" style="max-width:100%;" alt="Text" title="Text" /></a>\n    </td>\n\n    <td align="left" class="textContent">\n      <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <h3 style="color:#5E5EB5;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:17px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;"><strong>{JOB_TITLE}</strong></h3></a>\n      <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{JOB_URL}" target="_blank">\n      <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:13px;margin-bottom:0;color:#5F5F5F;line-height:135%;">{JOB_DESC}</div>\n      </a>\n    </td>\n  </tr>\n</table>', 'textarea'),
+(8097, 742, 1, 'hired_label', 'HIRED', ''),
+(8098, 2720, 15, 'hired_label', 'CONTRATADO', ''),
 (7714, 6014, 21, 'review_application_text', ' 您确定要对此应用进行审查吗？', ''),
 (7715, 6014, 21, 'email_label', ' 电子邮件', ''),
 (7716, 6014, 21, 'candidate_profile', ' 候选人资料', ''),
@@ -7072,7 +7075,7 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (7999, 4608, 19, 'select', 'Select', ''),
 (8000, 5442, 20, 'select', 'Select', ''),
 (8001, 4077, 18, 'select', 'Select', ''),
-(8002, 7647, 24, 'select', 'Vybrat', ''),
+(8002, 7647, 24, 'select', 'Select', ''),
 (8003, 289, 1, 'job_list_headline', 'New offers', ''),
 (8004, 289, 1, 'in', 'in', ''),
 (8005, 289, 1, 'sm_fb_label', 'FB', ''),
@@ -7082,146 +7085,7 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (8009, 289, 1, 'by', 'by', ''),
 (8010, 289, 1, 'listings', 'Listings', ''),
 (8011, 222, 1, 'in', 'in', ''),
-(8013, 289, 1, 'notification', 'Notification', ''),
-(8097, 7465, 24, 'top_menu_addcv', 'Pridať životopis', ''),
-(8098, 5800, 21, 'top_menu_addcv', 'Add resume+', ''),
-(8099, 6529, 23, 'top_menu_addcv', 'Pridat zivotopis', ''),
-(8100, 3408, 16, 'top_menu_addcv', 'Add resume+', ''),
-(8101, 2939, 15, 'top_menu_addcv', 'Add resume+', ''),
-(8102, 2470, 14, 'top_menu_addcv', 'Add resume+', ''),
-(8103, 4445, 19, 'top_menu_addcv', 'Add resume+', ''),
-(8104, 5272, 20, 'top_menu_addcv', 'Add resume+', ''),
-(8105, 3916, 18, 'top_menu_addcv', 'Add resume+', ''),
-(8106, 5927, 21, 'select', 'Select', ''),
-(8111, 6529, 23, 'job_list_headline', 'Nove ponuky', ''),
-(8110, 5800, 21, 'job_list_headline', 'New offers', ''),
-(8112, 3408, 16, 'job_list_headline', 'New offers', ''),
-(8113, 2939, 15, 'job_list_headline', 'New offers', ''),
-(8114, 2470, 14, 'job_list_headline', 'New offers', ''),
-(8115, 4445, 19, 'job_list_headline', 'New offers', ''),
-(8116, 5272, 20, 'job_list_headline', 'New offers', ''),
-(8117, 3916, 18, 'job_list_headline', 'New offers', ''),
-(8118, 7465, 24, 'job_list_headline', 'New offers', ''),
-(8119, 5800, 21, 'in', 'in', ''),
-(8120, 6529, 23, 'in', 'in', ''),
-(8121, 3408, 16, 'in', 'in', ''),
-(8122, 2939, 15, 'in', 'in', ''),
-(8123, 2470, 14, 'in', 'in', ''),
-(8124, 4445, 19, 'in', 'in', ''),
-(8125, 5272, 20, 'in', 'in', ''),
-(8126, 3916, 18, 'in', 'in', ''),
-(8127, 7465, 24, 'in', 'in', ''),
-(8128, 5800, 21, 'sm_fb_label', 'FB', ''),
-(8129, 5800, 21, 'sm_ln_label', 'LN', ''),
-(8130, 5800, 21, 'sm_tw_label', 'TW', ''),
-(8131, 5800, 21, 'sm_gp_label', 'G+', ''),
-(8132, 6529, 23, 'sm_fb_label', 'FB', ''),
-(8133, 6529, 23, 'sm_ln_label', 'LN', ''),
-(8134, 6529, 23, 'sm_gp_label', 'G+', ''),
-(8135, 6529, 23, 'sm_tw_label', 'TW', ''),
-(8136, 3408, 16, 'sm_fb_label', 'FB', ''),
-(8137, 3408, 16, 'sm_tw_label', 'TW', ''),
-(8138, 3408, 16, 'sm_ln_label', 'LN', ''),
-(8139, 3408, 16, 'sm_gp_label', 'G+', ''),
-(8140, 2939, 15, 'sm_fb_label', 'FB', ''),
-(8141, 2939, 15, 'sm_tw_label', 'TW', ''),
-(8142, 2939, 15, 'sm_gp_label', 'G+', ''),
-(8143, 2939, 15, 'sm_ln_label', 'LN', ''),
-(8144, 2470, 14, 'sm_fb_label', 'FB', ''),
-(8145, 2470, 14, 'sm_tw_label', 'TW', ''),
-(8146, 2470, 14, 'sm_gp_label', 'G+', ''),
-(8147, 2470, 14, 'sm_ln_label', 'LN', ''),
-(8148, 4445, 19, 'sm_fb_label', 'FB', ''),
-(8149, 4445, 19, 'sm_gp_label', 'G+', ''),
-(8150, 4445, 19, 'sm_tw_label', 'TW', ''),
-(8151, 4445, 19, 'sm_ln_label', 'LN', ''),
-(8152, 5272, 20, 'sm_fb_label', 'FB', ''),
-(8153, 5272, 20, 'sm_gp_label', 'G+', ''),
-(8154, 5272, 20, 'sm_ln_label', 'LN', ''),
-(8155, 5272, 20, 'sm_tw_label', 'TW', ''),
-(8156, 3916, 18, 'sm_fb_label', 'FB', ''),
-(8157, 3916, 18, 'sm_tw_label', 'TW', ''),
-(8158, 3916, 18, 'sm_gp_label', 'G+', ''),
-(8159, 3916, 18, 'sm_ln_label', 'LN', ''),
-(8160, 7465, 24, 'sm_fb_label', 'FB', ''),
-(8161, 7465, 24, 'sm_gp_label', 'G+', ''),
-(8162, 7465, 24, 'sm_ln_label', 'LN', ''),
-(8163, 7465, 24, 'sm_tw_label', 'TW', ''),
-(8164, 5800, 21, 'by', 'by', ''),
-(8165, 5800, 21, 'notification', 'Notification', ''),
-(8166, 5800, 21, 'listings', 'Listings', ''),
-(8167, 6529, 23, 'by', 'podle', ''),
-(8168, 6529, 23, 'notification', 'Oznameni', ''),
-(8169, 6529, 23, 'listings', 'Ponuky', ''),
-(8170, 3408, 16, 'by', 'by', ''),
-(8171, 3408, 16, 'listings', 'Listings', ''),
-(8172, 3408, 16, 'notification', 'Notification', ''),
-(8173, 2939, 15, 'by', 'by', ''),
-(8174, 2939, 15, 'notification', 'Notification', ''),
-(8175, 2939, 15, 'listings', 'Listings', ''),
-(8176, 2470, 14, 'by', 'by', ''),
-(8177, 2470, 14, 'notification', 'Notification', ''),
-(8178, 2470, 14, 'listings', 'Listings', ''),
-(8179, 4445, 19, 'by', 'by', ''),
-(8180, 4445, 19, 'notification', 'Notification', ''),
-(8181, 4445, 19, 'listings', 'Listings', ''),
-(8182, 5272, 20, 'by', 'by', ''),
-(8183, 5272, 20, 'notification', 'Notification', ''),
-(8184, 5272, 20, 'listings', 'Listings', ''),
-(8185, 3916, 18, 'by', 'by', ''),
-(8186, 3916, 18, 'notification', 'Notification', ''),
-(8187, 3916, 18, 'listings', 'Listings', ''),
-(8188, 7465, 24, 'by', 'podla', ''),
-(8189, 7465, 24, 'listings', 'Ponuky', ''),
-(8190, 7465, 24, 'notification', 'Oznam', ''),
-(8191, 6014, 21, 'in', 'in', ''),
-(8192, 6629, 23, 'in', 'v', ''),
-(8193, 3495, 16, 'in', 'in', ''),
-(8194, 3026, 15, 'in', 'in', ''),
-(8195, 2557, 14, 'in', 'in', ''),
-(8196, 4534, 19, 'in', 'in', ''),
-(8197, 5367, 20, 'in', 'in', ''),
-(8198, 4003, 18, 'in', 'in', ''),
-(8199, 7565, 24, 'in', 'in', ''),
-(8200, 5568, 21, 'edit_subheadline', 'Amend your details', ''),
-(8201, 6297, 23, 'edit_subheadline', 'Upravit detail profilu', ''),
-(8202, 3189, 16, 'edit_subheadline', 'Amend your details', ''),
-(8203, 2720, 15, 'edit_subheadline', 'Amend your details', ''),
-(8204, 2251, 14, 'edit_subheadline', 'Amend your details', ''),
-(8205, 4225, 19, 'edit_subheadline', 'Amend your details', ''),
-(8206, 5040, 20, 'edit_subheadline', 'Amend your details', ''),
-(8207, 3698, 18, 'edit_subheadline', 'Amend your details', ''),
-(8208, 7218, 24, 'edit_subheadline', 'Upravit detail profilu', ''),
-(8209, 5613, 21, 'company_pages_label', 'Website', ''),
-(8210, 6342, 23, 'company_pages_label', 'Website', ''),
-(8211, 3231, 16, 'company_pages_label', 'Website', ''),
-(8212, 2762, 15, 'company_pages_label', 'Website', ''),
-(8213, 2293, 14, 'company_pages_label', 'Website', ''),
-(8214, 4268, 19, 'company_pages_label', 'Website', ''),
-(8215, 5085, 20, 'company_pages_label', 'Website', ''),
-(8216, 3740, 18, 'company_pages_label', 'Website', ''),
-(8217, 7266, 24, 'company_pages_label', 'Website', ''),
-(8218, 5800, 21, 'more', 'more', ''),
-(8219, 6529, 23, 'more', 'vice', ''),
-(8220, 3408, 16, 'more', 'more', ''),
-(8221, 2939, 15, 'more', 'more', ''),
-(8222, 2470, 14, 'more', 'more', ''),
-(8223, 4445, 19, 'more', 'more', ''),
-(8224, 5272, 20, 'more', 'more', ''),
-(8225, 3916, 18, 'more', 'more', ''),
-(8226, 7465, 24, 'more', 'detail', ''),
-(8227, 0, 24, 'sign_up', '', ''),
-(8228, 8227, 24, 'headline', 'Vyberte ucet', ''),
-(8229, 8227, 24, 'employer_registration', 'Registracia firmy', ''),
-(8230, 8227, 24, 'candidates_registration', 'Registracia uchadzacov', ''),
-(8231, 7619, 24, 'account_plan', 'Plán balíčka:', ''),
-(8232, 7619, 24, 'cvs_left', 'životopisov na stiahnutie.', ''),
-(8233, 7619, 24, 'cv_left', 'životopis na stiahnutie.', ''),
-(8234, 7619, 24, 'jobs_left', 'reklamy k dispozícii.', ''),
-(8235, 7619, 24, 'job_left', 'reklama k dispozícii.', ''),
-(8236, 7619, 24, 'no_cvs_left_msg', 'Váš účet nemá voľný kredit. Pre stiahnutie nových životopisov a vkladania reklám je potrebné ho obnoviť.', ''),
-(8237, 7619, 24, 'out_of_credit', 'Status: prázdny kredit', ''),
-(8238, 7619, 24, 'renew', 'Obnoviť', '');
+(8013, 289, 1, 'notification', 'Notification', '');
 
 -- --------------------------------------------------------
 
@@ -7308,20 +7172,12 @@ CREATE TABLE `invoice` (
 --
 
 INSERT INTO `invoice` (`id`, `employer_id`, `path`, `date`, `seen`) VALUES
-(28, 110, '/uploads/invoices/invoice-1603121753-110.pdf', '2016-03-11 18:53:05', 1),
-(118, 110, '/uploads/invoices/invoice-1803080616-110.pdf', '2018-03-08 04:16:15', 1),
-(117, 110, '/uploads/invoices/invoice-1801141108-110.pdf', '2018-01-14 09:08:12', 1),
-(119, 115, '/uploads/invoices/invoice-1810151324-115.pdf', '2018-10-15 10:24:55', 1),
-(120, 115, '/uploads/invoices/invoice-1810151325-115.pdf', '2018-10-15 10:25:53', 1),
-(121, 115, '/uploads/invoices/invoice-1810151326-115.pdf', '2018-10-15 10:26:48', 1),
-(122, 9021, '/uploads/invoices/invoice-1901250701-9021.pdf', '2019-01-25 07:01:43', 0),
-(123, 9022, '/uploads/invoices/invoice-1901250721-9022.pdf', '2019-01-25 07:21:10', 0),
-(124, 9027, '/uploads/invoices/invoice-1901301302-9027.pdf', '2019-01-30 13:02:00', 0),
-(125, 9028, '/uploads/invoices/invoice-1901301304-9028.pdf', '2019-01-30 13:04:09', 0),
-(126, 9028, '/uploads/invoices/invoice-1901301306-9028.pdf', '2019-01-30 13:06:19', 0),
-(127, 9032, '/uploads/invoices/invoice-1901301324-9032.pdf', '2019-01-30 13:24:20', 0),
-(128, 9033, '/uploads/invoices/invoice-1901301325-9033.pdf', '2019-01-30 13:25:35', 0),
-(129, 9038, '/uploads/invoices/invoice-1901301351-9038.pdf', '2019-01-30 13:51:00', 0);
+(28, 110, '/uploads/invoices/invoice-1603121753-110.pdf', '2016-03-11 19:53:05', 1),
+(118, 110, '/uploads/invoices/invoice-1803080616-110.pdf', '2018-03-08 05:16:15', 1),
+(117, 110, '/uploads/invoices/invoice-1801141108-110.pdf', '2018-01-14 10:08:12', 1),
+(119, 115, '/uploads/invoices/invoice-1810151324-115.pdf', '2018-10-15 12:24:55', 1),
+(120, 115, '/uploads/invoices/invoice-1810151325-115.pdf', '2018-10-15 12:25:53', 1),
+(121, 115, '/uploads/invoices/invoice-1810151326-115.pdf', '2018-10-15 12:26:48', 1);
 
 -- --------------------------------------------------------
 
@@ -7354,16 +7210,16 @@ CREATE TABLE `jobs` (
 --
 
 INSERT INTO `jobs` (`id`, `type_id`, `employer_id`, `category_id`, `title`, `description`, `created_on`, `expires`, `is_active`, `views_count`, `city_id`, `apply_online`, `apply_desc`, `company`, `spotlight`, `salary`, `is_tmp`) VALUES
-(193, 1, 112, 3, 'AngularJS artisan (Google Maps)', '<p>We are looking for a talented frontend developer with Angular JS experience. You everyday duty will be to cooperate with designers and project managers.</p>\r\n<p>You must posses extensive Javascript knowledge, OOP paradaigm, HTML&amp;CSS skills. From time to time you will need to do&nbsp;some linux server programming.&nbsp;</p>\r\n<p><strong>Additional requirements:</strong></p>\r\n<p><span style="line-height: 2px;">1) well spoken and written english</span></p>\r\n<p><span style="line-height: 2px;">2) IT related education</span></p>\r\n<p><span style="line-height: 2px;">3) attention to detail</span></p>\r\n<p><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11102.345260333086!2d-118.3016786911141!3d34.17838576625917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcdb9a0f8d4a529d4!2sBurbank+Paint+Co+Inc!5e0!3m2!1sen!2ssk!4v1526371462068" width="400" height="300" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>\r\n<p><span style="line-height: 2px;"><span style="text-decoration: underline;">If this seems like a challenge</span> for you, please apply immediatelly for a speedy consideration.</span></p>\r\n<p><span style="line-height: 2px;">Thank you.</span></p>\r\n<p><span style="line-height: 2px;">James</span></p>', '2016-03-02 12:06:26', '2025-05-11 00:05:55', 1, 224, 82, 1, '', 'Niteosoft', 1, '100$/hour', 0),
-(195, 2, 112, 15, 'iOS developer (Video)', '<p style="color: #585450; font-size: medium;">XY&nbsp;is looking for an experienced iOS developer to join our team. We\'re a mobile design and development firm based in Denver, focused on developing and designing</p>\r\n<p style="color: #585450; font-size: medium;">solutions for mobile and connected hardware devices. Please check out our website, blog, and social media accounts to get to know us a little better.</p>\r\n<p style="color: #585450; font-size: medium;"><iframe src="//www.youtube.com/embed/YmWwZD5r6UU" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>\r\n<p style="color: #585450; font-size: medium;">Some details: we usually develop natively but also use Xamarin in occasions it is a fit. On the services side, Rails is our go-to. We use Git on nearly all of our projects. We\'re Trello</p>\r\n<p style="color: #585450; font-size: medium;">fans, and we use Jira also when appropriate. Our org is relatively flat&ndash;we have platform leads and a Development Director.</p>\r\n<p style="color: #585450; font-size: medium;">Please let us know in your brief cover letter why you\'d like to work with us. This position is located in our Denver office. Remote candidates considered, but local candidates are&nbsp;preferred.</p>\r\n<p><span style="color: #585450; font-size: medium;">Thanks!</span></p>', '2016-02-04 12:11:43', '2025-05-11 00:05:55', 1, 41, 1, 1, '', 'Niteosoft', 0, '30k$/year', 0),
-(197, 4, 110, 1, 'PHP magician', '<p><span style="color: #585450; font-size: medium;"><span style="text-decoration: underline;">Our company is devoted</span> to doing the best possible work for our clients and maintaining a fun, thriving environment for our team. You will work side by side with top talent to </span></p>\r\n<p><span style="color: #585450; font-size: medium;"><strong>Up to 50% of all profits are paid out monthly to all full-time</strong> employees! We also offer paid time off for all remote team members.&nbsp;</span><span style="color: #585450; font-size: medium;">Database</span><strong><span style="color: #585450; font-size: medium;"> query creating &amp; optimizing. Essential fronted skills and mainly:</span></strong></p>\r\n<ul>\r\n<li><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">4 years commercial experience</span></span></li>\r\n<li><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">live website / projects to show us your work</span></span></li>\r\n</ul>\r\n<p><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">We are happy to get started ASAP. Get in touch.</span></span></p>\r\n<ol>\r\n<li><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">we offer extra salary bonus</span></span></li>\r\n<li><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">gym tickets</span></span></li>\r\n</ol>\r\n<p><span style="color: #585450; font-size: medium;">Regards,</span></p>\r\n<p><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">Joe</span></span></p>', '2016-02-03 12:18:53', '2025-05-11 00:05:55', 1, 28, 83, 1, '', 'Infinity', 0, '124$/hour', 0),
-(198, 17, 110, 2, 'Talented Designer (Lists)', '<p>List styling example. In our company you will start from day one working on a great startup projects. We work remotely most of the time and use Slack and Skype for team communication.</p>\r\n<p><strong>What we expect:</strong></p>\r\n<p>&bull;&nbsp; attention to detail<br />&bull;&nbsp; team spirit<br />&bull;&nbsp; analytical thinking</p>\r\n<p><strong>What we need:</strong></p>\r\n<p>a) &nbsp;attention to detail<br />b) &nbsp;team spirit<br />c) &nbsp;analytical thinking</p>\r\n<p><strong>What we offer:</strong></p>\r\n<p>- annual salary bonus<br />- extra holydays<br />- gym and cinema tickets</p>', '2016-02-04 12:22:32', '2019-03-01 12:46:48', 1, 45, 77, 1, '', 'Infinity', 0, '300$/day', 0),
-(199, 1, 111, 5, 'Content writer', '<p style="color: #585450; font-size: medium;">XY is a growing company with the mission of inspiring and empowering people to make the shift from processed to real food in real life. We&rsquo;re a small, highly</p>\r\n<p style="color: #585450; font-size: medium;">effective team working remotely and are looking to bring on a design and technologically-savvy coordinator to execute on a variety of digital initiatives</p>\r\n<p style="color: #585450; font-size: medium;"><strong>Skills/Areas of Knowledge:</strong></p>\r\n<p style="color: #585450; font-size: medium;">NOTE: Individuals ONLY. No recruiters or agencies please. U.S. based only.</p>\r\n<p style="color: #585450; font-size: medium;">Please send: 1) A cover letter telling us why you\'re a fit, 2) Your resume, 3) At least 5 examples of digital graphics and content you\'ve produced.</p>\r\n<p style="color: #585450; font-size: medium;"><span style="font-size: medium;">We like to build stuff&hellip; sometimes complicated stuff&hellip; for Art Galleries, Non Profits and Charities. We&rsquo;ve been growing fast over the past few years and so we&rsquo;re back on the </span></p>\r\n<p style="color: #585450; font-size: medium;"><span style="font-size: medium;">lookout for another member of&nbsp;our team.</span></p>\r\n<p style="color: #585450; font-size: medium;"><span style="font-size: medium;">Thank you.</span></p>\r\n<p>&nbsp;</p>', '2016-02-03 12:32:05', '2025-05-11 00:05:55', 1, 22, 74, 1, '', 'Cloud Magic', 0, '90$/hour', 0),
-(202, 1, 114, 15, 'Hybrid mobile developer (custom apply link)', '<p><span style="color: #585450; font-size: medium;">As a member of the development team, the Hybrid&nbsp;Mobile&nbsp;Developer will be responsible for developing web-based mobile applications, particularly using JavaScript and Apache </span></p>\r\n<p><span style="color: #585450; font-size: medium;">Cordova. &nbsp;Responsibilities will include designing, developing and testing hybrid mobile applications as well as planning, requirements analysis, data analysis and documenting </span></p>\r\n<p><span style="color: #585450; font-size: medium;">solutions for assigned projects. We offer</span></p>\r\n<ul>\r\n<li><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">more holydays</span></span></li>\r\n<li><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">opportunity to grow</span></span></li>\r\n</ul>\r\n<p><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">See our offices below</span></span>&nbsp;</p>\r\n<p><span style="color: #585450; font-size: medium;">As a member of the development team, the Hybrid&nbsp;Mobile&nbsp;Developer will be responsible for developing web-based mobile applications, particularly using JavaScript and Apache</span></p>\r\n<p><span style="color: #585450; font-size: medium;">Cordova. &nbsp;Responsibilities will include designing, developing and testing hybrid mobile applications as well as planning, requirements analysis, data analysis and documenting</span></p>\r\n<p><span style="color: #585450; font-size: medium;">solutions for assigned projects.</span>&nbsp;&nbsp;</p>\r\n<p><span style="color: #585450; font-size: medium;">We use Cordova &amp; Ionic.</span></p>', '2016-03-01 13:04:38', '2018-12-15 06:18:58', 1, 55, 1, 0, 'careers.google.com', 'Circles', 0, '145$/hour', 0),
-(206, 2, 115, 1, 'NodeJS developer (images)', '<p>Another great opportunity for new developer to join our UK team. We our looking for:</p>\r\n<ul>\r\n<li>value creation</li>\r\n<li>good leadership skills</li>\r\n</ul>\r\n<p>We are looking for talented individuals with attention to detail.&nbsp;Contact recruitment department for immediate interview assesments.</p>\r\n<p><img style="float: left;" src="http://finda.photo/image/16894/thumbnail/original" alt="" width="457" height="305" /></p>', '2016-03-02 15:01:17', '2018-12-15 06:18:45', 1, 103, 1, 1, '', 'Power', 0, '135$/hour', 0),
-(207, 4, 127, 5, 'SEO expert wanted', '<p><strong>SEO</strong> <strong>expert wanted for new project based in Bournemouth</strong>. He will be responsible for content creation, website administration and other day to day tasks. He must have strong command of english language. We require:</p>\r\n<ul>\r\n<li>attention to detail</li>\r\n<li>in tinymce also videos can be included</li>\r\n<li>third ranom point</li>\r\n</ul>\r\n<p><span style="text-decoration: underline;">Please, if you think you are the match</span> apply for this position with your portfolio projects, cover letter and updated CV.</p>\r\n<p>First inteviews will be hold in April 2016.</p>', '2016-02-03 15:14:25', '2025-05-11 00:05:55', 1, 19, 82, 1, '', 'Graph', 0, '50k$/year', 0),
-(211, 1, 110, 2, 'London Designer Wanted', '<p>Job description</p>', '2016-02-29 12:54:02', '2018-12-15 06:18:59', 0, 0, 82, 1, '', 'Infinity', 1, 'negotiable', 0),
-(352, 1, 110, 1, 'Database specialist (audio interview)', '<p><span style="color: #333333; font-size: 16px;">We are looking for talented individuals with attention to detail.&nbsp;Contact recruitment department for immediate interview assesments.</span></p>\r\n<p><audio controls="controls">\r\n <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" type="audio/mp4" />\r\n <!-- The next two lines are only executed if the browser doesn\'t support MP4 files -->\r\n <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga" type="audio/ogg; codecs=vorbis" />\r\n <!-- The next line will only be executed if the browser doesn\'t support the <audio> tag--></audio></p>\r\n<p>Kindly download the audio interview transcript above and&nbsp;send us the answers to our email address.</p>\r\n<p>John Malwick</p>', '2017-04-05 01:15:05', '2025-05-11 00:05:55', 1, 45, 74, 1, '', 'Infinity', 0, 'negotiable', 0);
+(193, 1, 112, 3, 'AngularJS artisan (Google Maps)', '<p>We are looking for a talented frontend developer with Angular JS experience. You everyday duty will be to cooperate with designers and project managers.</p>\r\n<p>You must posses extensive Javascript knowledge, OOP paradaigm, HTML&amp;CSS skills. From time to time you will need to do&nbsp;some linux server programming.&nbsp;</p>\r\n<p><strong>Additional requirements:</strong></p>\r\n<p><span style="line-height: 2px;">1) well spoken and written english</span></p>\r\n<p><span style="line-height: 2px;">2) IT related education</span></p>\r\n<p><span style="line-height: 2px;">3) attention to detail</span></p>\r\n<p><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11102.345260333086!2d-118.3016786911141!3d34.17838576625917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcdb9a0f8d4a529d4!2sBurbank+Paint+Co+Inc!5e0!3m2!1sen!2ssk!4v1526371462068" width="400" height="300" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>\r\n<p><span style="line-height: 2px;"><span style="text-decoration: underline;">If this seems like a challenge</span> for you, please apply immediatelly for a speedy consideration.</span></p>\r\n<p><span style="line-height: 2px;">Thank you.</span></p>\r\n<p><span style="line-height: 2px;">James</span></p>', '2016-03-02 13:06:26', '2025-05-11 02:05:55', 1, 227, 82, 1, '', 'Niteosoft', 1, '100$/hour', 0),
+(195, 2, 112, 15, 'iOS developer (Video)', '<p style="color: #585450; font-size: medium;">XY&nbsp;is looking for an experienced iOS developer to join our team. We\'re a mobile design and development firm based in Denver, focused on developing and designing</p>\r\n<p style="color: #585450; font-size: medium;">solutions for mobile and connected hardware devices. Please check out our website, blog, and social media accounts to get to know us a little better.</p>\r\n<p style="color: #585450; font-size: medium;"><iframe src="//www.youtube.com/embed/YmWwZD5r6UU" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>\r\n<p style="color: #585450; font-size: medium;">Some details: we usually develop natively but also use Xamarin in occasions it is a fit. On the services side, Rails is our go-to. We use Git on nearly all of our projects. We\'re Trello</p>\r\n<p style="color: #585450; font-size: medium;">fans, and we use Jira also when appropriate. Our org is relatively flat&ndash;we have platform leads and a Development Director.</p>\r\n<p style="color: #585450; font-size: medium;">Please let us know in your brief cover letter why you\'d like to work with us. This position is located in our Denver office. Remote candidates considered, but local candidates are&nbsp;preferred.</p>\r\n<p><span style="color: #585450; font-size: medium;">Thanks!</span></p>', '2016-02-04 13:11:43', '2025-05-11 02:05:55', 1, 39, 1, 1, '', 'Niteosoft', 0, '30k$/year', 0),
+(197, 4, 110, 1, 'PHP magician', '<p><span style="color: #585450; font-size: medium;"><span style="text-decoration: underline;">Our company is devoted</span> to doing the best possible work for our clients and maintaining a fun, thriving environment for our team. You will work side by side with top talent to </span></p>\r\n<p><span style="color: #585450; font-size: medium;"><strong>Up to 50% of all profits are paid out monthly to all full-time</strong> employees! We also offer paid time off for all remote team members.&nbsp;</span><span style="color: #585450; font-size: medium;">Database</span><strong><span style="color: #585450; font-size: medium;"> query creating &amp; optimizing. Essential fronted skills and mainly:</span></strong></p>\r\n<ul>\r\n<li><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">4 years commercial experience</span></span></li>\r\n<li><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">live website / projects to show us your work</span></span></li>\r\n</ul>\r\n<p><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">We are happy to get started ASAP. Get in touch.</span></span></p>\r\n<ol>\r\n<li><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">we offer extra salary bonus</span></span></li>\r\n<li><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">gym tickets</span></span></li>\r\n</ol>\r\n<p><span style="color: #585450; font-size: medium;">Regards,</span></p>\r\n<p><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">Joe</span></span></p>', '2016-02-03 13:18:53', '2025-05-11 02:05:55', 1, 26, 83, 1, '', 'Infinity', 0, '124$/hour', 0),
+(198, 17, 110, 2, 'Talented Designer (Lists)', '<p>List styling example. In our company you will start from day one working on a great startup projects. We work remotely most of the time and use Slack and Skype for team communication.</p>\r\n<p><strong>What we expect:</strong></p>\r\n<p>&bull;&nbsp; attention to detail<br />&bull;&nbsp; team spirit<br />&bull;&nbsp; analytical thinking</p>\r\n<p><strong>What we need:</strong></p>\r\n<p>a) &nbsp;attention to detail<br />b) &nbsp;team spirit<br />c) &nbsp;analytical thinking</p>\r\n<p><strong>What we offer:</strong></p>\r\n<p>- annual salary bonus<br />- extra holydays<br />- gym and cinema tickets</p>', '2016-02-04 13:22:32', '2021-03-11 07:18:53', 1, 44, 77, 1, '', 'Infinity', 0, '300$/day', 0),
+(199, 1, 111, 5, 'Content writer', '<p style="color: #585450; font-size: medium;">XY is a growing company with the mission of inspiring and empowering people to make the shift from processed to real food in real life. We&rsquo;re a small, highly</p>\r\n<p style="color: #585450; font-size: medium;">effective team working remotely and are looking to bring on a design and technologically-savvy coordinator to execute on a variety of digital initiatives</p>\r\n<p style="color: #585450; font-size: medium;"><strong>Skills/Areas of Knowledge:</strong></p>\r\n<p style="color: #585450; font-size: medium;">NOTE: Individuals ONLY. No recruiters or agencies please. U.S. based only.</p>\r\n<p style="color: #585450; font-size: medium;">Please send: 1) A cover letter telling us why you\'re a fit, 2) Your resume, 3) At least 5 examples of digital graphics and content you\'ve produced.</p>\r\n<p style="color: #585450; font-size: medium;"><span style="font-size: medium;">We like to build stuff&hellip; sometimes complicated stuff&hellip; for Art Galleries, Non Profits and Charities. We&rsquo;ve been growing fast over the past few years and so we&rsquo;re back on the </span></p>\r\n<p style="color: #585450; font-size: medium;"><span style="font-size: medium;">lookout for another member of&nbsp;our team.</span></p>\r\n<p style="color: #585450; font-size: medium;"><span style="font-size: medium;">Thank you.</span></p>\r\n<p>&nbsp;</p>', '2016-02-03 13:32:05', '2025-05-11 02:05:55', 1, 20, 74, 1, '', 'Cloud Magic', 0, '90$/hour', 0),
+(202, 1, 114, 15, 'Hybrid mobile developer (custom apply link)', '<p><span style="color: #585450; font-size: medium;">As a member of the development team, the Hybrid&nbsp;Mobile&nbsp;Developer will be responsible for developing web-based mobile applications, particularly using JavaScript and Apache </span></p>\r\n<p><span style="color: #585450; font-size: medium;">Cordova. &nbsp;Responsibilities will include designing, developing and testing hybrid mobile applications as well as planning, requirements analysis, data analysis and documenting </span></p>\r\n<p><span style="color: #585450; font-size: medium;">solutions for assigned projects. We offer</span></p>\r\n<ul>\r\n<li><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">more holydays</span></span></li>\r\n<li><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">opportunity to grow</span></span></li>\r\n</ul>\r\n<p><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">See our offices below</span></span>&nbsp;</p>\r\n<p><span style="color: #585450; font-size: medium;">As a member of the development team, the Hybrid&nbsp;Mobile&nbsp;Developer will be responsible for developing web-based mobile applications, particularly using JavaScript and Apache</span></p>\r\n<p><span style="color: #585450; font-size: medium;">Cordova. &nbsp;Responsibilities will include designing, developing and testing hybrid mobile applications as well as planning, requirements analysis, data analysis and documenting</span></p>\r\n<p><span style="color: #585450; font-size: medium;">solutions for assigned projects.</span>&nbsp;&nbsp;</p>\r\n<p><span style="color: #585450; font-size: medium;">We use Cordova &amp; Ionic.</span></p>', '2016-03-01 14:04:38', '2021-04-10 06:18:58', 1, 55, 1, 0, 'careers.google.com', 'Circles', 0, '145$/hour', 0),
+(206, 2, 115, 1, 'NodeJS developer (images)', '<p>Another great opportunity for new developer to join our UK team. We our looking for:</p>\r\n<ul>\r\n<li>value creation</li>\r\n<li>good leadership skills</li>\r\n</ul>\r\n<p>We are looking for talented individuals with attention to detail.&nbsp;Contact recruitment department for immediate interview assesments.</p>\r\n<p><img style="float: left;" src="http://finda.photo/image/16894/thumbnail/original" alt="" width="457" height="305" /></p>', '2016-03-02 16:01:17', '2019-06-07 12:08:00', 1, 104, 1, 1, '', 'Power', 0, '135$/hour', 0),
+(207, 4, 127, 5, 'SEO expert wanted', '<p><strong>SEO</strong> <strong>expert wanted for new project based in Bournemouth</strong>. He will be responsible for content creation, website administration and other day to day tasks. He must have strong command of english language. We require:</p>\r\n<ul>\r\n<li>attention to detail</li>\r\n<li>in tinymce also videos can be included</li>\r\n<li>third ranom point</li>\r\n</ul>\r\n<p><span style="text-decoration: underline;">Please, if you think you are the match</span> apply for this position with your portfolio projects, cover letter and updated CV.</p>\r\n<p>First inteviews will be hold in April 2016.</p>', '2016-02-03 16:14:25', '2025-05-11 02:05:55', 1, 17, 82, 1, '', 'Graph', 0, '50k$/year', 0),
+(211, 1, 110, 2, 'London Designer Wanted', '<p>Job description</p>', '2016-02-29 13:54:02', '2020-04-10 06:18:59', 0, 0, 82, 1, '', 'Infinity', 1, 'negotiable', 0),
+(352, 1, 110, 1, 'Database specialist (audio interview)', '<p><span style="color: #333333; font-size: 16px;">We are looking for talented individuals with attention to detail.&nbsp;Contact recruitment department for immediate interview assesments.</span></p>\r\n<p><audio controls="controls">\r\n <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" type="audio/mp4" />\r\n <!-- The next two lines are only executed if the browser doesn\'t support MP4 files -->\r\n <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga" type="audio/ogg; codecs=vorbis" />\r\n <!-- The next line will only be executed if the browser doesn\'t support the <audio> tag--></audio></p>\r\n<p>Kindly download the audio interview transcript above and&nbsp;send us the answers to our email address.</p>\r\n<p>John Malwick</p>', '2017-04-05 03:15:05', '2025-05-11 02:05:55', 1, 46, 74, 1, '', 'Infinity', 0, 'negotiable', 0);
 
 -- --------------------------------------------------------
 
@@ -7385,19 +7241,19 @@ CREATE TABLE `job_applications` (
 --
 
 INSERT INTO `job_applications` (`id`, `job_id`, `applicant_id`, `created_on`, `ip`, `status`) VALUES
-(158, 197, 102, '2016-10-28 09:52:09', '::1', 0),
-(111, 198, 72, '2016-02-12 14:46:22', '188.123.106.84', 0),
-(131, 202, 86, '2016-07-09 10:48:15', '::1', 0),
-(159, 206, 103, '2016-10-28 09:54:18', '::1', 0),
-(157, 198, 101, '2016-10-28 09:50:44', '::1', 0),
-(161, 199, 105, '2016-10-28 09:57:38', '::1', 2),
-(160, 195, 104, '2016-10-28 09:56:50', '::1', 0),
-(156, 197, 100, '2016-10-28 09:48:41', '::1', 2),
-(184, 193, 145, '2016-12-10 11:06:12', '::1', 0),
-(185, 206, 145, '2016-12-10 11:16:02', '::1', 1),
-(230, 197, 67, '2017-05-26 14:01:51', '::1', 0),
-(228, 352, 67, '2017-05-26 14:01:23', '::1', 1),
-(229, 198, 67, '2017-05-26 14:01:35', '::1', 3);
+(158, 197, 102, '2016-10-28 11:52:09', '::1', 0),
+(111, 198, 72, '2016-02-12 15:46:22', '188.123.106.84', 0),
+(131, 202, 86, '2016-07-09 12:48:15', '::1', 0),
+(159, 206, 103, '2016-10-28 11:54:18', '::1', 0),
+(157, 198, 101, '2016-10-28 11:50:44', '::1', 0),
+(161, 199, 105, '2016-10-28 11:57:38', '::1', 2),
+(160, 195, 104, '2016-10-28 11:56:50', '::1', 0),
+(156, 197, 100, '2016-10-28 11:48:41', '::1', 2),
+(184, 193, 145, '2016-12-10 12:06:12', '::1', 0),
+(185, 206, 145, '2016-12-10 12:16:02', '::1', 1),
+(230, 197, 67, '2017-05-26 16:01:51', '::1', 0),
+(228, 352, 67, '2017-05-26 16:01:23', '::1', 1),
+(229, 198, 67, '2017-05-26 16:01:35', '::1', 3);
 
 -- --------------------------------------------------------
 
@@ -7437,7 +7293,7 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `date`, `message`) VALUES
-(1, '2018-01-01 15:25:32', 'Welcome to our recruiting platform');
+(1, '2018-01-01 16:25:32', 'Welcome to our recruiting platform');
 
 -- --------------------------------------------------------
 
@@ -7567,8 +7423,8 @@ INSERT INTO `pages` (`id`, `url`, `page_title`, `keywords`, `description`, `cont
 (20, 'sitemap.xml', 'Sitemap', 'sitemap', 'Sitemap', '<br /><div style="color:red">PLEASE DO NOT EDIT THIS FILE FROM ADMIN. IT IS USING DYNAMIC PHP FORM. IF YOU WANT TO CHANGE IT EDIT "_lib/functions.php" - generate_sitemap() function</div>', 6, 0, ''),
 (21, 'subscribe', 'Job Alert', 'job alert, subscribe, newsletter, receive  jobs', 'Subscribe to receive latest job offers', '<br /><div style="color:red">PLEASE DO NOT EDIT THIS FILE FROM ADMIN. IT IS USING DYNAMIC PHP FORM. IF YOU WANT TO CHANGE IT EDIT "_tpl/default/subscription/subscribe.tpl"</div>', 2, 0, ''),
 (22, 'privacy-policy', 'Privacy Policy', 'privacy, policy', 'Privacy policy', '<h2 style="font-size: 30px;">Privacy Policy</h2>\r\n<ol>\r\n<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae turpis ligula. Maecenas ultrices, eros a luctus laoreet, arcu leo luctus mi, et condimentum mi ex hendrerit leo.</li>\r\n<li>Suspendisse vel bibendum risus. Phasellus vel sem id sapien tincidunt blandit et a dui. Fusce eget eros id elit ultrices consectetur at nec metus. Quisque convallis aliquet lobortis. Aenean vel luctus ante. Suspendisse dictum nec neque et pretium. Nunc fermentum varius quam ut feugiat. Etiam pellentesque, neque eu posuere varius, turpis sem dapibus nisl, quis aliquam neque metus elementum lectus. Integer vitae elementum dui, sit amet convallis magna.</li>\r\n<li>Phasellus lectus libero, pulvinar in leo vel, sagittis tincidunt tellus. Praesent luctus nisi felis, eget bibendum nibh gravida et. In nec nisi eu nisl sollicitudin ornare. Vestibulum aliquam a elit sit amet bibendum. Morbi vel nibh mi. Sed tincidunt efficitur lorem sit amet mollis.</li>\r\n<li>Aenean leo tellus, aliquam id ullamcorper nec, auctor vel ante. Nullam et interdum elit. In laoreet purus eu euismod mollis. Vestibulum et tempus libero. Aliquam erat volutpat. Proin pellentesque lobortis tortor a maximus. Ut facilisis neque vel efficitur dignissim. Praesent tempus sapien vel risus porttitor malesuada</li>\r\n<li>...</li>\r\n</ol>', 4, 0, 'http://'),
-(40, '', 'Blog', '', '', '', 2, 1, 'http://stage.simplejobscript.com/blog'),
-(41, '', 'Indeed Feed', '', '', '', 7, 1, 'http://stage.simplejobscript.com/feed'),
+(40, '', 'Blog', '', '', '', 2, 1, 'http://localhost/blog'),
+(41, '', 'Indeed Feed', '', '', '', 7, 1, 'http://localhost/feed'),
 (53, 'about', 'About', 'about us', 'about us meta description', '<h1>About us</h1>\r\n<p><strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit. Donec vitae turpis ligula. Maecenas ultrices, eros a luctus laoreet, arcu leo luctus mi, et condimentum mi ex hendrerit leo.</p>\r\n<h3>Our vision</h3>\r\n<p><span style="color: #000000; font-size: 14px;"><em>Lorem ipsum dolor sit amet</em>, <span style="text-decoration: underline;">consectetur adipiscing elit</span>. Donec vitae turpis ligula.<span style="text-decoration: line-through;"> Maecenas ultrices</span>, eros a luctus laoreet, arcu leo luctus mi, et condimentum mi ex hendrerit leo.&nbsp;</span><span style="color: #000000; font-size: 14px;">Nam id justo non mi condimentum facilisis. Integer luctus a nulla eget porta. Vivamus vitae mauris condimentum eros sagittis consectetur.&nbsp;</span></p>\r\n<h3 style="color: #828282; font-size: 26px;">Formatting options</h3>\r\n<p><span style="color: #000000; font-size: 14px;">Donec vitae turpis ligula. Maecenas ultrices, eros a luctus laoreet, arcu leo luctus mi, et condimentum mi ex hendrerit leo.&nbsp;</span></p>\r\n<ul>\r\n<li><span style="color: #000000; font-size: 14px;">First</span></li>\r\n<li><span style="color: #000000; font-size: 14px;">Second</span></li>\r\n<li><span style="color: #000000; font-size: 14px;">Third</span></li>\r\n</ul>\r\n<ol>\r\n<li><span style="font-size: 14px;"><span style="color: #000000;">First</span></span></li>\r\n<li><span style="font-size: 14px;"><span style="color: #000000;">Second</span></span></li>\r\n<li><span style="font-size: 14px;"><span style="color: #000000;">Third</span></span></li>\r\n</ol>\r\n<p><span style="color: #000000; font-size: 14px;">Curabitur ac sem felis. Fusce interdum metus dignissim nulla dapibus suscipit.</span></p>\r\n<h4>Image</h4>\r\n<p><img src="http://simplejobscript.com/wp-content/uploads/laptop.jpg" alt="" width="402" height="268" />&nbsp;</p>\r\n<h4 style="font-size: 22px;">Video</h4>\r\n<p><iframe src="//player.vimeo.com/video/188890572?title=0&amp;byline=0" width="360" height="251"></iframe></p>\r\n<h4 style="color: #828282; font-size: 22px;">Audio</h4>\r\n<p><audio controls="controls">\r\n <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" type="audio/mp4" />\r\n <!-- The next two lines are only executed if the browser doesn\'t support MP4 files -->\r\n <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga" type="audio/ogg; codecs=vorbis" />\r\n <!-- The next line will only be executed if the browser doesn\'t support the <audio> tag--></audio></p>\r\n<h4 style="font-size: 22px;">Code formatting</h4>\r\n<p><code><span style="color: #000000; font-size: 14px;">For (i=0; i&lt; 5; i++);</span></code>&nbsp;&nbsp;</p>', 1, 0, 'http://'),
 (55, 'pricing-plans', 'Pricing Plans', 'pricing plans', 'Pricing plans and packages', '<br /><div style="color:red">PLEASE DO NOT EDIT THIS FILE FROM ADMIN. IT IS USING DYNAMIC PHP. IF YOU WANT TO CHANGE IT EDIT "_tpl/default/static/static_pricing-plans.tpl"</div>', 1, 0, 'http://');
 
@@ -7612,20 +7468,6 @@ CREATE TABLE `payment` (
   `currency_code` varchar(20) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `payment`
---
-
-INSERT INTO `payment` (`transaction_id`, `transaction_status`, `transaction_timestamp`, `mysql_timestamp`, `employer_id`, `job_id`, `payer_id`, `payer_status`, `payer_email`, `payer_name`, `payer_surname`, `amount`, `currency_code`) VALUES
-('42113108SY708583V', 'Success', '2019-01-25T07:01:42Z', '2019-01-25 07:01:42', 9021, 0, 'VVWRP3GQJYJUA', 'verified', 'infomeetowntravellers@gmail.com', 'meetown', 'testing', '60.00', 'USD'),
-('286235358S291431D', 'Success', '2019-01-25T07:21:10Z', '2019-01-25 07:21:10', 9022, 0, 'VVWRP3GQJYJUA', 'verified', 'infomeetowntravellers@gmail.com', 'meetown', 'testing', '90.00', 'USD'),
-('9P2392736R2756506', 'Success', '2019-01-30T13:02:00Z', '2019-01-30 13:02:00', 9027, 0, 'R6LE4322USLXE', 'verified', 'paypal-buyer@niteosoft.co.uk', 'test', 'buyer', '30.00', 'USD'),
-('1U300424WK634504W', 'Success', '2019-01-30T13:04:09Z', '2019-01-30 13:04:09', 9028, 0, 'R6LE4322USLXE', 'verified', 'paypal-buyer@niteosoft.co.uk', 'test', 'buyer', '60.00', 'USD'),
-('4UL40573Y3006723C', 'Success', '2019-01-30T13:06:19Z', '2019-01-30 13:06:19', 9028, 0, 'R6LE4322USLXE', 'verified', 'paypal-buyer@niteosoft.co.uk', 'test', 'buyer', '90.00', 'USD'),
-('7UL49864BG549960F', 'Success', '2019-01-30T13:24:19Z', '2019-01-30 13:24:19', 9032, 0, 'R6LE4322USLXE', 'verified', 'paypal-buyer@niteosoft.co.uk', 'test', 'buyer', '60.00', 'USD'),
-('4GX60032WR067521X', 'Success', '2019-01-30T13:25:34Z', '2019-01-30 13:25:34', 9033, 0, 'R6LE4322USLXE', 'verified', 'paypal-buyer@niteosoft.co.uk', 'test', 'buyer', '30.00', 'USD'),
-('09M26656T19960127', 'Success', '2019-01-30T13:51:00Z', '2019-01-30 13:51:00', 9038, 0, 'R6LE4322USLXE', 'verified', 'paypal-buyer@niteosoft.co.uk', 'test', 'buyer', '60.00', 'USD');
-
 -- --------------------------------------------------------
 
 --
@@ -7646,7 +7488,7 @@ CREATE TABLE `payment_mode` (
 INSERT INTO `payment_mode` (`id`, `name`, `active`, `free_trial`) VALUES
 (1, 'free', 1, 0),
 (2, 'fees', 0, 0),
-(3, 'packages', 0, 1);
+(3, 'packages', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -7699,26 +7541,13 @@ CREATE TABLE `searches` (
 --
 
 INSERT INTO `searches` (`id`, `keywords`, `created_on`) VALUES
-(622, 'angular', '2017-11-27 11:27:28'),
-(621, 'angular', '2017-11-27 11:26:31'),
+(675, 'angular', '2019-03-04 18:41:55'),
+(674, 'angular', '2019-03-04 18:30:41'),
 (670, 'los angeles', '2018-04-14 10:53:53'),
 (669, 'los angeles', '2018-04-14 10:53:30'),
 (668, 'new york', '2018-04-14 10:53:23'),
-(623, 'angular', '2017-11-27 11:28:31'),
-(624, 'angular', '2017-11-27 11:29:20'),
-(625, 'angular', '2017-11-27 11:30:16'),
-(626, 'nodejs', '2017-11-27 11:31:23'),
-(627, 'nodejs', '2017-11-27 11:31:36'),
-(628, 'nodejs', '2017-11-29 11:09:49'),
-(629, 'nodejs', '2017-11-29 11:10:45'),
-(630, 'hybr', '2017-11-29 11:10:58'),
-(631, 'hybrid', '2017-11-29 11:22:43'),
-(632, 'nodejs', '2017-11-30 14:45:35'),
-(633, 'nodejs', '2017-11-30 14:46:27'),
-(634, 'nodejs', '2017-11-30 14:47:20'),
-(635, 'developer', '2018-01-11 12:21:35'),
-(636, 'nodejs', '2018-01-11 12:22:06'),
-(637, 'nodejs', '2018-01-11 12:29:55'),
+(677, 'inifinity', '2019-04-04 08:07:04'),
+(676, 'database', '2019-04-04 08:06:59'),
 (638, 'nodejs', '2018-01-11 12:30:16'),
 (639, 'nodejs', '2018-01-11 12:31:47'),
 (640, 'nodejs', '2018-01-11 12:32:03'),
@@ -7748,7 +7577,20 @@ INSERT INTO `searches` (`id`, `keywords`, `created_on`) VALUES
 (664, 'nodejs', '2018-03-12 11:15:23'),
 (665, 'angularjs', '2018-03-14 15:38:47'),
 (666, 'nodejs', '2018-03-15 12:26:27'),
-(667, 'angularjs', '2018-03-15 12:26:35');
+(667, 'angularjs', '2018-03-15 12:26:35'),
+(671, 'angular', '2019-03-04 15:37:35'),
+(672, 'angular', '2019-03-04 18:29:14'),
+(673, 'angular', '2019-03-04 18:29:41'),
+(678, 'infinity', '2019-04-04 08:07:08'),
+(679, 'content', '2019-04-04 08:07:15'),
+(680, 'nodejs', '2019-04-04 08:07:25'),
+(681, 'infinity', '2019-04-04 08:07:30'),
+(682, 'infinity', '2019-04-04 08:07:33'),
+(683, 'niteosoft', '2019-04-04 08:07:35'),
+(684, 'ios', '2019-04-04 08:07:40'),
+(685, 'inifnity', '2019-04-04 08:07:44'),
+(686, 'infinity', '2019-04-04 08:07:47'),
+(687, 'talented designer', '2019-04-04 08:07:54');
 
 -- --------------------------------------------------------
 
@@ -7879,8 +7721,8 @@ CREATE TABLE `settings` (
 --
 
 INSERT INTO `settings` (`id`, `category_id`, `name`, `title`, `description`, `data_type`, `input_type`, `input_options`, `validation`, `value`, `extradata`, `ordering`) VALUES
-(1, 1, 'site_name', 'Site name', '', NULL, NULL, NULL, 'not_empty', 'stage.simplejobscript.com', NULL, 1),
-(2, 5, 'admin_email', 'Admin Email', 'Here you receive emails submitted from contact page', NULL, NULL, NULL, 'not_empty|is_email', 'info@yourmail.com', NULL, 1),
+(1, 1, 'site_name', 'Site name', '', NULL, NULL, NULL, 'not_empty', 'localhost', NULL, 1),
+(2, 5, 'admin_email', 'Admin Email', 'Here you receive emails submitted from contact page', NULL, NULL, NULL, 'not_empty|is_email', 'admin@email.com', NULL, 1),
 (4, 6, 'theme', 'Theme', 'Pick the theme to use for the frontend.', NULL, 'available_themes', NULL, 'not_empty', 'default', NULL, 0),
 (169, 2, 'candidates_per_page', 'Candidates per page', NULL, NULL, NULL, NULL, NULL, '15', NULL, 11),
 (63, 2, 'applications_per_page', 'Job applications per page', '', NULL, NULL, NULL, NULL, '20', NULL, 2),
@@ -8073,7 +7915,7 @@ INSERT INTO `statistics` (`id`, `date`, `job_id`, `views`, `applications`) VALUE
 (393, '2016-12-15', 198, 46, 18),
 (542, '2018-03-13', 193, 3, -16),
 (541, '2018-03-12', 193, 5, -16),
-(540, '2018-03-11', 206, 1, -3),
+(540, '2018-03-11', 206, 1, -4),
 (539, '2018-03-10', 193, 1, -16),
 (538, '2018-03-08', 432, 2, 0),
 (537, '2018-03-08', 193, 2, -16),
@@ -8107,7 +7949,7 @@ INSERT INTO `statistics` (`id`, `date`, `job_id`, `views`, `applications`) VALUE
 (512, '2017-11-28', 195, 3, 0),
 (511, '2017-11-28', 198, 1, 0),
 (510, '2017-11-28', 202, 4, 0),
-(509, '2017-11-28', 206, 2, -3),
+(509, '2017-11-28', 206, 2, -4),
 (508, '2017-11-28', 352, 3, -3),
 (507, '2017-11-28', 193, 6, -27),
 (506, '2017-11-27', 193, 1, -27),
@@ -8122,12 +7964,12 @@ INSERT INTO `statistics` (`id`, `date`, `job_id`, `views`, `applications`) VALUE
 (497, '2017-06-04', 352, 2, -3),
 (496, '2017-06-04', 193, 2, -27),
 (495, '2017-06-03', 352, 1, -3),
-(494, '2017-06-02', 206, 3, -3),
+(494, '2017-06-02', 206, 3, -4),
 (493, '2017-06-02', 352, 3, -2),
 (492, '2017-06-02', 193, 3, -26),
 (491, '2017-06-01', 352, 7, -6),
 (490, '2017-06-01', 193, 2, -28),
-(489, '2017-06-01', 206, 2, -3),
+(489, '2017-06-01', 206, 2, -4),
 (488, '2017-05-31', 198, 1, 0),
 (487, '2017-05-30', 193, 1, -29),
 (486, '2017-05-27', 352, 1, -6),
@@ -8138,7 +7980,7 @@ INSERT INTO `statistics` (`id`, `date`, `job_id`, `views`, `applications`) VALUE
 (481, '2017-05-24', 198, 1, -1),
 (480, '2017-05-24', 193, 1, -29),
 (479, '2017-05-20', 193, 1, -29),
-(478, '2017-05-15', 206, 1, -4),
+(478, '2017-05-15', 206, 1, -5),
 (477, '2017-05-15', 193, 2, -29),
 (476, '2017-05-13', 414, 1, 0),
 (475, '2017-05-11', 193, 1, -29),
@@ -8153,8 +7995,8 @@ INSERT INTO `statistics` (`id`, `date`, `job_id`, `views`, `applications`) VALUE
 (547, '2018-03-15', 193, 2, -16),
 (548, '2018-03-24', 193, 1, -16),
 (549, '2018-03-25', 193, 1, -16),
-(550, '2018-03-25', 206, 1, -3),
-(551, '2018-03-28', 206, 2, -3),
+(550, '2018-03-25', 206, 1, -4),
+(551, '2018-03-28', 206, 2, -4),
 (552, '2018-03-28', 193, 1, -12),
 (553, '2018-03-28', 352, 1, -2),
 (555, '2018-04-14', 352, 1, -3),
@@ -8163,24 +8005,24 @@ INSERT INTO `statistics` (`id`, `date`, `job_id`, `views`, `applications`) VALUE
 (559, '2018-04-26', 193, 1, -16),
 (560, '2018-04-30', 352, 1, -3),
 (561, '2018-04-30', 193, 2, -16),
-(594, '2018-05-17', 206, 1, -3),
-(563, '2018-04-30', 206, 1, -3),
+(594, '2018-05-17', 206, 1, -4),
+(563, '2018-04-30', 206, 1, -4),
 (564, '2018-04-30', 199, 1, 0),
 (565, '2018-05-01', 193, 1, -16),
-(566, '2018-05-01', 206, 1, -3),
+(566, '2018-05-01', 206, 1, -4),
 (567, '2018-05-01', 202, 1, 0),
 (568, '2018-05-01', 195, 1, 0),
 (569, '2018-05-01', 197, 1, -1),
 (570, '2018-05-02', 193, 3, -16),
 (571, '2018-05-02', 352, 1, -3),
-(572, '2018-05-02', 206, 1, -3),
+(572, '2018-05-02', 206, 1, -4),
 (573, '2018-05-02', 195, 1, 0),
 (574, '2018-05-14', 193, 1, -16),
 (575, '2018-05-14', 202, 2, 0),
 (578, '2018-05-15', 202, 3, 0),
 (579, '2018-05-15', 193, 5, -16),
 (580, '2018-05-15', 352, 4, -3),
-(581, '2018-05-15', 206, 4, -3),
+(581, '2018-05-15', 206, 4, -4),
 (582, '2018-05-15', 198, 3, 0),
 (583, '2018-05-15', 197, 2, -1),
 (584, '2018-05-15', 199, 2, 0),
@@ -8194,12 +8036,12 @@ INSERT INTO `statistics` (`id`, `date`, `job_id`, `views`, `applications`) VALUE
 (602, '2018-05-25', 198, 1, 0),
 (603, '2018-05-25', 193, 1, -16),
 (604, '2018-05-31', 193, 1, -16),
-(607, '2018-06-11', 206, 1, -2),
+(607, '2018-06-11', 206, 1, -3),
 (608, '2018-06-11', 193, 1, -14),
 (609, '2018-06-13', 193, 1, -11),
 (610, '2018-06-13', 352, 1, -1),
 (611, '2018-06-14', 193, 1, -16),
-(613, '2018-06-22', 206, 1, -2),
+(613, '2018-06-22', 206, 1, -3),
 (614, '2018-06-22', 193, 1, -16),
 (615, '2018-07-10', 352, 1, -3),
 (616, '2018-07-10', 193, 1, -16),
@@ -8216,14 +8058,14 @@ INSERT INTO `statistics` (`id`, `date`, `job_id`, `views`, `applications`) VALUE
 (627, '2018-10-06', 197, 1, 0),
 (628, '2018-10-10', 193, 1, -1),
 (629, '2018-10-14', 352, 1, -1),
-(630, '2018-10-14', 206, 1, -1),
+(630, '2018-10-14', 206, 1, -2),
 (631, '2018-10-14', 202, 1, 0),
 (632, '2018-10-14', 193, 1, 0),
 (633, '2018-10-15', 193, 1, 0),
-(634, '2018-10-15', 206, 1, 0),
+(634, '2018-10-15', 206, 1, -1),
 (635, '2018-10-16', 193, 2, 0),
 (636, '2018-10-17', 193, 1, 0),
-(637, '2018-10-17', 206, 1, 2),
+(637, '2018-10-17', 206, 1, 1),
 (638, '2018-10-17', 207, 1, -1),
 (639, '2018-10-18', 207, 1, -2),
 (640, '2018-10-24', 193, 2, 0),
@@ -8239,13 +8081,12 @@ INSERT INTO `statistics` (`id`, `date`, `job_id`, `views`, `applications`) VALUE
 (650, '2018-12-07', 198, 1, 1),
 (651, '2018-12-09', 193, 1, 0),
 (652, '2019-01-07', 193, 2, 0),
-(653, '2019-01-25', 195, 2, 0),
-(654, '2019-01-25', 352, 2, 0),
-(655, '2019-01-25', 193, 2, 0),
-(656, '2019-01-25', 199, 2, 0),
-(657, '2019-01-25', 207, 2, 0),
-(658, '2019-01-25', 197, 2, 0),
-(659, '2019-01-30', 198, 1, 0);
+(653, '2019-01-30', 193, 1, 0),
+(654, '2019-02-02', 193, 2, 0),
+(655, '2019-03-25', 352, 1, 0),
+(656, '2019-04-02', 206, 1, 0),
+(657, '2019-05-15', 193, 2, 0),
+(658, '2019-05-15', 352, 2, 0);
 
 -- --------------------------------------------------------
 
@@ -8293,8 +8134,8 @@ INSERT INTO `subscriptions` (`id`, `email`, `categories`, `confirmed`) VALUES
 
 CREATE TABLE `types` (
   `id` int(11) NOT NULL,
-  `name` varchar(16) NOT NULL,
-  `var_name` varchar(32) NOT NULL
+  `name` varchar(72) NOT NULL,
+  `var_name` varchar(72) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='full-time/freelance';
 
 --
@@ -8573,7 +8414,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `applicant`
 --
 ALTER TABLE `applicant`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=244;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=245;
 --
 -- AUTO_INCREMENT for table `areas`
 --
@@ -8598,7 +8439,7 @@ ALTER TABLE `cities`
 -- AUTO_INCREMENT for table `company`
 --
 ALTER TABLE `company`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=594;
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=572;
 --
 -- AUTO_INCREMENT for table `customizer`
 --
@@ -8608,7 +8449,7 @@ ALTER TABLE `customizer`
 -- AUTO_INCREMENT for table `employer`
 --
 ALTER TABLE `employer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9039;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9020;
 --
 -- AUTO_INCREMENT for table `i18n_langs`
 --
@@ -8618,7 +8459,7 @@ ALTER TABLE `i18n_langs`
 -- AUTO_INCREMENT for table `i18n_translations`
 --
 ALTER TABLE `i18n_translations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8239;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8117;
 --
 -- AUTO_INCREMENT for table `indeed_search_options`
 --
@@ -8633,17 +8474,17 @@ ALTER TABLE `indeed_settings`
 -- AUTO_INCREMENT for table `invoice`
 --
 ALTER TABLE `invoice`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=130;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=122;
 --
 -- AUTO_INCREMENT for table `jobs`
 --
 ALTER TABLE `jobs`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=488;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=492;
 --
 -- AUTO_INCREMENT for table `job_applications`
 --
 ALTER TABLE `job_applications`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=317;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=318;
 --
 -- AUTO_INCREMENT for table `news`
 --
@@ -8653,7 +8494,7 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT for table `notification`
 --
 ALTER TABLE `notification`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=249;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=250;
 --
 -- AUTO_INCREMENT for table `pages`
 --
@@ -8663,7 +8504,7 @@ ALTER TABLE `pages`
 -- AUTO_INCREMENT for table `payment_mode`
 --
 ALTER TABLE `payment_mode`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `payment_settings_fees`
 --
@@ -8673,7 +8514,7 @@ ALTER TABLE `payment_settings_fees`
 -- AUTO_INCREMENT for table `searches`
 --
 ALTER TABLE `searches`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=671;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=688;
 --
 -- AUTO_INCREMENT for table `seo_categories`
 --
@@ -8698,12 +8539,12 @@ ALTER TABLE `social_media`
 -- AUTO_INCREMENT for table `statistics`
 --
 ALTER TABLE `statistics`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=660;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=659;
 --
 -- AUTO_INCREMENT for table `subscriptions`
 --
 ALTER TABLE `subscriptions`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=144;
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=146;
 --
 -- AUTO_INCREMENT for table `types`
 --

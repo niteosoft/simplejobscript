@@ -9,7 +9,7 @@
   <meta name="description" content="{if $seo_desc}{$seo_desc}{else}{$meta_description}{/if}" />
   <meta name="keywords" content="{if $seo_keys}{$seo_keys}{else}{$meta_keywords}{/if}" />
 
-    <!-- 
+    <!--
    Chrome and Opera Icons - to add support create your icon with different resolutions. Default is 192x192
      <link rel="icon" sizes="192x192" href="{$BASE_URL}fav.png" >
     <link rel="icon" sizes="144x144" href="{$BASE_URL}fav-144.png" >
@@ -17,7 +17,7 @@
     <link rel="icon" sizes="48x48" href="{$BASE_URL}fav-48.png" >
   -->
   <link rel="icon" href="{$BASE_URL}fav.png" >
-  <!-- 
+  <!--
    Apple iOS icons
     <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
     <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
@@ -58,15 +58,16 @@
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:description" content="{if $seo_desc}{$seo_desc}{else}{$meta_description}{/if}"/>
   <meta name="twitter:title" content="{if $seo_title}{$seo_title}{else}{$html_title}{/if}"/>
-  <!-- add your twitter site 
+  <!-- add your twitter site
   <meta name="twitter:site" content="@yourbrand"/>
-  --> 
+  -->
   <meta name="twitter:domain" content="{$SITE_NAME}"/>
   <meta name="twitter:image" content="{$PROTOCOL_URL}share-image.png" />
+  <meta http-equiv="X-UA-Compatible" content="IE=11">
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="{$SITE_NAME} RSS Feed" href="{$BASE_URL}rss">
-  
+
 
   <!-- CSS -->
 
@@ -87,7 +88,7 @@
   <link href="{$BASE_URL}_tpl/{$THEME}/1.5/css/sjs-updates.css" rel="stylesheet">
 
   <noscript>{$translations.website_general.noscript_msg}</noscript>
-  
+
 <style type="text/css">
 {$custom_css}
 
@@ -139,7 +140,7 @@
 .btn-next, .btn-back:hover, .btn-back:focus, .btn-social:hover, .btn-social:focus, #jobpopup .btn-ns.active, #jobpopup .btn-eu.active, #jobpopup .btn-modal-a, .navbar-toggle {
   background: {$CUSTOMIZER_COLOR} !important;
   color: #fff !important;
-  border-color: {$CUSTOMIZER_COLOR} !important; 
+  border-color: {$CUSTOMIZER_COLOR} !important;
 }
 #jobpopup .btn-modal-c:hover , #jobpopup .btn-modal-c:focus {
   color: #4A4A4A !important;
@@ -163,6 +164,29 @@
     border-color: rgba{$CUSTOMIZER_COLOR_RGBA} !important;
   }
 }
+input#keywords {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 42px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+input#subscribe_email{
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 42px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+
+}
+.form-group.position input#landing_title{
+    box-sizing: border-box;
+    height: 46px;
+    padding: 0 10px;
+}
 </style>
 
 <script src="{$BASE_URL}_tpl/{$THEME}/1.5/js/jquery.min.js"></script>
@@ -173,7 +197,7 @@
 
   <!--fallback jquery
   <script>if (!window.jQuery) { document.write('<script src="{$BASE_URL}js/jquery-1.11.2.min.js"><\/script>'); }</script>-->
-  
+
   <!--
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <!--fallback bootstrap-
@@ -193,7 +217,7 @@
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
 
 {if $INDEED == 'activated'}
-<script type="text/javascript" src="https://gdc.indeed.com/ads/apiresults.js"></script>         
+<script type="text/javascript" src="https://gdc.indeed.com/ads/apiresults.js"></script>
 {/if}
 
 </head>
@@ -328,7 +352,7 @@
                 </li>
 
               {/if}
-          
+
         </ul>
       </div>
     </div>

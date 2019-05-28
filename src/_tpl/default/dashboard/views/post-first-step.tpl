@@ -9,12 +9,12 @@
 {if not $lock_post}
 					<div class="row " id="step-1">
 					 <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 mlpl0">
-
+						
 						<div class="row checkboxes">
 								<div class="col-md-3 col-xs-12">
 									<h3 class="process-heading">{$translations.dashboard_recruiter.post_type_label}</h3>
 								</div>
-								<div class="col-md-5 col-xs-12">
+								<div class="col-md-5 col-xs-12">								
 									<select id="type_select" name="type_select">
 										{foreach from=$types key=id item=value}
 											<option {if $DRAFT}{if $draft_data.type_name == {$value}}selected{/if}{/if} value="{$id}">{$value}</option>
@@ -93,7 +93,7 @@
 								</div>
 							</div>
 							<br />
-
+				
 							<div class="acceptance mb50">
 								<label>
 									<input class="checkbox-custom" type="checkbox" onchange="SimpleJobScript.applyChanged(this.checked);" name="apply_online_switch" id="apply_online_switch" data-size="mini" checked />
@@ -103,13 +103,13 @@
 								</label>
 							</div>
 							<br />
-
+							
 							 <div id="apply-desc-block" class="form-group mb20 displayNone" >
 								<label class="green tal mb20">{$translations.dashboard_recruiter.howto_apply_label}</label>
 								<input id="howtoTA" class="form-control minput" id="howtoapply" name="howtoapply" value="{$job.apply_desc}"></input>
 							 </div>
-
-
+							
+						
 					</div>
 
 					<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 mlpl0 mt25">
@@ -124,7 +124,7 @@
 		<div class="modal1">
 			<div class="modal fade in" id="myModal" role="dialog" style="display: block;">
 				<div class="modal-dialog">
-
+			
 					<div class="modal-content">
 						<div class="modal-body">
 							<h4 class="modal-title md-hide mb25">1/2</h4>
@@ -138,7 +138,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>	
 
 {/if}
 
