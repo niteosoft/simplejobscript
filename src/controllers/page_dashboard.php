@@ -97,6 +97,9 @@
 					$apps_job = new Job();
 					$data = $apps_job->getJobTitlesByEmployerId($_SESSION['user']);
 
+					$empClass = new Employer();
+					$job_ids = $empClass->getJobsByEmployerId($_SESSION['user']);
+
 					if (isset($_SESSION['JOB_ID']))
 						$smarty->assign('select_job_id', $_SESSION['JOB_ID']);
 
@@ -105,7 +108,7 @@
 
 					//get hired candidates
 					$ja = new JobApplication();
-					$hired_apps = $ja->getHiredJobApplications();
+					$hired_apps = $ja->getHiredJobApplications($_SESSION['user'], $job_ids);
 
 					if ($hired_apps[0] == NULL) {
 						$smarty->assign('HIRED_APPS', false);

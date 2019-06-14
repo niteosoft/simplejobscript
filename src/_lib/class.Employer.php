@@ -551,4 +551,22 @@ class Employer {
 	}
 
 
+	public function getJobsByEmployerId($employer_id){
+		global $db;
+
+		$sql = 'SELECT id FROM '.DB_PREFIX.'jobs
+		               WHERE is_tmp = 0 AND employer_id = ' . $employer_id;
+		$result = $db->query($sql);
+		$ids = array();
+
+		if ($result->num_rows > 0) {
+			while ($row = $result->fetch_assoc()){
+					array_push($ids, $row['id']);
+				}
+		} 
+
+		return $ids;
+	}
+
+
 } ?>

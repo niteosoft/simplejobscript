@@ -231,11 +231,16 @@ class JobApplication
 
 
 
-	public function getHiredJobApplications() {
+	public function getHiredJobApplications($emp_id, $job_ids) {
 		global $db;
 		$apps = array();
 
-		$sql = 'SELECT b.id as "id", b.job_id as "job_id", b.status as "status", a.fullname as "name", a.occupation as "occupation", a.email as "email", a.phone as "phone", a.message as "message", a.weblink as "website", a.cv_path as "cv_path", UNIX_TIMESTAMP(b.created_on) as "created_on", a.location as "location", a.skills as "skills", a.sm_link_1, a.sm_link_2, a.sm_link_3, a.sm_link_4 FROM '.DB_PREFIX.'job_applications b, '.DB_PREFIX.'applicant a WHERE b.status = 3 AND b.applicant_id=a.id';
+		if (empty($job_ids))
+			return NULL;
+
+		$job_ids_str = implode (", ", $job_ids);
+
+		$sql = 'SELECT b.id as "id", b.job_id as "job_id", b.status as "status", a.fullname as "name", a.occupation as "occupation", a.email as "email", a.phone as "phone", a.message as "message", a.weblink as "website", a.cv_path as "cv_path", UNIX_TIMESTAMP(b.created_on) as "created_on", a.location as "location", a.skills as "skills", a.sm_link_1, a.sm_link_2, a.sm_link_3, a.sm_link_4 FROM '.DB_PREFIX.'job_applications b, '.DB_PREFIX.'applicant a WHERE b.status = 3 AND b.applicant_id=a.id AND b.job_id IN (' . $job_ids_str . ')';
 		$result = $db->query($sql);
 		while ($row = $result->fetch_assoc()){
 
