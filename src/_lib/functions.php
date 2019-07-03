@@ -782,12 +782,13 @@ function generate_sitemap($type)
     }
 
     // Get all companies
-    $result = $db->query('SELECT company FROM '.DB_PREFIX.'jobs WHERE is_active = 1 GROUP BY company');
-    while ($row = $result->fetch_assoc()) $sitemap[URL_JOBS_AT_COMPANY . '/' . $sanitizer->sanitize_title_with_dashes($row['company']) . '/'] = 1;
+    $result = $db->query('SELECT c.id as "company_id", j.company FROM '.DB_PREFIX.'jobs j, company c WHERE j.is_active = 1 AND c.name = j.company');
+    while ($row = $result->fetch_assoc()) $sitemap[URL_JOBS_AT_COMPANY . '/' . $sanitizer->sanitize_title_with_dashes($row['company']) . '/' . $row['company_id']] = 1;
         
     // Get all active Jobs
     $result = $db->query('SELECT j.id as "jid", j.title as "jtitle", j.company as "jcompany", c.ascii_name as "cascii" FROM '.DB_PREFIX.'jobs j, cities c WHERE j.is_active = 1 AND j.city_id=c.id');
     while ($row = $result->fetch_assoc()) $sitemap[URL_JOB .'/' . $sanitizer->sanitize_title_with_dashes($row['jtitle']) . '-' . $row['cascii'] . '/' . $row['jid']] = 1;
+
 
     // Generate output
     if ($type == 'xml')
