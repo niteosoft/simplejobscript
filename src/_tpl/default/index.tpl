@@ -73,7 +73,7 @@ session_start();
   <link rel="stylesheet" href="{$BASE_URL}_tpl/{$THEME}/1.5/css/font-awesome.min.css">
 
   <link href="{$BASE_URL}_tpl/{$THEME}/1.5/css/dev.css" rel="stylesheet">
-  <link href="{$BASE_URL}_tpl/{$THEME}/1.5/css/customizer.css" rel="stylesheet">
+  <!--<link href="{$BASE_URL}_tpl/{$THEME}/1.5/css/customizer.css" rel="stylesheet">-->
 
 	<noscript>{$translations.website_general.noscript_msg}</noscript>
 

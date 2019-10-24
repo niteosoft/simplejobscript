@@ -7,7 +7,12 @@
 					 	{if $navitem->is_external == '1'}
 					 		<li><a title="{$navitem->name}" target="_blank" href="{$navitem->external_url}">{$navitem->name}</a></li>
 					 	{else}
+					 		{if $PAYMENT_MODE == '1' and $navitem->page_id == '55'}
+					 			 {continue} 
+					 		{else}
 					 		<li><a title="{$navitem->title}" href="{$BASE_URL}{$navitem->url}">{$navitem->name}</a></li>
+					 		{/if}
+					 		
 					 	{/if}
 				{/foreach}
 				</ul>

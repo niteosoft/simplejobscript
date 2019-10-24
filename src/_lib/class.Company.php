@@ -63,7 +63,7 @@ class Company {
 	public function getAdminCompanyData() {
 		global $db;
 		$sql = 'SELECT c.id as "company_id", c.name as "company_name", emp.id as "employer_id", emp.name as "employer_name", emp.email as "employer_email" FROM company c INNER JOIN 
-		employer emp ON emp.id=c.employer_id WHERE emp.name="Admin"';
+		employer emp ON emp.id=c.employer_id WHERE emp.id=144';
 		$result = $db->query($sql);
 		if ($result) {
 			$row = $result->fetch_assoc();

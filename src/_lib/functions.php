@@ -314,7 +314,7 @@ function get_navigation($menu = null)
 	$navigation = array();
 
 	$sql = '
-		SELECT url, page_title, description, is_external, external_url
+		SELECT id, url, page_title, description, is_external, external_url
 		FROM '.DB_PREFIX.'pages
 		ORDER BY link_order ASC';
 
@@ -322,6 +322,7 @@ function get_navigation($menu = null)
 	while ($row = $result->fetch_assoc())
 	{
 		$o = new stdClass;
+		$o->page_id = $row['id'];
 		$o->url = $row['url'];
 		$o->name = $row['page_title'];
 		$o->title = $row['description'];
