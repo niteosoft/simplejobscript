@@ -34,13 +34,13 @@
 
 				<div class="form-group">
 					<label id="bannerLabel" for="cv" style="font-size:15px;">UPLOAD CSV</label>
-					<input accept=".csv" name="cv" id="cv" class="inputfile form-control minput" type="file" />
+					<input required accept=".csv" name="cv" id="cv" class="inputfile form-control minput" type="file" />
 
 					<!-- <div id="err" class="negative-feedback displayNone">{$translations.apply.cv_err}</div> -->
 				</div>
 
 				<div class="banBtnDiv">
-					<button type="submit" class="btn btn-default btn-primary mbtn" style=" background-color: #E74C3C">IMPORT</button>
+					<button id="submitButton" type="submit" class="btn btn-default btn-primary mbtn" style=" background-color: #E74C3C">IMPORT</button>
 				</div>
 			</form>
 		</div>
@@ -54,9 +54,25 @@
 
 {literal}
 <script type="text/javascript">
+
+	{/literal}
+		var fSize = "{$MAX_FILE_SIZE}";
+		var fSizeText = "{$MAX_FILE_SIZE_TEXT}";
+	{literal}
+
 	$(document).ready(function() {
 
 		$('#cv').change(function() {
+
+			if (this.files && this.files[0].size > fSize){
+				alert('File too large. There is a ' + fSizeText + ' upload limit.');
+				this.files.value = null;
+				$('#submitButton').attr('disabled','disabled');
+				return;
+			} else {
+				$('#submitButton').removeAttr('disabled');
+			}
+
 			var fname = $('input[type=file]').val().split('\\').pop();
 			if( fname )
 				$('#bannerLabel').html(fname);

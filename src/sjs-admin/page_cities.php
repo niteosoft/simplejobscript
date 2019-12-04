@@ -233,8 +233,22 @@
 					$this->prepareDisplayCities();
 					break;
 					
-				case 'list': ; // do nothing, just fall through 
+				case 'list': 
+					$base = log(MAX_LOCATIONS_IMPORT_FILE_SIZE, 1024);
+					$suffixes = array('', 'KB', 'MB', 'GB', 'TB');   
+					$fSize = round(pow(1024, $base - floor($base)), $precision) . $suffixes[floor($base)];
+					
+					$smarty->assign('MAX_FILE_SIZE', MAX_LOCATIONS_IMPORT_FILE_SIZE);
+					$smarty->assign('MAX_FILE_SIZE_TEXT', $fSize);
+				; // do nothing, just fall through 
 				default:
+					$base = log(MAX_LOCATIONS_IMPORT_FILE_SIZE, 1024);
+					$suffixes = array('', 'KB', 'MB', 'GB', 'TB');   
+					$fSize = round(pow(1024, $base - floor($base)), $precision) . $suffixes[floor($base)];
+					
+					$smarty->assign('MAX_FILE_SIZE', MAX_LOCATIONS_IMPORT_FILE_SIZE);
+					$smarty->assign('MAX_FILE_SIZE_TEXT', $fSize);
+
 					$this->prepareDisplayCities();
 			}
 			

@@ -36,6 +36,6 @@ define('ENABLE_SINGLE_ACCOUNT_REGISTRATION', 'disabled');
 define('THEME', 'default');
 define('INVOICES_UPLOAD_FOLDER', 'uploads/invoices/');
 define('MAX_CV_SIZE', "2500000");
-
+define('MAX_LOCATIONS_IMPORT_FILE_SIZE', "3000000");
 
 ?>

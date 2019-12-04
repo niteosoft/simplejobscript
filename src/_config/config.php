@@ -412,5 +412,6 @@
 	// push settings from constants.php into Smarty
 	$smarty->assign('EMAIL_CONFIRMATION_FLAG', EMAIL_CONFIRMATION_FLAG);
 	$smarty->assign('MAX_CV_SIZE', MAX_CV_SIZE);
+	$smarty->assign('MAX_LOCATIONS_IMPORT_FILE_SIZE', MAX_LOCATIONS_IMPORT_FILE_SIZE);
 
 ?>
