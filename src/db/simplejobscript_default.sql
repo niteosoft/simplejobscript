@@ -4,7 +4,6 @@
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
--- --------------------------------------------------------
 
 --
 -- Table structure for table `admin`
@@ -299,7 +298,8 @@ INSERT INTO `confirmed_applicants` (`user_id`, `hash`) VALUES
 (229, '5448718fd210d3866a036a68d4e13e14e16c4c61'),
 (230, 'ed770b5ddefacb19072402eb212e86123407ea4f'),
 (234, '91556d433be904a79d56044cce1362a83707df39'),
-(241, 'ea540abcf6478de2b279d59ebb9e3bb92d44f6e9');
+(241, 'ea540abcf6478de2b279d59ebb9e3bb92d44f6e9'),
+(246, '23465c4f2eb9a500c31fb70f8f4408ec0601bbbe');
 
 -- --------------------------------------------------------
 
@@ -731,7 +731,12 @@ INSERT INTO `hits` (`job_id`, `created_on`, `ip`) VALUES
 (193, '2019-05-15 08:56:09', '::1'),
 (193, '2019-05-15 09:01:13', '::1'),
 (352, '2019-05-15 10:11:51', '::1'),
-(352, '2019-05-15 10:12:33', '::1');
+(352, '2019-05-15 10:12:33', '::1'),
+(202, '2019-07-03 11:22:11', '::1'),
+(202, '2019-07-10 07:47:07', '::1'),
+(198, '2019-07-10 07:47:21', '::1'),
+(198, '2019-07-10 07:54:35', '::1'),
+(352, '2019-07-10 07:55:57', '::1');
 
 -- --------------------------------------------------------
 
@@ -795,14 +800,14 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (363, 361, 1, 'headline_login', 'Login', ''),
 (362, 361, 1, 'incorrect', 'Access denied. Please, make sure you enter valid credentials.', ''),
 (297, 291, 1, 'subscribe_message_cat', 'Job alert', ''),
-(357, 355, 1, 'message', '<h1>Welcome to {BASE_URL}</h1>\n<h2>Confirm your account</h2>\n<div>After you are ready to post your jobs and track statistics</div>\n\n<table border="0" cellpadding="10" cellspacing="0" width="500" >\n	<tr>&nbsp;</tr>\n	<tr>\n		<td style="padding-top:0;" align="left" valign="top" width="500" >\n			<table border="0" cellpadding="0" cellspacing="0" width="50%" style="background-color: #3498db;background-color:#205478; border-collapse:separate;">\n				<tr>\n					<td align="center" valign="middle" class="buttonContent" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">\n						<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="http://{BASE_URL_LINK}{URL_RECRUITER_ACCOUNT_CONFIRMATION}/{HASH}" target="_blank">Confirmation</a>\n					</td>\n				</tr>\n			</table>\n		</td>\n	</tr>\n</table>			\n\n<br />\n<div>{BASE_URL} &#169; {CUR_YEAR}. All&nbsp;rights&nbsp;reserved.</div>', 'textarea'),
+(357, 355, 1, 'message', '<h1>Welcome to {BASE_URL}</h1>\n<h2>Confirm your account</h2>\n<div>After you are ready to post your jobs and track statistics</div>\n\n<table border="0" cellpadding="10" cellspacing="0" width="500" >\n	<tr>&nbsp;</tr>\n	<tr>\n		<td style="padding-top:0;" align="left" valign="top" width="500" >\n			<table border="0" cellpadding="0" cellspacing="0" width="50%" style="background-color: #3498db;background-color:#205478; border-collapse:separate;">\n				<tr>\n					<td align="center" valign="middle" class="buttonContent" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">\n						<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{BASE_URL_LINK}{URL_RECRUITER_ACCOUNT_CONFIRMATION}/{HASH}" target="_blank">Confirmation</a>\n					</td>\n				</tr>\n			</table>\n		</td>\n	</tr>\n</table>			\n\n<br />\n<div>{BASE_URL} &#169; {CUR_YEAR}. All&nbsp;rights&nbsp;reserved.</div>', 'textarea'),
 (356, 355, 1, 'subject', '[ {BASE_URL} ] - Confirmation request', ''),
 (355, 0, 1, 'email_confirmationRequest', '', ''),
 (359, 291, 1, 'confirmed_msg_fail', 'This confirmation link is no longer active! Please, subscribe again!', ''),
-(354, 352, 1, 'message', '<h1>Welcome to {BASE_URL}</h1>\n\n<table border="0" cellpadding="0" cellspacing="0" width="500">\n	<tr>\n		<td style="padding-top:0;" align="left" valign="top" width="500" >\n			<table border="0" cellpadding="0" cellspacing="0" width="75%" >\n				<tr>\n					<div>To confirm your subscription, please click the following link:</div><br />\n					<div><a href="http://{BASE_URL_LINK}{URL_SUBSCRIBE_CONFIRMATION}/{HASH}" target="_blank">{BASE_URL_LINK}{URL_SUBSCRIBE_CONFIRMATION}/{HASH}</a></div><br />\n					<div>You can change the categories of your interest at <a href="http://{BASE_URL_LINK}{URL_SUBSCRIBE}" target="_blank">{BASE_URL_LINK}{URL_SUBSCRIBE}</a></div><br />\n					<div>Later you can always unsubscribe</div><br />\n					<div>Wish you a happy searching</div>\n					<hr /><br />\n					<div>{BASE_URL} Team</div>\n				</tr>\n			</table>\n		</td>\n	</tr>\n</table>\n\n<br />\n<div>{BASE_URL} &#169; {CUR_YEAR}. All&nbsp;rights&nbsp;reserved.</div>', 'textarea'),
+(354, 352, 1, 'message', '<h1>Welcome to {BASE_URL}</h1>\n\n<table border="0" cellpadding="0" cellspacing="0" width="500">\n	<tr>\n		<td style="padding-top:0;" align="left" valign="top" width="500" >\n			<table border="0" cellpadding="0" cellspacing="0" width="75%" >\n				<tr>\n					<div>To confirm your subscription, please click the following link:</div><br />\n					<div><a href="{BASE_URL_LINK}{URL_SUBSCRIBE_CONFIRMATION}/{HASH}" target="_blank">{BASE_URL_LINK}{URL_SUBSCRIBE_CONFIRMATION}/{HASH}</a></div><br />\n					<div>You can change the categories of your interest at <a href="{BASE_URL_LINK}{URL_SUBSCRIBE}" target="_blank">{BASE_URL_LINK}{URL_SUBSCRIBE}</a></div><br />\n					<div>Later you can always unsubscribe</div><br />\n					<div>Wish you a happy searching</div>\n					<hr /><br />\n					<div>{BASE_URL} Team</div>\n				</tr>\n			</table>\n		</td>\n	</tr>\n</table>\n\n<br />\n<div>{BASE_URL} &#169; {CUR_YEAR}. All&nbsp;rights&nbsp;reserved.</div>', 'textarea'),
 (353, 352, 1, 'subject', '[ {BASE_URL} ] - Welcome!  ', ''),
 (352, 0, 1, 'email_welcomeSubscriber', '', ''),
-(351, 349, 1, 'message', '<h1>Goodbye from {BASE_URL}</h1>\n\n<table border="0" cellpadding="0" cellspacing="0" width="500" >\n	<tr>\n		<td style="padding-top:0;" align="left" valign="top" width="500" >\n			<table border="0" cellpadding="0" cellspacing="0" width="75%" >\n				<tr>\n					<div>We would like to thank you for using our services. You have unsubscribed from our newsletter. If you decide to subscribe again, just go to</div><br />\n					<div><a href="http://{BASE_URL_LINK}{URL_SUBSCRIBE}" target="_blank">{BASE_URL_LINK}{URL_SUBSCRIBE}</a></div><br />\n					<div>Good luck.</div><hr /><br />\n					<div>{BASE_URL} Team</div>\n				</tr>\n			</table>\n		</td>\n	</tr>\n</table>\n\n<br />\n<div>{BASE_URL} &#169; {CUR_YEAR}. All&nbsp;rights&nbsp;reserved.</div>', 'textarea'),
+(351, 349, 1, 'message', '<h1>Goodbye from {BASE_URL}</h1>\n\n<table border="0" cellpadding="0" cellspacing="0" width="500" >\n	<tr>\n		<td style="padding-top:0;" align="left" valign="top" width="500" >\n			<table border="0" cellpadding="0" cellspacing="0" width="75%" >\n				<tr>\n					<div>We would like to thank you for using our services. You have unsubscribed from our newsletter. If you decide to subscribe again, just go to</div><br />\n					<div><a href="{BASE_URL_LINK}{URL_SUBSCRIBE}" target="_blank">{BASE_URL_LINK}{URL_SUBSCRIBE}</a></div><br />\n					<div>Good luck.</div><hr /><br />\n					<div>{BASE_URL} Team</div>\n				</tr>\n			</table>\n		</td>\n	</tr>\n</table>\n\n<br />\n<div>{BASE_URL} &#169; {CUR_YEAR}. All&nbsp;rights&nbsp;reserved.</div>', 'textarea'),
 (350, 349, 1, 'subject', 'Goodbye from [ {BASE_URL} ]', ''),
 (349, 0, 1, 'email_goodbyeSubscriber', '', ''),
 (60, 0, 1, 'alljobs', '', ''),
@@ -922,15 +927,15 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (650, 222, 1, 'close', 'Close', ''),
 (651, 222, 1, 'chars_remaining', 'characters remaining', ''),
 (652, 222, 1, 'file_upload_notsupported', 'File upload not supported! Please contact us', ''),
-(348, 346, 1, 'message', '<h1>{BASE_URL}</h1>\n<h2>Awaiting confirmation for your subscription</h2>\n\n<table border="0" cellpadding="0" cellspacing="0" width="500" >\n	<tr>\n		<td style="padding-top:0;" align="left" valign="top" width="500" >\n\n			<table border="0" cellpadding="0" cellspacing="0" width="75%" >\n				<tr>\n					<div>You have not confirmed your subscription yet. To recieve new job opportunities, please click the following link:</div><br />\n					<div><a href="http://{BASE_URL_LINK}{URL_SUBSCRIBE_CONFIRMATION}/{HASH}" target="_blank">{BASE_URL_LINK}{URL_SUBSCRIBE_CONFIRMATION}/{HASH}</a></div><br />\n					<div>Thank you.</div><br />\n					<div>Wish you a happy searching.</div><hr /><br />\n					<div>{BASE_URL} Team</div>\n				</tr>\n			</table>\n\n		</td>\n	</tr>\n</table>\n\n<br />\n<div>{BASE_URL} &#169; {CUR_YEAR}. All&nbsp;rights&nbsp;reserved.</div>', 'textarea'),
+(348, 346, 1, 'message', '<h1>{BASE_URL}</h1>\n<h2>Awaiting confirmation for your subscription</h2>\n\n<table border="0" cellpadding="0" cellspacing="0" width="500" >\n	<tr>\n		<td style="padding-top:0;" align="left" valign="top" width="500" >\n\n			<table border="0" cellpadding="0" cellspacing="0" width="75%" >\n				<tr>\n					<div>You have not confirmed your subscription yet. To recieve new job opportunities, please click the following link:</div><br />\n					<div><a href="{BASE_URL_LINK}{URL_SUBSCRIBE_CONFIRMATION}/{HASH}" target="_blank">{BASE_URL_LINK}{URL_SUBSCRIBE_CONFIRMATION}/{HASH}</a></div><br />\n					<div>Thank you.</div><br />\n					<div>Wish you a happy searching.</div><hr /><br />\n					<div>{BASE_URL} Team</div>\n				</tr>\n			</table>\n\n		</td>\n	</tr>\n</table>\n\n<br />\n<div>{BASE_URL} &#169; {CUR_YEAR}. All&nbsp;rights&nbsp;reserved.</div>', 'textarea'),
 (347, 346, 1, 'subject', 'Your subscription for the [ {BASE_URL} ] website has still not been confirmed', ''),
 (346, 0, 1, 'email_subscriberNotConfirmedEmail', '', ''),
 (336, 0, 1, 'email_passwordRecovery', '', ''),
 (337, 336, 1, 'subject', 'Your password recovery for [ {BASE_URL} ]', ''),
-(338, 336, 1, 'message', '<h1>{BASE_URL}</h1>\n<h2>Password recovery</h2>\n\n<table border="0" cellpadding="0" cellspacing="0" width="500" >\n	<tr>\n		<td style="padding-top:0;" align="left" valign="top" width="500" >\n\n			<table border="0" cellpadding="0" cellspacing="0" width="75%"  >\n				<tr>\n					<div>You requested a password recovery. To reset your password, please click the following link</div><br />\n					<div><a href="http://{BASE_URL_LINK}{RESET_URL}/{HASH}" target="_blank">{BASE_URL_LINK}{RESET_URL}/{HASH}</a></div><br />\n					<div>Have a nice day</div><hr /><br />\n					<div>{BASE_URL} Team</div>\n				</tr>\n			</table>\n\n		</td>\n	</tr>\n</table>\n\n<br />\n<div>{BASE_URL} &#169; {CUR_YEAR}. All&nbsp;rights&nbsp;reserved.</div>', 'textarea'),
+(338, 336, 1, 'message', '<h1>{BASE_URL}</h1>\n<h2>Password recovery</h2>\n\n<table border="0" cellpadding="0" cellspacing="0" width="500" >\n	<tr>\n		<td style="padding-top:0;" align="left" valign="top" width="500" >\n\n			<table border="0" cellpadding="0" cellspacing="0" width="75%"  >\n				<tr>\n					<div>You requested a password recovery. To reset your password, please click the following link</div><br />\n					<div><a href="{BASE_URL_LINK}{RESET_URL}/{HASH}" target="_blank">{BASE_URL_LINK}{RESET_URL}/{HASH}</a></div><br />\n					<div>Have a nice day</div><hr /><br />\n					<div>{BASE_URL} Team</div>\n				</tr>\n			</table>\n\n		</td>\n	</tr>\n</table>\n\n<br />\n<div>{BASE_URL} &#169; {CUR_YEAR}. All&nbsp;rights&nbsp;reserved.</div>', 'textarea'),
 (339, 0, 1, 'email_SubscriptionUpdated', '', ''),
 (340, 339, 1, 'subject', 'Your subscription on [ {BASE_URL} ] has been updated', ''),
-(341, 339, 1, 'message', '<h1>{BASE_URL}</h1>\n<h2>Subscription updated</h2>\n\n<table border="0" cellpadding="0" cellspacing="0" width="500" >\n  <tr>\n    <td style="padding-top:0;" align="left" valign="top" width="500">\n      <table border="0" cellpadding="0" cellspacing="0" width="75%" >\n        <tr>\n          <div>Your subscription settings has changed. To manage them please visit:</div><br />\n          <div><a href="http://{BASE_URL_LINK}{URL_SUBSCRIBE}" target="_blank">{BASE_URL_LINK}{URL_SUBSCRIBE}</a></div><br />\n          <div>Thank you.</div><br />\n          <div>Wish you a happy searching.</div><hr /><br />\n          <div>{BASE_URL} Team</div>\n        </tr>\n      </table>\n    </td>\n  </tr>\n</table>\n\n<br />\n<div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:left;line-height:120%;">\n	<div>{BASE_URL} &#169; {CUR_YEAR}. All&nbsp;rights&nbsp;reserved.</div>\n	<div>If you do not want to recieve emails from us, you can <a href="{BASE_URL_LINK}{URL_UNSUBSCRIBE}/{HASH}" target="_blank" style="text-decoration:none;color:#828282;"><strong><span style="color:#828282;">{URL_UNSUBSCRIBE}</strong></span></a>.\n	</div>\n</div><br />', 'textarea'),
+(341, 339, 1, 'message', '<h1>{BASE_URL}</h1>\n<h2>Subscription updated</h2>\n\n<table border="0" cellpadding="0" cellspacing="0" width="500" >\n  <tr>\n    <td style="padding-top:0;" align="left" valign="top" width="500">\n      <table border="0" cellpadding="0" cellspacing="0" width="75%" >\n        <tr>\n          <div>Your subscription settings has changed. To manage them please visit:</div><br />\n          <div><a href="{BASE_URL_LINK}{URL_SUBSCRIBE}" target="_blank">{BASE_URL_LINK}{URL_SUBSCRIBE}</a></div><br />\n          <div>Thank you.</div><br />\n          <div>Wish you a happy searching.</div><hr /><br />\n          <div>{BASE_URL} Team</div>\n        </tr>\n      </table>\n    </td>\n  </tr>\n</table>\n\n<br />\n<div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:left;line-height:120%;">\n	<div>{BASE_URL} &#169; {CUR_YEAR}. All&nbsp;rights&nbsp;reserved.</div>\n	<div>If you do not want to recieve emails from us, you can <a href="{BASE_URL_LINK}{URL_UNSUBSCRIBE}/{HASH}" target="_blank" style="text-decoration:none;color:#828282;"><strong><span style="color:#828282;">{URL_UNSUBSCRIBE}</strong></span></a>.\n	</div>\n</div><br />', 'textarea'),
 (8115, 6328, 23, 'searchbar_text', 'HLEDAT', ''),
 (8116, 7252, 24, 'searchbar_text', 'HLADAT', ''),
 (342, 291, 1, 'quit_msg', 'By confirmation we will remove your email address from our newsletter.', ''),
@@ -944,7 +949,7 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (407, 391, 1, 'submit_final', 'Complete', ''),
 (260, 0, 1, 'email_PublishToUser', '', ''),
 (261, 260, 1, 'subject', 'Your ad on [ {BASE_URL} ] has been approved', ''),
-(262, 260, 1, 'message', '<h1>{BASE_URL}</h1>\n<h2>Your ad has been approved</h2>\n\n<table border="0" cellpadding="0" cellspacing="0" width="500" >\n	<tr>\n		<td style="padding-top:0;" align="left" valign="top" width="500">\n			<table border="0" cellpadding="0" cellspacing="0" width="75%" >\n				<tr>\n					<div>Good day, Your ad <strong>{JOB_TITLE}</strong> has been approved and is available at: </div><br />\n					<div><a href="http://{JOB_URL}" target="_blank">{JOB_URL}</a></div><br />\n					<div>Manage your listing: <a href="http://{JOB_MANAGE_URL}" target="_blank">{JOB_MANAGE_URL}</a></div><br />\n					<div>Manage your applications: <a href="http://{JOB_APPLICANTS_URL}" target="_blank">{JOB_APPLICANTS_URL}</a></div><br />\n					<div>See performance of your ad: <a href="http://{STATISTICS_URL}" target="_blank"> {STATISTICS_URL}</a></div><br />\n					<div>Thank you for using our services</div><hr /><br />\n					<div>{BASE_URL} Team</div>\n				</tr>\n			</table>\n		</td>\n	</tr>\n</table>\n\n<br />\n<div>{BASE_URL} &#169; {CUR_YEAR}. All&nbsp;rights&nbsp;reserved.</div>', 'textarea'),
+(262, 260, 1, 'message', '<h1>{BASE_URL}</h1>\n<h2>Your ad has been approved</h2>\n\n<table border="0" cellpadding="0" cellspacing="0" width="500" >\n	<tr>\n		<td style="padding-top:0;" align="left" valign="top" width="500">\n			<table border="0" cellpadding="0" cellspacing="0" width="75%" >\n				<tr>\n					<div>Good day, Your ad <strong>{JOB_TITLE}</strong> has been approved and is available at: </div><br />\n					<div><a href="{JOB_URL}" target="_blank">{JOB_URL}</a></div><br />\n					<div>Manage your listing: <a href="{JOB_MANAGE_URL}" target="_blank">{JOB_MANAGE_URL}</a></div><br />\n					<div>Manage your applications: <a href="{JOB_APPLICANTS_URL}" target="_blank">{JOB_APPLICANTS_URL}</a></div><br />\n					<div>See performance of your ad: <a href="{STATISTICS_URL}" target="_blank"> {STATISTICS_URL}</a></div><br />\n					<div>Thank you for using our services</div><hr /><br />\n					<div>{BASE_URL} Team</div>\n				</tr>\n			</table>\n		</td>\n	</tr>\n</table>\n\n<br />\n<div>{BASE_URL} &#169; {CUR_YEAR}. All&nbsp;rights&nbsp;reserved.</div>', 'textarea'),
 (403, 391, 1, 'hash_confirmation_successful', 'Your account has been activated', ''),
 (401, 391, 1, 'registration_done_message', 'Your registration has been completed. You can sign in.', ''),
 (402, 391, 1, 'account_not_confirmed_text', 'Please confirm your email address by clicking on the link that has been sent to your mailbox.', ''),
@@ -3979,7 +3984,7 @@ INSERT INTO `i18n_translations` (`id`, `parent_id`, `lang_id`, `item`, `value`, 
 (4832, 4545, 19, 'account_not_confirmed_text_applicants', ' हम आपके द्वारा प्रदान पता करने के लिए एक सत्यापन ईमेल भेजा है। खाते की पुष्टि होने के बाद अपने प्रोफ़ाइल नियोक्ताओं के लिए दिखाई हो जाएगा और आप एक बटन के एक क्लिक के साथ नौकरियों के लिए आवेदन कर सकते हैं।', ''),
 (4833, 4014, 18, 'account_not_confirmed_text_applicants', 'Мы отправили письмо с подтверждением на указанный вами адрес. После подтверждения аккаунта ваш профиль станет видимым для рекрутеров и вы можете подать заявление на работу с одним нажатием кнопки.', ''),
 (4834, 0, 1, 'email_confirmationRequestApplicant', '', ''),
-(4835, 4834, 1, 'message', '<h1>Welcome to {BASE_URL}</h1>\n<h2>Confirm your account</h2>\n<div>After you can apply to jobs with a single click and your profile will be visible to the recruiters.</div>\n\n<table border="0" cellpadding="10" cellspacing="0" width="500" >\n	<tr>&nbsp;</tr>\n	<tr>\n		<td style="padding-top:0;" align="left" valign="top" width="500" >\n			<table border="0" cellpadding="0" cellspacing="0" width="50%" style="background-color: #3498db;background-color:#205478; border-collapse:separate;">\n				<tr>\n					<td align="center" valign="middle" class="buttonContent" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">\n						<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="http://{BASE_URL_LINK}{URL_APPLICANT_ACCOUNT_CONFIRMATION}/{HASH}" target="_blank">Confirmation</a>\n					</td>\n				</tr>\n			</table>\n		</td>\n	</tr>\n</table>			\n\n<br />\n<div>{BASE_URL} &#169; {CUR_YEAR}. All&nbsp;rights&nbsp;reserved.</div>', 'textarea'),
+(4835, 4834, 1, 'message', '<h1>Welcome to {BASE_URL}</h1>\n<h2>Confirm your account</h2>\n<div>After you can apply to jobs with a single click and your profile will be visible to the recruiters.</div>\n\n<table border="0" cellpadding="10" cellspacing="0" width="500" >\n	<tr>&nbsp;</tr>\n	<tr>\n		<td style="padding-top:0;" align="left" valign="top" width="500" >\n			<table border="0" cellpadding="0" cellspacing="0" width="50%" style="background-color: #3498db;background-color:#205478; border-collapse:separate;">\n				<tr>\n					<td align="center" valign="middle" class="buttonContent" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">\n						<a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="{BASE_URL_LINK}{URL_APPLICANT_ACCOUNT_CONFIRMATION}/{HASH}" target="_blank">Confirmation</a>\n					</td>\n				</tr>\n			</table>\n		</td>\n	</tr>\n</table>			\n\n<br />\n<div>{BASE_URL} &#169; {CUR_YEAR}. All&nbsp;rights&nbsp;reserved.</div>', 'textarea'),
 (4844, 4837, 14, 'subject', '[ {BASE_URL} ] - Demande de confirmation', ''),
 (4839, 0, 16, 'email_confirmationRequestApplicant', '', ''),
 (4840, 0, 18, 'email_confirmationRequestApplicant', '', ''),
@@ -7213,13 +7218,13 @@ INSERT INTO `jobs` (`id`, `type_id`, `employer_id`, `category_id`, `title`, `des
 (193, 1, 112, 3, 'AngularJS artisan (Google Maps)', '<p>We are looking for a talented frontend developer with Angular JS experience. You everyday duty will be to cooperate with designers and project managers.</p>\r\n<p>You must posses extensive Javascript knowledge, OOP paradaigm, HTML&amp;CSS skills. From time to time you will need to do&nbsp;some linux server programming.&nbsp;</p>\r\n<p><strong>Additional requirements:</strong></p>\r\n<p><span style="line-height: 2px;">1) well spoken and written english</span></p>\r\n<p><span style="line-height: 2px;">2) IT related education</span></p>\r\n<p><span style="line-height: 2px;">3) attention to detail</span></p>\r\n<p><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11102.345260333086!2d-118.3016786911141!3d34.17838576625917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcdb9a0f8d4a529d4!2sBurbank+Paint+Co+Inc!5e0!3m2!1sen!2ssk!4v1526371462068" width="400" height="300" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>\r\n<p><span style="line-height: 2px;"><span style="text-decoration: underline;">If this seems like a challenge</span> for you, please apply immediatelly for a speedy consideration.</span></p>\r\n<p><span style="line-height: 2px;">Thank you.</span></p>\r\n<p><span style="line-height: 2px;">James</span></p>', '2016-03-02 13:06:26', '2025-05-11 02:05:55', 1, 227, 82, 1, '', 'Niteosoft', 1, '100$/hour', 0),
 (195, 2, 112, 15, 'iOS developer (Video)', '<p style="color: #585450; font-size: medium;">XY&nbsp;is looking for an experienced iOS developer to join our team. We\'re a mobile design and development firm based in Denver, focused on developing and designing</p>\r\n<p style="color: #585450; font-size: medium;">solutions for mobile and connected hardware devices. Please check out our website, blog, and social media accounts to get to know us a little better.</p>\r\n<p style="color: #585450; font-size: medium;"><iframe src="//www.youtube.com/embed/YmWwZD5r6UU" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>\r\n<p style="color: #585450; font-size: medium;">Some details: we usually develop natively but also use Xamarin in occasions it is a fit. On the services side, Rails is our go-to. We use Git on nearly all of our projects. We\'re Trello</p>\r\n<p style="color: #585450; font-size: medium;">fans, and we use Jira also when appropriate. Our org is relatively flat&ndash;we have platform leads and a Development Director.</p>\r\n<p style="color: #585450; font-size: medium;">Please let us know in your brief cover letter why you\'d like to work with us. This position is located in our Denver office. Remote candidates considered, but local candidates are&nbsp;preferred.</p>\r\n<p><span style="color: #585450; font-size: medium;">Thanks!</span></p>', '2016-02-04 13:11:43', '2025-05-11 02:05:55', 1, 39, 1, 1, '', 'Niteosoft', 0, '30k$/year', 0),
 (197, 4, 110, 1, 'PHP magician', '<p><span style="color: #585450; font-size: medium;"><span style="text-decoration: underline;">Our company is devoted</span> to doing the best possible work for our clients and maintaining a fun, thriving environment for our team. You will work side by side with top talent to </span></p>\r\n<p><span style="color: #585450; font-size: medium;"><strong>Up to 50% of all profits are paid out monthly to all full-time</strong> employees! We also offer paid time off for all remote team members.&nbsp;</span><span style="color: #585450; font-size: medium;">Database</span><strong><span style="color: #585450; font-size: medium;"> query creating &amp; optimizing. Essential fronted skills and mainly:</span></strong></p>\r\n<ul>\r\n<li><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">4 years commercial experience</span></span></li>\r\n<li><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">live website / projects to show us your work</span></span></li>\r\n</ul>\r\n<p><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">We are happy to get started ASAP. Get in touch.</span></span></p>\r\n<ol>\r\n<li><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">we offer extra salary bonus</span></span></li>\r\n<li><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">gym tickets</span></span></li>\r\n</ol>\r\n<p><span style="color: #585450; font-size: medium;">Regards,</span></p>\r\n<p><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">Joe</span></span></p>', '2016-02-03 13:18:53', '2025-05-11 02:05:55', 1, 26, 83, 1, '', 'Infinity', 0, '124$/hour', 0),
-(198, 17, 110, 2, 'Talented Designer (Lists)', '<p>List styling example. In our company you will start from day one working on a great startup projects. We work remotely most of the time and use Slack and Skype for team communication.</p>\r\n<p><strong>What we expect:</strong></p>\r\n<p>&bull;&nbsp; attention to detail<br />&bull;&nbsp; team spirit<br />&bull;&nbsp; analytical thinking</p>\r\n<p><strong>What we need:</strong></p>\r\n<p>a) &nbsp;attention to detail<br />b) &nbsp;team spirit<br />c) &nbsp;analytical thinking</p>\r\n<p><strong>What we offer:</strong></p>\r\n<p>- annual salary bonus<br />- extra holydays<br />- gym and cinema tickets</p>', '2016-02-04 13:22:32', '2021-03-11 07:18:53', 1, 44, 77, 1, '', 'Infinity', 0, '300$/day', 0),
+(198, 17, 110, 2, 'Talented Designer (Lists)', '<p>List styling example. In our company you will start from day one working on a great startup projects. We work remotely most of the time and use Slack and Skype for team communication.</p>\r\n<p><strong>What we expect:</strong></p>\r\n<p>&bull;&nbsp; attention to detail<br />&bull;&nbsp; team spirit<br />&bull;&nbsp; analytical thinking</p>\r\n<p><strong>What we need:</strong></p>\r\n<p>a) &nbsp;attention to detail<br />b) &nbsp;team spirit<br />c) &nbsp;analytical thinking</p>\r\n<p><strong>What we offer:</strong></p>\r\n<p>- annual salary bonus<br />- extra holydays<br />- gym and cinema tickets</p>', '2016-02-04 13:22:32', '2021-03-11 07:18:53', 1, 46, 77, 1, '', 'Infinity', 0, '300$/day', 0),
 (199, 1, 111, 5, 'Content writer', '<p style="color: #585450; font-size: medium;">XY is a growing company with the mission of inspiring and empowering people to make the shift from processed to real food in real life. We&rsquo;re a small, highly</p>\r\n<p style="color: #585450; font-size: medium;">effective team working remotely and are looking to bring on a design and technologically-savvy coordinator to execute on a variety of digital initiatives</p>\r\n<p style="color: #585450; font-size: medium;"><strong>Skills/Areas of Knowledge:</strong></p>\r\n<p style="color: #585450; font-size: medium;">NOTE: Individuals ONLY. No recruiters or agencies please. U.S. based only.</p>\r\n<p style="color: #585450; font-size: medium;">Please send: 1) A cover letter telling us why you\'re a fit, 2) Your resume, 3) At least 5 examples of digital graphics and content you\'ve produced.</p>\r\n<p style="color: #585450; font-size: medium;"><span style="font-size: medium;">We like to build stuff&hellip; sometimes complicated stuff&hellip; for Art Galleries, Non Profits and Charities. We&rsquo;ve been growing fast over the past few years and so we&rsquo;re back on the </span></p>\r\n<p style="color: #585450; font-size: medium;"><span style="font-size: medium;">lookout for another member of&nbsp;our team.</span></p>\r\n<p style="color: #585450; font-size: medium;"><span style="font-size: medium;">Thank you.</span></p>\r\n<p>&nbsp;</p>', '2016-02-03 13:32:05', '2025-05-11 02:05:55', 1, 20, 74, 1, '', 'Cloud Magic', 0, '90$/hour', 0),
-(202, 1, 114, 15, 'Hybrid mobile developer (custom apply link)', '<p><span style="color: #585450; font-size: medium;">As a member of the development team, the Hybrid&nbsp;Mobile&nbsp;Developer will be responsible for developing web-based mobile applications, particularly using JavaScript and Apache </span></p>\r\n<p><span style="color: #585450; font-size: medium;">Cordova. &nbsp;Responsibilities will include designing, developing and testing hybrid mobile applications as well as planning, requirements analysis, data analysis and documenting </span></p>\r\n<p><span style="color: #585450; font-size: medium;">solutions for assigned projects. We offer</span></p>\r\n<ul>\r\n<li><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">more holydays</span></span></li>\r\n<li><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">opportunity to grow</span></span></li>\r\n</ul>\r\n<p><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">See our offices below</span></span>&nbsp;</p>\r\n<p><span style="color: #585450; font-size: medium;">As a member of the development team, the Hybrid&nbsp;Mobile&nbsp;Developer will be responsible for developing web-based mobile applications, particularly using JavaScript and Apache</span></p>\r\n<p><span style="color: #585450; font-size: medium;">Cordova. &nbsp;Responsibilities will include designing, developing and testing hybrid mobile applications as well as planning, requirements analysis, data analysis and documenting</span></p>\r\n<p><span style="color: #585450; font-size: medium;">solutions for assigned projects.</span>&nbsp;&nbsp;</p>\r\n<p><span style="color: #585450; font-size: medium;">We use Cordova &amp; Ionic.</span></p>', '2016-03-01 14:04:38', '2021-04-10 06:18:58', 1, 55, 1, 0, 'careers.google.com', 'Circles', 0, '145$/hour', 0),
+(202, 1, 114, 15, 'Hybrid mobile developer (custom apply link)', '<p><span style="color: #585450; font-size: medium;">As a member of the development team, the Hybrid&nbsp;Mobile&nbsp;Developer will be responsible for developing web-based mobile applications, particularly using JavaScript and Apache </span></p>\r\n<p><span style="color: #585450; font-size: medium;">Cordova. &nbsp;Responsibilities will include designing, developing and testing hybrid mobile applications as well as planning, requirements analysis, data analysis and documenting </span></p>\r\n<p><span style="color: #585450; font-size: medium;">solutions for assigned projects. We offer</span></p>\r\n<ul>\r\n<li><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">more holydays</span></span></li>\r\n<li><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">opportunity to grow</span></span></li>\r\n</ul>\r\n<p><span style="color: #585450; font-size: medium;"><span style="line-height: 2px;">See our offices below</span></span>&nbsp;</p>\r\n<p><span style="color: #585450; font-size: medium;">As a member of the development team, the Hybrid&nbsp;Mobile&nbsp;Developer will be responsible for developing web-based mobile applications, particularly using JavaScript and Apache</span></p>\r\n<p><span style="color: #585450; font-size: medium;">Cordova. &nbsp;Responsibilities will include designing, developing and testing hybrid mobile applications as well as planning, requirements analysis, data analysis and documenting</span></p>\r\n<p><span style="color: #585450; font-size: medium;">solutions for assigned projects.</span>&nbsp;&nbsp;</p>\r\n<p><span style="color: #585450; font-size: medium;">We use Cordova &amp; Ionic.</span></p>', '2016-03-01 14:04:38', '2021-04-10 06:18:58', 1, 57, 1, 0, 'careers.google.com', 'Circles', 0, '145$/hour', 0),
 (206, 2, 115, 1, 'NodeJS developer (images)', '<p>Another great opportunity for new developer to join our UK team. We our looking for:</p>\r\n<ul>\r\n<li>value creation</li>\r\n<li>good leadership skills</li>\r\n</ul>\r\n<p>We are looking for talented individuals with attention to detail.&nbsp;Contact recruitment department for immediate interview assesments.</p>\r\n<p><img style="float: left;" src="http://finda.photo/image/16894/thumbnail/original" alt="" width="457" height="305" /></p>', '2016-03-02 16:01:17', '2019-06-07 12:08:00', 1, 104, 1, 1, '', 'Power', 0, '135$/hour', 0),
 (207, 4, 127, 5, 'SEO expert wanted', '<p><strong>SEO</strong> <strong>expert wanted for new project based in Bournemouth</strong>. He will be responsible for content creation, website administration and other day to day tasks. He must have strong command of english language. We require:</p>\r\n<ul>\r\n<li>attention to detail</li>\r\n<li>in tinymce also videos can be included</li>\r\n<li>third ranom point</li>\r\n</ul>\r\n<p><span style="text-decoration: underline;">Please, if you think you are the match</span> apply for this position with your portfolio projects, cover letter and updated CV.</p>\r\n<p>First inteviews will be hold in April 2016.</p>', '2016-02-03 16:14:25', '2025-05-11 02:05:55', 1, 17, 82, 1, '', 'Graph', 0, '50k$/year', 0),
 (211, 1, 110, 2, 'London Designer Wanted', '<p>Job description</p>', '2016-02-29 13:54:02', '2020-04-10 06:18:59', 0, 0, 82, 1, '', 'Infinity', 1, 'negotiable', 0),
-(352, 1, 110, 1, 'Database specialist (audio interview)', '<p><span style="color: #333333; font-size: 16px;">We are looking for talented individuals with attention to detail.&nbsp;Contact recruitment department for immediate interview assesments.</span></p>\r\n<p><audio controls="controls">\r\n <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" type="audio/mp4" />\r\n <!-- The next two lines are only executed if the browser doesn\'t support MP4 files -->\r\n <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga" type="audio/ogg; codecs=vorbis" />\r\n <!-- The next line will only be executed if the browser doesn\'t support the <audio> tag--></audio></p>\r\n<p>Kindly download the audio interview transcript above and&nbsp;send us the answers to our email address.</p>\r\n<p>John Malwick</p>', '2017-04-05 03:15:05', '2025-05-11 02:05:55', 1, 46, 74, 1, '', 'Infinity', 0, 'negotiable', 0);
+(352, 1, 110, 1, 'Database specialist (audio interview)', '<p><span style="color: #333333; font-size: 16px;">We are looking for talented individuals with attention to detail.&nbsp;Contact recruitment department for immediate interview assesments.</span></p>\r\n<p><audio controls="controls">\r\n <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" type="audio/mp4" />\r\n <!-- The next two lines are only executed if the browser doesn\'t support MP4 files -->\r\n <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga" type="audio/ogg; codecs=vorbis" />\r\n <!-- The next line will only be executed if the browser doesn\'t support the <audio> tag--></audio></p>\r\n<p>Kindly download the audio interview transcript above and&nbsp;send us the answers to our email address.</p>\r\n<p>John Malwick</p>', '2017-04-05 03:15:05', '2025-05-11 02:05:55', 1, 47, 74, 1, '', 'Infinity', 0, 'negotiable', 0);
 
 -- --------------------------------------------------------
 
@@ -7315,8 +7320,10 @@ INSERT INTO `notification` (`id`, `employer_id`) VALUES
 (156, 112),
 (157, 112),
 (158, 112),
+(252, 110),
 (178, 112),
 (166, 112),
+(251, 110),
 (168, 112),
 (177, 112),
 (176, 112),
@@ -7368,7 +7375,8 @@ INSERT INTO `notification` (`id`, `employer_id`) VALUES
 (226, 112),
 (227, 112),
 (228, 112),
-(241, 112);
+(241, 112),
+(250, 110);
 
 -- --------------------------------------------------------
 
@@ -7548,9 +7556,9 @@ INSERT INTO `searches` (`id`, `keywords`, `created_on`) VALUES
 (668, 'new york', '2018-04-14 10:53:23'),
 (677, 'inifinity', '2019-04-04 08:07:04'),
 (676, 'database', '2019-04-04 08:06:59'),
-(638, 'nodejs', '2018-01-11 12:30:16'),
-(639, 'nodejs', '2018-01-11 12:31:47'),
-(640, 'nodejs', '2018-01-11 12:32:03'),
+(688, 'angular', '2019-06-18 17:03:17'),
+(690, 'developer', '2019-06-18 17:12:17'),
+(689, 'database', '2019-06-18 17:12:13'),
 (641, 'nodejs', '2018-01-11 12:32:58'),
 (642, 'nodejs', '2018-01-11 12:33:42'),
 (643, 'nodejs', '2018-01-11 12:33:54'),
@@ -7901,18 +7909,18 @@ CREATE TABLE `statistics` (
 --
 
 INSERT INTO `statistics` (`id`, `date`, `job_id`, `views`, `applications`) VALUES
-(247, '2016-12-08', 198, 49, 14),
-(246, '2016-12-22', 198, 55, 16),
-(245, '2016-12-28', 198, 60, 31),
-(406, '2017-01-28', 198, 1, -2),
-(401, '2017-01-26', 198, 1, -2),
-(222, '2017-01-04', 198, 37, 15),
-(221, '2017-01-09', 198, 20, 9),
-(220, '2017-01-15', 198, 25, 10),
-(212, '2017-01-13', 198, 3, 8),
-(395, '2017-01-10', 198, 87, 35),
-(394, '2016-12-01', 198, 19, 10),
-(393, '2016-12-15', 198, 46, 18),
+(247, '2016-12-08', 198, 49, 12),
+(246, '2016-12-22', 198, 55, 14),
+(245, '2016-12-28', 198, 60, 29),
+(406, '2017-01-28', 198, 1, -4),
+(401, '2017-01-26', 198, 1, -4),
+(222, '2017-01-04', 198, 37, 13),
+(221, '2017-01-09', 198, 20, 7),
+(220, '2017-01-15', 198, 25, 8),
+(212, '2017-01-13', 198, 3, 6),
+(395, '2017-01-10', 198, 87, 33),
+(394, '2016-12-01', 198, 19, 8),
+(393, '2016-12-15', 198, 46, 16),
 (542, '2018-03-13', 193, 3, -16),
 (541, '2018-03-12', 193, 5, -16),
 (540, '2018-03-11', 206, 1, -4),
@@ -7920,7 +7928,7 @@ INSERT INTO `statistics` (`id`, `date`, `job_id`, `views`, `applications`) VALUE
 (538, '2018-03-08', 432, 2, 0),
 (537, '2018-03-08', 193, 2, -16),
 (536, '2018-03-06', 193, 1, -16),
-(389, '2017-01-21', 198, 1, 0),
+(389, '2017-01-21', 198, 1, -2),
 (535, '2018-03-05', 193, 2, -16),
 (534, '2018-01-21', 193, 1, -16),
 (533, '2018-01-20', 193, 2, -16),
@@ -7929,17 +7937,17 @@ INSERT INTO `statistics` (`id`, `date`, `job_id`, `views`, `applications`) VALUE
 (530, '2018-01-15', 193, 2, -16),
 (529, '2018-01-14', 193, 1, -16),
 (528, '2018-01-13', 193, 1, -16),
-(412, '2017-01-29', 198, 1, -1),
+(412, '2017-01-29', 198, 1, -3),
 (527, '2017-12-29', 193, 1, -16),
 (526, '2017-12-27', 193, 1, -16),
 (525, '2017-12-07', 193, 1, -16),
 (524, '2017-12-07', 197, 1, -1),
-(417, '2017-02-04', 198, 1, -1),
+(417, '2017-02-04', 198, 1, -3),
 (523, '2017-12-06', 193, 3, -16),
 (522, '2017-12-05', 193, 3, -17),
 (521, '2017-12-03', 193, 1, -17),
 (520, '2017-12-02', 193, 2, -17),
-(519, '2017-12-01', 352, 1, -2),
+(519, '2017-12-01', 352, 1, -3),
 (518, '2017-12-01', 193, 2, -22),
 (517, '2017-11-30', 193, 3, -27),
 (516, '2017-11-29', 202, 1, 0),
@@ -7947,37 +7955,37 @@ INSERT INTO `statistics` (`id`, `date`, `job_id`, `views`, `applications`) VALUE
 (514, '2017-11-28', 197, 3, -1),
 (513, '2017-11-28', 199, 3, 0),
 (512, '2017-11-28', 195, 3, 0),
-(511, '2017-11-28', 198, 1, 0),
+(511, '2017-11-28', 198, 1, -2),
 (510, '2017-11-28', 202, 4, 0),
 (509, '2017-11-28', 206, 2, -4),
-(508, '2017-11-28', 352, 3, -3),
+(508, '2017-11-28', 352, 3, -4),
 (507, '2017-11-28', 193, 6, -27),
 (506, '2017-11-27', 193, 1, -27),
 (505, '2017-10-09', 193, 1, -21),
 (504, '2017-10-08', 193, 1, -27),
-(503, '2017-08-31', 352, 1, -3),
-(502, '2017-08-29', 352, 1, -3),
+(503, '2017-08-31', 352, 1, -4),
+(502, '2017-08-29', 352, 1, -4),
 (501, '2017-08-29', 202, 1, 0),
 (500, '2017-08-29', 193, 1, -27),
 (499, '2017-08-08', 207, 1, -2),
 (498, '2017-07-31', 193, 1, -27),
-(497, '2017-06-04', 352, 2, -3),
+(497, '2017-06-04', 352, 2, -4),
 (496, '2017-06-04', 193, 2, -27),
-(495, '2017-06-03', 352, 1, -3),
+(495, '2017-06-03', 352, 1, -4),
 (494, '2017-06-02', 206, 3, -4),
-(493, '2017-06-02', 352, 3, -2),
+(493, '2017-06-02', 352, 3, -3),
 (492, '2017-06-02', 193, 3, -26),
-(491, '2017-06-01', 352, 7, -6),
+(491, '2017-06-01', 352, 7, -7),
 (490, '2017-06-01', 193, 2, -28),
 (489, '2017-06-01', 206, 2, -4),
-(488, '2017-05-31', 198, 1, 0),
+(488, '2017-05-31', 198, 1, -2),
 (487, '2017-05-30', 193, 1, -29),
-(486, '2017-05-27', 352, 1, -6),
+(486, '2017-05-27', 352, 1, -7),
 (485, '2017-05-27', 193, 1, -29),
-(484, '2017-05-26', 198, 1, 0),
-(483, '2017-05-26', 352, 1, -6),
+(484, '2017-05-26', 198, 1, -2),
+(483, '2017-05-26', 352, 1, -7),
 (482, '2017-05-26', 197, 2, 1),
-(481, '2017-05-24', 198, 1, -1),
+(481, '2017-05-24', 198, 1, -3),
 (480, '2017-05-24', 193, 1, -29),
 (479, '2017-05-20', 193, 1, -29),
 (478, '2017-05-15', 206, 1, -5),
@@ -7998,12 +8006,12 @@ INSERT INTO `statistics` (`id`, `date`, `job_id`, `views`, `applications`) VALUE
 (550, '2018-03-25', 206, 1, -4),
 (551, '2018-03-28', 206, 2, -4),
 (552, '2018-03-28', 193, 1, -12),
-(553, '2018-03-28', 352, 1, -2),
-(555, '2018-04-14', 352, 1, -3),
+(553, '2018-03-28', 352, 1, -3),
+(555, '2018-04-14', 352, 1, -4),
 (556, '2018-04-14', 193, 2, -16),
 (557, '2018-04-24', 199, 1, 0),
 (559, '2018-04-26', 193, 1, -16),
-(560, '2018-04-30', 352, 1, -3),
+(560, '2018-04-30', 352, 1, -4),
 (561, '2018-04-30', 193, 2, -16),
 (594, '2018-05-17', 206, 1, -4),
 (563, '2018-04-30', 206, 1, -4),
@@ -8014,50 +8022,50 @@ INSERT INTO `statistics` (`id`, `date`, `job_id`, `views`, `applications`) VALUE
 (568, '2018-05-01', 195, 1, 0),
 (569, '2018-05-01', 197, 1, -1),
 (570, '2018-05-02', 193, 3, -16),
-(571, '2018-05-02', 352, 1, -3),
+(571, '2018-05-02', 352, 1, -4),
 (572, '2018-05-02', 206, 1, -4),
 (573, '2018-05-02', 195, 1, 0),
 (574, '2018-05-14', 193, 1, -16),
 (575, '2018-05-14', 202, 2, 0),
 (578, '2018-05-15', 202, 3, 0),
 (579, '2018-05-15', 193, 5, -16),
-(580, '2018-05-15', 352, 4, -3),
+(580, '2018-05-15', 352, 4, -4),
 (581, '2018-05-15', 206, 4, -4),
-(582, '2018-05-15', 198, 3, 0),
+(582, '2018-05-15', 198, 3, -2),
 (583, '2018-05-15', 197, 2, -1),
 (584, '2018-05-15', 199, 2, 0),
 (585, '2018-05-15', 195, 2, 0),
 (601, '2018-05-23', 193, 1, -16),
 (587, '2018-05-16', 193, 3, -16),
-(589, '2018-05-16', 352, 1, -3),
-(590, '2018-05-16', 198, 1, 0),
+(589, '2018-05-16', 352, 1, -4),
+(590, '2018-05-16', 198, 1, -2),
 (591, '2018-05-16', 197, 1, -1),
 (600, '2018-05-17', 195, 1, 0),
-(602, '2018-05-25', 198, 1, 0),
+(602, '2018-05-25', 198, 1, -2),
 (603, '2018-05-25', 193, 1, -16),
 (604, '2018-05-31', 193, 1, -16),
 (607, '2018-06-11', 206, 1, -3),
 (608, '2018-06-11', 193, 1, -14),
 (609, '2018-06-13', 193, 1, -11),
-(610, '2018-06-13', 352, 1, -1),
+(610, '2018-06-13', 352, 1, -2),
 (611, '2018-06-14', 193, 1, -16),
 (613, '2018-06-22', 206, 1, -3),
 (614, '2018-06-22', 193, 1, -16),
-(615, '2018-07-10', 352, 1, -3),
+(615, '2018-07-10', 352, 1, -4),
 (616, '2018-07-10', 193, 1, -16),
 (617, '2018-07-22', 193, 2, 10),
-(618, '2018-07-22', 352, 1, -3),
+(618, '2018-07-22', 352, 1, -4),
 (619, '2018-09-25', 193, 1, -2),
 (620, '2018-10-01', 193, 1, -2),
 (621, '2018-10-02', 197, 1, -1),
-(622, '2018-10-02', 352, 1, -3),
-(623, '2018-10-02', 198, 1, 0),
-(624, '2018-10-05', 352, 2, 7),
+(622, '2018-10-02', 352, 1, -4),
+(623, '2018-10-02', 198, 1, -2),
+(624, '2018-10-05', 352, 2, 6),
 (625, '2018-10-05', 193, 2, -2),
 (626, '2018-10-06', 193, 2, -1),
 (627, '2018-10-06', 197, 1, 0),
 (628, '2018-10-10', 193, 1, -1),
-(629, '2018-10-14', 352, 1, -1),
+(629, '2018-10-14', 352, 1, -2),
 (630, '2018-10-14', 206, 1, -2),
 (631, '2018-10-14', 202, 1, 0),
 (632, '2018-10-14', 193, 1, 0),
@@ -8069,24 +8077,28 @@ INSERT INTO `statistics` (`id`, `date`, `job_id`, `views`, `applications`) VALUE
 (638, '2018-10-17', 207, 1, -1),
 (639, '2018-10-18', 207, 1, -2),
 (640, '2018-10-24', 193, 2, 0),
-(641, '2018-10-24', 352, 1, -1),
-(642, '2018-10-26', 352, 1, -1),
+(641, '2018-10-24', 352, 1, -2),
+(642, '2018-10-26', 352, 1, -2),
 (643, '2018-10-28', 193, 1, 0),
 (644, '2018-11-09', 193, 1, 1),
-(645, '2018-11-15', 352, 1, 0),
-(646, '2018-12-04', 352, 1, 0),
-(647, '2018-12-04', 198, 1, 0),
-(648, '2018-12-06', 198, 1, 0),
+(645, '2018-11-15', 352, 1, -1),
+(646, '2018-12-04', 352, 1, -1),
+(647, '2018-12-04', 198, 1, -2),
+(648, '2018-12-06', 198, 1, -2),
 (649, '2018-12-06', 193, 2, 0),
-(650, '2018-12-07', 198, 1, 1),
+(650, '2018-12-07', 198, 1, -1),
 (651, '2018-12-09', 193, 1, 0),
 (652, '2019-01-07', 193, 2, 0),
 (653, '2019-01-30', 193, 1, 0),
 (654, '2019-02-02', 193, 2, 0),
-(655, '2019-03-25', 352, 1, 0),
+(655, '2019-03-25', 352, 1, -1),
 (656, '2019-04-02', 206, 1, 0),
 (657, '2019-05-15', 193, 2, 0),
-(658, '2019-05-15', 352, 2, 0);
+(658, '2019-05-15', 352, 2, -1),
+(659, '2019-07-03', 202, 1, 0),
+(660, '2019-07-10', 202, 1, 0),
+(661, '2019-07-10', 198, 2, 0),
+(662, '2019-07-10', 352, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -8414,7 +8426,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `applicant`
 --
 ALTER TABLE `applicant`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=245;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=247;
 --
 -- AUTO_INCREMENT for table `areas`
 --
@@ -8434,7 +8446,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `cities`
 --
 ALTER TABLE `cities`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
 --
 -- AUTO_INCREMENT for table `company`
 --
@@ -8479,12 +8491,12 @@ ALTER TABLE `invoice`
 -- AUTO_INCREMENT for table `jobs`
 --
 ALTER TABLE `jobs`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=492;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=493;
 --
 -- AUTO_INCREMENT for table `job_applications`
 --
 ALTER TABLE `job_applications`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=318;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=321;
 --
 -- AUTO_INCREMENT for table `news`
 --
@@ -8494,7 +8506,7 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT for table `notification`
 --
 ALTER TABLE `notification`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=250;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=253;
 --
 -- AUTO_INCREMENT for table `pages`
 --
@@ -8514,7 +8526,7 @@ ALTER TABLE `payment_settings_fees`
 -- AUTO_INCREMENT for table `searches`
 --
 ALTER TABLE `searches`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=688;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=691;
 --
 -- AUTO_INCREMENT for table `seo_categories`
 --
@@ -8539,12 +8551,12 @@ ALTER TABLE `social_media`
 -- AUTO_INCREMENT for table `statistics`
 --
 ALTER TABLE `statistics`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=659;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=664;
 --
 -- AUTO_INCREMENT for table `subscriptions`
 --
 ALTER TABLE `subscriptions`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=146;
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=147;
 --
 -- AUTO_INCREMENT for table `types`
 --

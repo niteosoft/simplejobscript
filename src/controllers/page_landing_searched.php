@@ -7,6 +7,8 @@
 	$smarty->assign('SIDEBAR_CHEVRON', "activated");
 	escape($_POST);
 
+	$landing_location = $db->getConnection()->real_escape_string($landing_location);
+
 	if (INDEED_ACTIVATED == 'activated' && INDEED_BOTH_JOBS_FLAG != '1') { 
 		$smarty->assign('IndeedLandingSearch', true);
 

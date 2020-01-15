@@ -91,6 +91,13 @@
 										{include file="$modal_snippet"}
 									{/if}
 
+									{if $ENABLE_RECAPTCHA}
+									<div class="col-md-6 col-xs-12 ml0 pl0 mb50">
+											{$captcha_html}
+											<div id="captcha_err" class="negative-feedback displayNone ml0" >{$translations.apply.captcha_empty_err}</div>
+									</div>
+									{/if}
+
 									<div class="row mlpl0">
 										<div class="col-md-6 col-xs-12 mlpl0">
 											<button type="submit" class="btn btn-modal-a" onclick="return SimpleJobScript.Apply({$MAX_CV_SIZE}, 'new');">{$translations.apply.submit}</button>

@@ -85,7 +85,7 @@ class Mailer extends Translator {
 	public function applicantRegisteredWelcome($email) {
 		$replace = array(
 			'BASE_URL' => processUrlForEmailTrimEnd(MAIN_URL),
-			'BASE_URL_LINK' => processUrlForEmail(MAIN_URL),
+			'BASE_URL_LINK' => processUrlForEmail(PROTOCOL_URL),
 			'URL_PROFILE' => URL_PROFILE,
 			'CUR_YEAR' => $this->_currentYear
 		);
@@ -112,7 +112,7 @@ class Mailer extends Translator {
 
 	public function applicantVerificationEmail($email, $hash) {
  		$replace = array(
- 			'BASE_URL_LINK' => processUrlForEmail(MAIN_URL),
+ 			'BASE_URL_LINK' => processUrlForEmail(PROTOCOL_URL),
  			'BASE_URL' => processUrlForEmailTrimEnd(MAIN_URL),
  			'URL_APPLICANT_ACCOUNT_CONFIRMATION' => URL_APPLICANT_ACCOUNT_CONFIRMATION,
  			'HASH' => $hash,
@@ -192,10 +192,6 @@ class Mailer extends Translator {
 
 		  	$result = $this->_mailer->send($message);
 		  } catch (Exception $e) {
-		  	if (ENVIRONMENT == 'dev')
-			{
-				var_dump($e->getMessage()); die();
-			}
 			return false;
 		  }
 		  return true;
@@ -216,7 +212,7 @@ class Mailer extends Translator {
 	public function sendPasswordRecoveryEmail($email, $hash, $reset_url) {
 		$replace = array(
 			'BASE_URL' => processUrlForEmailTrimEnd(MAIN_URL),
-			'BASE_URL_LINK' => processUrlForEmail(MAIN_URL),
+			'BASE_URL_LINK' => processUrlForEmail(PROTOCOL_URL),
 			'RESET_URL' => $reset_url,
 			'HASH' => $hash,
 			'CUR_YEAR' => $this->_currentYear
@@ -229,7 +225,7 @@ class Mailer extends Translator {
 	public function subscriptionUpdated($email, $hash) {
 		$replace = array(
 			'BASE_URL' => processUrlForEmailTrimEnd(MAIN_URL),
-			'BASE_URL_LINK' => processUrlForEmail(MAIN_URL),
+			'BASE_URL_LINK' => processUrlForEmail(PROTOCOL_URL),
 			'MANAGE_URL' => processUrlForEmail(MAIN_URL),
 			'URL_SUBSCRIBE' => URL_SUBSCRIBE,
 			'URL_UNSUBSCRIBE' => URL_UNSUBSCRIBE,
@@ -243,7 +239,7 @@ class Mailer extends Translator {
 	public function subscriberNotConfirmedEmail($email, $hash) {
 		$replace = array(
 			'BASE_URL' => processUrlForEmailTrimEnd(MAIN_URL),
-			'BASE_URL_LINK' => processUrlForEmail(MAIN_URL),
+			'BASE_URL_LINK' => processUrlForEmail(PROTOCOL_URL),
 			'URL_SUBSCRIBE_CONFIRMATION' => URL_SUBSCRIBE_CONFIRMATION,
 			'HASH' => $hash,
 			'CUR_YEAR' => $this->_currentYear
@@ -257,7 +253,7 @@ class Mailer extends Translator {
 	public function sendGoodbyeSubscriberMail($email) {
 		$replace = array(
 			'BASE_URL' => processUrlForEmailTrimEnd(MAIN_URL),
-			'BASE_URL_LINK' => processUrlForEmail(MAIN_URL),
+			'BASE_URL_LINK' => processUrlForEmail(PROTOCOL_URL),
 			'URL_SUBSCRIBE' => URL_SUBSCRIBE,
 			'CUR_YEAR' => $this->_currentYear
 		);	
@@ -270,7 +266,7 @@ class Mailer extends Translator {
 
 		$replace = array(
 			'BASE_URL' => processUrlForEmailTrimEnd(MAIN_URL),
-			'BASE_URL_LINK' => processUrlForEmail(MAIN_URL),
+			'BASE_URL_LINK' => processUrlForEmail(PROTOCOL_URL),
 			'URL_SUBSCRIBE_CONFIRMATION' => URL_SUBSCRIBE_CONFIRMATION,
 			'URL_SUBSCRIBE' => URL_SUBSCRIBE,
 			'HASH' => $hash,
@@ -286,7 +282,7 @@ class Mailer extends Translator {
 
 		$replace = array(
 			'BASE_URL' => processUrlForEmailTrimEnd(MAIN_URL),
-			'BASE_URL_LINK' => processUrlForEmail(MAIN_URL),
+			'BASE_URL_LINK' => processUrlForEmail(PROTOCOL_URL),
 			'URL_RECRUITER_ACCOUNT_CONFIRMATION' => URL_RECRUITER_ACCOUNT_CONFIRMATION,
 			'HASH' => $hash,
 			'CUR_YEAR' => $this->_currentYear
@@ -299,7 +295,7 @@ class Mailer extends Translator {
 	public function sendConfirmationEmailTrial($email, $user_id){
 		$replace = array(
 			'BASE_URL' => processUrlForEmailTrimEnd(MAIN_URL),
-			'BASE_URL_LINK' => processUrlForEmail(MAIN_URL),
+			'BASE_URL_LINK' => processUrlForEmail(PROTOCOL_URL),
 			'URL_RECRUITER_ACCOUNT_CONFIRMATION' => 'register-recruiters-packages',
 			'HASH' => $user_id,
 			'CUR_YEAR' => $this->_currentYear
@@ -329,10 +325,6 @@ class Mailer extends Translator {
 		  	$result = $this->_mailer->send($message);
 
 		  } catch (Exception $e) {
-		  	if (ENVIRONMENT == 'dev')
-			{
-				var_dump($e->getMessage()); die();
-			}
 			return false;
 		  }
 		  return true;
@@ -359,10 +351,6 @@ class Mailer extends Translator {
 
 		  	$result = $this->_mailer->send($message);
 		  } catch (Exception $e) {
-		  	if (ENVIRONMENT == 'dev')
-			{
-				var_dump($e->getMessage()); die();
-			}
 			return false;
 		  }
 		  return true;
