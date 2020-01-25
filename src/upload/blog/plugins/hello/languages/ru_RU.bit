@@ -1,8 +1,0 @@
-<?php
-
-$_PLUGIN_CONFIG['LANG'] = array(
-'NAME'=>'Привет Мир!',
-'DESCRIPTION'=>'Показывает Привет Мир!.'
-);
-
-?>

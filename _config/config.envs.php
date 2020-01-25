@@ -9,6 +9,7 @@ $__instance = array(
 		'db_user' => '{DB_USER}',
 		'db_password' => '{DB_PASSWORD}',
 		'db_name' => '{DB_NAME}',
+		'db_prefix' => '',
 		// language to use
 		'lang_code' => 'en',
 		'plugins' => array('', '', '', '', '', ''), // list your plugins HERE, separated by comma ['plugin A', 'plugin B']

@@ -1,8 +1,0 @@
-<?php
-
-$_PLUGIN_CONFIG['LANG'] = array(
-	'NAME'=>'Twitter Cards',
-	'DESCRIPTION'=>'Mejora el SEO de tu blog con Twitter Cards.'
-);
-
-?>

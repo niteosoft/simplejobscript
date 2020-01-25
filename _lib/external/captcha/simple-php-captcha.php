@@ -1,9 +1,9 @@
 <?php
 
     /**
-     * Simplejobscript Copyright (©) 2019 Niteosoft s.r.o. (ltd)
+     * Simplejobscript Copyright (©) 2016 Niteosoft
      *
-     * @author     Niteosoft s.r.o. (ltd)
+     * @author     Niteosoft
      * @license    MIT
      * 
      */

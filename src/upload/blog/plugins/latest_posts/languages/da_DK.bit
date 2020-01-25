@@ -1,9 +1,0 @@
-<?php
-
-$_PLUGIN_CONFIG['LANG'] = array(
-	'Seneste indlæg',
-	'DESCRIPTION'=>'Viser seneste indlæg sorteret efter dato.',
-	'AMOUNT'=>'Antal'
-);
-
-?>

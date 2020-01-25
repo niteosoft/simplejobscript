@@ -1,0 +1,79 @@
+The MIT License (MIT)
+
+Copyright (c) 2016 Niteosoft
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+--------------------------------------------------------------------
+
+Simplejobscript software uses sub-parts (source code or libraries)
+which have been developed by other parties. There are no license limitations, modifications nor restrictions placed upon 
+and no rights have been transfered to all third-party software parts of this product. You are granted to use these libraries
+and sub-parts while following their individual license specifications and terms of service (included within library, or online). 
+List of third party libraries used in this project:
+
+#####################################################################
+A. Google Charts - website graphs called via API are property of Google, Inc.
+   See their terms of service - https://developers.google.com/terms/
+   and privacy policy - https://www.google.com/policies/privacy/
+B. Bootstrap - MIT license - https://github.com/twbs/bootstrap/blob/master/LICENSE
+   FAQ - http://getbootstrap.com/getting-started/#license-faqs
+C. jQuery - https://jquery.org/license/
+D. tinymce - https://www.tinymce.com/
+E. swiftmailer - MIT license Fabien Potencier
+F. tcpdf - GNU Lesser General Public License
+G. Smarty - GNU Lesser General Public License
+H. FLAT ui - http://designmodo.github.io/Flat-UI/
+I. Cookiie notice script - https://silktide.com/tools/cookie-consent/
+J. Project extends basic open-source architecture and functionality, that has been 
+distributed by Filip Chereches-Tosa under the MIT license.
+K. Nibbleblog code is Copyright 2009 - 2015 by Diego Ignacio Gabriel Najar Carrascal
+#####################################################################
+
+This program incorporates work covered by the following copyright and
+permission notices:
+--------------------------------------------------------------------
+
+The MIT License (MIT)
+
+Copyright (c) 2014 Filip Chereches-Tosa
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+----------------------------------------------------------------------------------------
+Blog software - GNU GENERAL PUBLIC LICENSE - see full license in "blog" subfolder
+========================================================================================
+END OF COPYRIGHT NOTICE
+========================================================================================

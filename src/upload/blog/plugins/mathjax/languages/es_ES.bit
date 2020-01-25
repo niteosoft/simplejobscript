@@ -1,8 +1,0 @@
-<?php
-
-$_PLUGIN_CONFIG['LANG'] = array(
-	'NAME'=>'MathJax',
-	'DESCRIPTION'=>'Permite agregar fórmulas matemáticas con latex en tu página web.'
-);
-
-?>
