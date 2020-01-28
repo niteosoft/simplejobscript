@@ -38,37 +38,47 @@ $public_profile = (isset($public_profile)) ? 1 : 0;
 $ERROR = FALSE;
 
 if (intval($new_user) == 1) {
-	if (!empty($_FILES["cv"]['tmp_name'])) {
 
-		$f = pathinfo($_FILES['cv']['name']);
-		$f_rename = pathinfo(cleanString($_FILES['cv']['name']));
+		// CV
+		if (!empty($_FILES["cv"]['tmp_name'])) {
 
-		$UID = uniqid();
-		$basefilename = $f_rename['filename'] . '_' . $UID;
-		$filename = $basefilename . '.' . $f['extension'];
+			$f = pathinfo($_FILES['cv']['name']);
+			$f_rename = pathinfo(cleanString($_FILES['cv']['name']));
 
-		$suffix = 0;
-		while (file_exists(FILE_UPLOAD_DIR . $filename)) {
-			$suffix++;
-			$filename = $basefilename . '_' . $suffix . '.' . $f['extension'];
-		}
+			$UID = uniqid();
+			$basefilename = $f_rename['filename'] . '_' . $UID;
+			$filename = $basefilename . '.' . $f['extension'];
 
-		if (move_uploaded_file($_FILES['cv']['tmp_name'], FILE_UPLOAD_DIR . $filename))
-		{
-			$cv_path = FILE_UPLOAD_DIR . $filename;
-		}
-		else
-		{
+			if ($f['extension'] == "pdf" || $f['extension'] == "doc" || $f['extension'] == "docx") {
+
+				$suffix = 0;
+				while (file_exists(FILE_UPLOAD_DIR . $filename)) {
+					$suffix++;
+					$filename = $basefilename . '_' . $suffix . '.' . $f['extension'];
+				}
+
+				if (move_uploaded_file($_FILES['cv']['tmp_name'], FILE_UPLOAD_DIR . $filename))
+				{
+					$cv_path = FILE_UPLOAD_DIR . $filename;
+				}
+				else
+				{
+					$cv_path = '';
+				}
+
+				if (!empty($_FILES['cv']['error'])) {
+					$cv_path = '';
+				}	
+
+			} else {
+				$smarty->assign('error_msg', $translations['applications']['cv'] . " error. " . $translations['apply']['cv_err']);
+				$template = 'err/err-general.tpl';
+				return;
+			}
+
+		} else {
 			$cv_path = '';
 		}
-
-		if (!empty($_FILES['cv']['error'])) {
-			$cv_path = '';
-		}
-
-	} else {
-		$cv_path = '';
-	}
 
 	chmod($cv_path, 0777);
 
