@@ -122,13 +122,16 @@
 		} catch (Exception $e) {
 			define('PAYPAL_PLUGIN', false);
 			define('PAYMENT_MODE', "0");
+			$smarty->assign('PAYPAL_PLUGIN', false);
 			$smarty->assign('PAYMENT_MODE', "0");
 		}
 
 		$smarty->assign('PAYMENT_MODE', PAYMENT_MODE);
+		$smarty->assign('PAYPAL_PLUGIN', true);
 		// --------------------------------------------------------------------------------
 	} else {
 		define('PAYPAL_PLUGIN', false);
+		$smarty->assign('PAYPAL_PLUGIN', false);
 		$smarty->assign('PAYMENT_MODE', "0");
 		define('PAYMENT_MODE', "0");
 	}
@@ -295,6 +298,10 @@
 	// CUSTOM ROUTING REDIRECTING TO CONTROLLERS
 	switch($page)
 	{
+		case 'gdpr-data-removal':
+			require_once  CONTROLLERS_PATH . '/page_gdpr_data_removal.php';
+			break;
+
 		case 'index':
 			$smarty->assign('landing_page', 1);
 			require_once  CONTROLLERS_PATH . '/page_home.php';
@@ -578,6 +585,9 @@
 		case 'search':
 			require_once  CONTROLLERS_PATH . '/page_search.php';
 			break;
+		// case 'jobapi':
+		// 	require_once  'api/api.php';
+		// 	break;
 		case URL_LANDING_SEARCHED:
 			require_once  CONTROLLERS_PATH . '/page_landing_searched.php';
 			break;

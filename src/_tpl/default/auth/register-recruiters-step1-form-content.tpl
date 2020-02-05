@@ -37,6 +37,18 @@
 	</div>
 	{/if}
 
+
+	{if $GDPR_ENABLED == '1'}
+	<div class="row">
+		<div class="col-md-12 col-xs-12">	
+			<div class="tos">
+				<label><input required type="checkbox" class="checkbox-custom"></input> 
+				<h4>{$translations.registration.accept_part1} <a target="_blank" href="{$BASEURL}gdpr"> {$translations.registration.accept_gdpr}</a></h4></label>
+			</div>
+		</div>
+	</div>
+	{/if}
+
 	<div class="row">
 		<div class="col-md-12 col-xs-12">	
 			<div class="tos">

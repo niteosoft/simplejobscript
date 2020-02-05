@@ -34,7 +34,7 @@
 		}
 
 		// get default bg for partners
-		$iii = 'SELECT general_homepage_bgimage_path FROM customizer';
+		$iii = 'SELECT partners_bgimage_path FROM customizer';
 		$qqq = $db->query($iii);
 		$rrr = $qqq->fetch_assoc();
 

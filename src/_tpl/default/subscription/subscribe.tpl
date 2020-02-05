@@ -28,10 +28,25 @@
 						 			<input id="subscribe-email" name="subscribe-email" maxlength="300" type="email" required />
 						 			<br /><br />
 
+						 			{if $GDPR_ENABLED == '1'}
+						 			<div class="subscribe-tos">
+										<label style="text-align: left;"><input required type="checkbox" class="checkbox-custom"></input> 
+										<h4>{$translations.registration.accept_part1} <a target="_blank" href="{$BASEURL}gdpr"> {$translations.registration.accept_gdpr}</a></h4></label>
+									</div>
+									{/if}
+
 						 			<div class="subscribe-tos">
 										<label><input required type="checkbox" class="checkbox-custom"></input> 
 										<h4>{$translations.registration.accept_part1} <a target="_blank" href="{$BASEURL}{TERMS_CONDITIONS_URL}"> {$translations.registration.accept_part2}</a></h4></label>
 									</div>
+
+									{if $ENABLE_RECAPTCHA}
+									<br />
+				               		 <div id="jobpopup" style="background-color: white;">
+										{$captcha_html}
+										{if $captcha_err}<div class="negative-feedback">{$response_msg}</div>{/if}
+									 </div>
+									{/if}
 
 									<button type="submit" class="btn">{$translations.subscriptions.subscribe_submit}</button>
 								</div>

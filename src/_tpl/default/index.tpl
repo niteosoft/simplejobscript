@@ -13,7 +13,7 @@ session_start();
     <meta name="description" content="{if $seo_desc}{$seo_desc}{else}{$meta_description}{/if}" />
     <meta name="keywords" content="{if $seo_keys}{$seo_keys}{else}{$meta_keywords}{/if}" />
 
-	  <!--
+	  <!-- 
    Chrome and Opera Icons - to add support create your icon with different resolutions. Default is 192x192
      <link rel="icon" sizes="192x192" href="{$BASE_URL}fav.png" >
     <link rel="icon" sizes="144x144" href="{$BASE_URL}fav-144.png" >
@@ -21,7 +21,7 @@ session_start();
     <link rel="icon" sizes="48x48" href="{$BASE_URL}fav-48.png" >
   -->
   <link rel="icon" href="{$BASE_URL}fav.png" >
-  <!--
+  <!-- 
    Apple iOS icons
     <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
     <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
@@ -52,28 +52,29 @@ session_start();
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:description" content="{if $seo_desc}{$seo_desc}{else}{$meta_description}{/if}"/>
   <meta name="twitter:title" content="{if $seo_title}{$seo_title}{else}{$html_title}{/if}"/>
-  <!-- add your twitter site
+  <!-- add your twitter site 
   <meta name="twitter:site" content="@brand"/>
-  -->
+  --> 
   <meta name="twitter:domain" content="{$SITE_NAME}"/>
   <meta name="twitter:image" content="{$MAIN_URL}share-image.png" />
-
+  
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="{$SITE_NAME} RSS Feed" href="{$BASE_URL}rss">
-
+ 
 	<link rel="canonical" href="http://{$BASE_URL}home" />
 
-  <!-- IF ALL STYLES ARE REMOVED EXCEPT BOOTSTRAP, UNCOMMENT THIS STYLE, TO KEEP THE BASIC, WORKING WEB. READY TO BE CUSTOMIZED
+  <!-- IF ALL STYLES ARE REMOVED EXCEPT BOOTSTRAP, UNCOMMENT THIS STYLE, TO KEEP THE BASIC, WORKING WEB. READY TO BE CUSTOMIZED 
   <link rel="stylesheet" href="{$BASE_URL}_tpl/{$THEME}/css/saveStructure.css" type="text/css" /> -->
   <!-- ######################################################################################################################## -->
-
+	
   <link rel="stylesheet" href="{$BASE_URL}_tpl/{$THEME}/1.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="{$BASE_URL}_tpl/{$THEME}/1.5/css/style.css">
   <link rel="stylesheet" href="{$BASE_URL}_tpl/{$THEME}/1.5/css/reset.css">
   <link rel="stylesheet" href="{$BASE_URL}_tpl/{$THEME}/1.5/css/font-awesome.min.css">
+  <link href="{$BASE_URL}_tpl/{$THEME}/1.5/css/sjs-updates.css" rel="stylesheet">
 
   <link href="{$BASE_URL}_tpl/{$THEME}/1.5/css/dev.css" rel="stylesheet">
-  <!--<link href="{$BASE_URL}_tpl/{$THEME}/1.5/css/customizer.css" rel="stylesheet">-->
+<!--   <link href="{$BASE_URL}_tpl/{$THEME}/1.5/css/customizer.css" rel="stylesheet"> -->
 
 	<noscript>{$translations.website_general.noscript_msg}</noscript>
 
@@ -116,7 +117,7 @@ div.header { background-image: url('{$BASE_URL}{$general_homepage_bgimage_path}'
 .navbar-toggle {
   background: {$CUSTOMIZER_COLOR} !important;
   color: #fff !important;
-  border-color: {$CUSTOMIZER_COLOR} !important;
+  border-color: {$CUSTOMIZER_COLOR} !important; 
 }
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #fff !important;
@@ -131,7 +132,7 @@ div.header { background-image: url('{$BASE_URL}{$general_homepage_bgimage_path}'
 }
 .form-group.position input#landing_title{
     box-sizing: border-box;
-    height: 46px;
+    height: 46px; 
     padding: 0 10px;
 }
 </style>
@@ -189,7 +190,7 @@ div.header { background-image: url('{$BASE_URL}{$general_homepage_bgimage_path}'
             <li><a href="{$BASE_URL}{$URL_REGISTER_APPLICANTS}" >{$translations.website_general.top_menu_addcv}</a></li>
             {/if}
             <li><a href="{$BASE_URL}{$ABOUT_URL}" >{$translations.apply.about}</a></li>
-            <li><a href="{$BASE_URL}{$URL_SIGN_UP}"  class="sign-up-btn">{$translations.website_general.top_menu_register_label}</a></li>
+            <li><a href="{$BASE_URL}{$URL_SIGN_UP}"  class="sign-up-btn">{$translations.website_general.top_menu_register_label}</a></li>                
           </ul>
         </div>
       </div>
@@ -219,7 +220,7 @@ div.header { background-image: url('{$BASE_URL}{$general_homepage_bgimage_path}'
                         {foreach from=$cities key=id item=value}
                         <option value="{$id}">{$value}</option>
                         {/foreach}
-                     </select>
+                     </select>   
                    </form>
 
                 </div>
@@ -259,7 +260,7 @@ div.header { background-image: url('{$BASE_URL}{$general_homepage_bgimage_path}'
       <h2>{$customizer_data.candidates_headline}</h2>
       <p>{$customizer_data.candidates_subheadline}
       </p>
-
+      
       <div class="col-md-4 col-xs-12 c-box">
         <img src="{$BASE_URL}_tpl/default/1.5/images/emp-cand01.png">
         <h3>{$customizer_data.candidates_firstcol_headline}</h3>
@@ -283,7 +284,7 @@ div.header { background-image: url('{$BASE_URL}{$general_homepage_bgimage_path}'
 
 <div id="future">
   <div class="container">
-    <div class="row">
+    <div class="row">   
       <div class="col-md-12 col-xs-12 c-box">
         <h1>{$customizer_data.candidates_strip_headline}</h1>
         <h2>{$customizer_data.candidates_strip_subheadline}</h2>
@@ -301,7 +302,7 @@ div.header { background-image: url('{$BASE_URL}{$general_homepage_bgimage_path}'
       <h2>{$customizer_data.employers_headline}</h2>
       <p>{$customizer_data.employers_subheadline}
       </p>
-
+      
       <div class="col-md-4 col-xs-12 c-box">
         <img src="{$BASE_URL}_tpl/default/1.5/images/emp-cand04.png">
         <h3>{$customizer_data.employers_firstcol_headline}</h3>
@@ -325,7 +326,7 @@ div.header { background-image: url('{$BASE_URL}{$general_homepage_bgimage_path}'
 
 <div id="opportunity">
   <div class="container">
-    <div class="row">
+    <div class="row">   
       <div class="col-md-12 col-xs-12 c-box">
         <h1>{$customizer_data.employers_strip_headline}</h1>
         <h2>{$customizer_data.employers_strip_subheadline}</h2>
@@ -343,7 +344,7 @@ div.header { background-image: url('{$BASE_URL}{$general_homepage_bgimage_path}'
       <h2>{$customizer_data.about_headline}</h2>
       <p>{$customizer_data.about_subheadline}
       </p>
-
+      
       <div class="col-md-5 col-xs-12 c-box">
         <h4>{$customizer_data.about_leftcol}</h4>
       </div>
@@ -408,7 +409,7 @@ div.header { background-image: url('{$BASE_URL}{$general_homepage_bgimage_path}'
       </a>
       <a class="right carousel-control" href="#testimonial-carousel" data-slide="next">
         <span class="icon-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-      </a>
+      </a>  
     </div>
 
   </div>
@@ -431,7 +432,7 @@ div.header { background-image: url('{$BASE_URL}{$general_homepage_bgimage_path}'
 
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
         <div id="employers-signup">
-          <div class="row">
+          <div class="row">   
             <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 c-box">
               <h1>{$customizer_data.ta_emp_headline}</h1>
               <h2>{$customizer_data.ta_emp_subheadline}</h2>
@@ -443,7 +444,7 @@ div.header { background-image: url('{$BASE_URL}{$general_homepage_bgimage_path}'
 
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
         <div id="candidates-signup">
-          <div class="row">
+          <div class="row">   
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 c-box">
 
                {if $PROFILES_PLUGIN == 'true'}
@@ -532,7 +533,7 @@ div.header { background-image: url('{$BASE_URL}{$general_homepage_bgimage_path}'
       $this.text(this.countNum);
     }
 
-  });
+  });  
 });
 </script>
 {/literal}

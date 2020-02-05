@@ -56,7 +56,7 @@ This project is licensed under the [MIT License](https://github.com/Microsoft/ca
 
 ## Current version
 
-Simplejobscript Version 1.65
+Simplejobscript Version 1.66
 
 
 ## Source code structure

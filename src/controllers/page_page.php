@@ -83,6 +83,7 @@
 	// get data for pricing tables
 	if ($pageData['id'] == "55") {
 
+		if (PAYMENT_MODE == '3') {
 			$sql = 'SELECT * FROM packages';
 			$result = $db->query($sql);
 			$data = array();
@@ -93,16 +94,40 @@
 			}
 
 			$smarty->assign('package_data', $data);
+		} else if (PAYMENT_MODE == '2') {
+			$sql = 'SELECT value FROM payment_settings_fees WHERE name="job_posted_price"';
+			$result = $db->query($sql);
+			$row = $result->fetch_assoc();
+			$smarty->assign('job_posted_price', format_currency(WEBSITE_CURRENCY, $row['value']));
+
+			$sql = 'SELECT value FROM payment_settings_fees WHERE name="cvdb_access_price"';
+			$result = $db->query($sql);
+			$row = $result->fetch_assoc();
+			$smarty->assign('cvdb_access_price', format_currency(WEBSITE_CURRENCY, $row['value']));
+
+			$sql = 'SELECT value FROM payment_settings_fees WHERE name="premium_listing_price"';
+			$result = $db->query($sql);
+			$row = $result->fetch_assoc();
+			$smarty->assign('premium_listing_price', format_currency(WEBSITE_CURRENCY, $row['value']));
+
+			$sql = 'SELECT value FROM settings WHERE name="job_expires"';
+			$result = $db->query($sql);
+			$row = $result->fetch_assoc();
+			$smarty->assign('job_expires', $row['value']);
+		}
+			
 	}
 
 	if ($pageData['id'] != "2" && $pageData['id'] != "21" && $pageData['id'] != "19") {
 		$smarty->assign('WYSIWYG_PAGE', 1);
-	}
-
-	// var_dump(htmlspecialchars_decode($pageData["content"])); die();
+	}	 
 
 	$smarty->assign('page', $pageData);
 	$smarty->assign('PAGE_CONTENT', htmlspecialchars_decode($pageData["content"]));
 	$smarty->assign('tpl', 'static/static_' .$pageData['url'] . '.tpl');
+
+	if ($pageData['id'] == "55" && PAYMENT_MODE == '2') {
+	 $smarty->assign('tpl', 'static/static_fees-pricing-plans.tpl');
+    } 
 
 ?>

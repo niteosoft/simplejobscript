@@ -13,7 +13,7 @@
 		$_SESSION['JOB_ID'] = $_POST['job_id'];
 
 		$class = new JobApplication();
-		$apps = $class->getJobApplicationsByJobId($_POST['job_id']);
+		$apps = $class->getJobApplicationsByJobId((int) $_POST['job_id']);
 		//$html = '';
 
 		if (empty($apps)){
