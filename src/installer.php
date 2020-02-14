@@ -58,8 +58,9 @@ $step = 1;
 if (isset($_POST['url']) && isset($_POST['host'])  && isset($_POST['port']) && isset($_POST['username']) 
 	&& isset($_POST['password']) && isset($_POST['db_name'])) {
 
-	$url = $_POST['url'];
-	$host = $_POST['host'];
+	//$url = $_POST['url'];
+    $url = preg_replace( '/[^a-zA-Z0-9:_\.\-\/]/', '', $_POST['url'] );
+    $host = $_POST['host'];
 	$port = $_POST['port'];
 	$username = $_POST['username'];
 	$password = $_POST['password'];
