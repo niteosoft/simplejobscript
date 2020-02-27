@@ -238,6 +238,187 @@ if ($id === "candidates") {
 
 	$template = 'feeder-jobs.tpl';
 	return;
+} else if ($id === "import") {
+
+		global $db;
+
+		$base = log(MAX_LOCATIONS_IMPORT_FILE_SIZE, 1024);
+		$suffixes = array('', 'KB', 'MB', 'GB', 'TB');   
+		$fSize = round(pow(1024, $base - floor($base)), $precision) . $suffixes[floor($base)];
+		
+		$smarty->assign('MAX_FILE_SIZE', MAX_LOCATIONS_IMPORT_FILE_SIZE);
+		$smarty->assign('MAX_FILE_SIZE_TEXT', $fSize);
+
+		$smarty->assign('ERR_IMPORT', false);
+
+		if (!empty($_FILES["cv"]['tmp_name'])) {
+			$err = false;
+			$job = new Job();
+			$class = new Company();
+
+			$data = array();
+			$index = 0;
+			$i = 0;
+			// parse the document
+			try {
+				$csv = array_map('str_getcsv', file($_FILES['cv']['tmp_name']));
+
+				if (count($csv) > 20000) {
+					var_dump("Too many jobs for import at once. Please upload at once no more than 20 000 jobs. If you need more, split these into multiple imports.");
+					die();
+				}
+
+				foreach ($csv as $line) {
+
+					// skip formating desc columns
+					$index++;
+					if ($index == 1)
+						continue;
+
+					foreach ($line as $entry) {
+						$i++;
+
+						if ($entry != "")
+							array_push($data, trim($entry));
+
+							if ($i % 6 == 0) {
+		
+								    // import job
+									$title = $data[0];
+									$description = $db->getConnection()->real_escape_string($data[1]);
+
+									// import location
+
+									$sql = "SELECT id as 'location_id' FROM cities WHERE name like '%" . $data[2] . "%'";
+									$row = $db->query($sql);
+
+									if (intval($row->num_rows) > 0) {
+										// location exists, get id
+										$res = $row->fetch_assoc();
+										$location_id = $res['location_id'];
+									} else {
+										// location does not exist, create it and get id
+										$locationPerma = strtolower(str_replace(' ', '-', $data[2]));
+										$sql = "INSERT INTO cities(name, ascii_name) VALUES ('" . $data[2] . "', '" . $locationPerma . "')";
+										$row = $db->query($sql);
+
+										if ($row)
+											$location_id = $db->getConnection()->insert_id;
+										else
+											$location_id = 112; // if import goes wrong, set default location to Georgia
+
+									}
+
+									// import employer
+									$sql = "SELECT id as 'employer_id' FROM employer WHERE email like '%" . $data[5] . "%'";
+									$row = $db->query($sql);
+
+									if (intval($row->num_rows) > 0) {
+										$res = $row->fetch_assoc();
+										$employer_id = $res['employer_id'];
+									} else {
+										// HDA jobs default account
+										$employer_id = 144;
+
+									}
+
+									// company
+									$sql = "SELECT name as 'company_name' FROM company WHERE employer_id =" . $employer_id;
+									$row = $db->query($sql);
+
+									if (intval($row->num_rows) > 0) {
+										$res = $row->fetch_assoc();
+										$comp_name = $res['company_name'];
+									} else {
+										$comp_name = "HDA MD Staff";
+									}
+
+									// category
+									$sql = "SELECT id as 'category_id' FROM categories WHERE name like '%" . $data[3] . "%'";
+									$row = $db->query($sql);
+
+									if (intval($row->num_rows) > 0) {
+										$res = $row->fetch_assoc();
+										$cat_id = $res['category_id'];
+									} else {
+										// HDA jobs default account
+										$catPerma = strtolower(str_replace(' ', '-', $data[3]));
+										$sql = "INSERT INTO categories(name, var_name, title, description, keywords, category_order) VALUES ('" . $data[3] . "', '" . $catPerma . "', '" . $data[3] . "',
+											'" . $data[3] . "', '" . $data[3] . "', 1)";
+										$row = $db->query($sql);
+
+										if ($row)
+											$cat_id = $db->getConnection()->insert_id;
+										else
+											$cat_id = 116; // Other
+
+									}
+
+
+									// type
+									$sql = "SELECT id as 'type_id' FROM types WHERE name like '%" . $data[4] . "%'";
+									$row = $db->query($sql);
+
+									if (intval($row->num_rows) > 0) {
+										$res = $row->fetch_assoc();
+										$type_id = $res['type_id'];
+									} else {
+										// HDA jobs default account
+										$typePerma = strtolower(str_replace(' ', '-', $data[4]));
+										$sql = "INSERT INTO types(name, var_name) VALUES ('" . $data[4] . "', '" . $typePerma . "')";
+										$row = $db->query($sql);
+
+										if ($row)
+											$type_id = $db->getConnection()->insert_id;
+										else
+											$type_id = 1; // Full time
+
+									}
+
+									$import_data = array(
+										"type_id" => intval($type_id),
+										"employer_id" => intval($employer_id),
+										"category_id" => intval($cat_id),
+										"title" => $title,
+										"spotlight" => 0,
+										"salary" => "",
+										"description" => $description,
+										"is_active" => 1,
+										"city_id" => $location_id,
+										"apply_online" => 1,
+										"apply_desc" => "",
+										"company" => $comp_name,
+										"job_period" => JOB_EXPIRES,
+										"is_tmp" => "0"
+									);
+
+									$result = $job->Create($import_data);
+
+								// clear the data array
+								$data = array();
+
+							}
+
+					}
+	
+				} // end of job line
+
+
+		 		$err = false;
+			} catch (Exception $e) {
+				$err = true;
+			}
+
+			clear_main_cache();
+			$smarty->assign('IMPORT_SUCCESS', true);
+
+		} else {
+			$err = true;
+		}
+
+
+	$template = 'feeder-import-jobs.tpl';
+	return;
 }
 
 $template = 'feeder.tpl';

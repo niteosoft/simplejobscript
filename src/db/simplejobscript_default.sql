@@ -1,10 +1,8 @@
 
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
-
 
 -- --------------------------------------------------------
 
@@ -428,7 +426,7 @@ CREATE TABLE `customizer` (
 --
 
 INSERT INTO `customizer` (`id`, `website_color`, `general_homepage_logo_w`, `general_homepage_logo_margin`, `general_homepage_bgimage_path`, `header_title`, `header_subtitle`, `header_what_title`, `header_what_placeholder`, `header_where_title`, `header_search_btn_title`, `candidates_headline`, `candidates_subheadline`, `candidates_firstcol_headline`, `candidates_firstcol_subheadline`, `candidates_secondcol_headline`, `candidates_secondcol_subheadline`, `candidates_thirdcol_headline`, `candidates_thirdcol_subheadline`, `candidates_strip_headline`, `candidates_strip_subheadline`, `candidates_strip_btn_title`, `candidates_on_flag`, `employers_on_flag`, `employers_headline`, `employers_subheadline`, `employers_firstcol_headline`, `employers_firstcol_subheadline`, `employers_secondcol_headline`, `employers_secondcol_subheadline`, `employers_thirdcol_headline`, `employers_thirdcol_subheadline`, `employers_strip_headline`, `employers_strip_subheadline`, `employers_strip_btn_title`, `about_on_flag`, `about_headline`, `about_subheadline`, `about_leftcol`, `about_rightcol`, `about_readmore_btn_title`, `test_on_flag`, `test_headline`, `partners_on_flag`, `partners_headline`, `partners_bgimage_path`, `ta_on_flag`, `ta_emp_headline`, `ta_emp_subheadline`, `ta_emp_btn_label`, `ta_can_headline`, `ta_can_subheadline`, `ta_can_btn_label`, `stats_on_flag`, `stats_headline`, `stats_first_col`, `stats_sec_col`, `stats_third_col`, `stats_fourth_col`, `stats_first_numb`, `stats_second_numb`, `stats_third_numb`, `stats_fourth_numb`, `listings_on_flag`, `jobs_logo_width`, `jobs_logo_width_mobile`, `jobs_logo_padding`, `jobs_candidates_on_flag`, `jobs_subheader_bg_path`, `custom_css`) VALUES
-(1, '#46cac6', '10%', '3% 8%', 'uploads/images/coffee-back.png', 'All jobs in one place', 'Finding your new job just got easier', 'What', 'e.g. accountant', 'Where', 'Search', 'Candidates', 'Looking for a change? You are one click away from reaching the best global startup companies', 'Browse roles', 'Or sign up for job alert and receive latest jobs straight to your email', 'Apply and get an interview', 'Get connected with awesome startups', 'Start a career', 'We find for you new opportunities everyday', 'Browse jobs and land a career of your dreams', 'We connect the best talent with the most renowned startup companies worldwide.', 'View jobs', 1, 1, 'Employers', 'Hiring? Advertise with us. We connect companies with talented individuals globally', 'Advertise', 'Post jobs & track the performance', 'Interview & shortlist', 'Candidates of your preference', 'Resume database', 'Browse & hire from our talent pool', 'Hire the best talent today', 'Select one of our packages and reach our database of candidates instantly.', 'Post a job', 1, 'About', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nunc risus, faucibus ut ultricies ut, aliquam vitae est.', 'Etiam consectetur sapien, a commodo dui placerat in. Quisque sapien leo, posuere non, pellentesque vitae ante. Nunc a hendrerit purus, a aliquet justo.', 'Donec ut placerat lorem. Nulla facilisi. Ut orci arcu, porttitor a posuere quis, convallis laoreet lacus. Donec sodales ante sed elit posuere condimentum.', 'Read more', 1, 'Testimonials', 1, 'Our trusted partners', 'uploads/images/logo-set.png', 1, 'Sign up Employers', 'Post your jobs and start hiring', 'REGISTER', 'Sign up Candidates', 'Find a career of your dreams', 'REGISTER', 1, 'Our stats', 'JOBS', 'COMPANIES', 'RESUMES', 'DAILY USERS', '750', '110', '1500', '1000', 1, '8%', '20%', '7px 10px 2px 2px', 1, 'uploads/images/subheader.png', '/* example */\r\n\r\ndiv.filterHeadline {\r\n color:  #46CAC6  !important\r\n}');
+(1, '#46cac6', '10%', '3% 8%', 'uploads/images/coffee-back.png', 'All jobs in one place', 'Finding your new job just got easier', 'What', 'e.g. accountant', 'Where', 'Search', 'Candidates', 'Looking for a change? You are one click away from reaching the best global startup companies', 'Browse roles', 'Or sign up for job alert and receive latest jobs straight to your email', 'Apply and get an interview', 'Get connected with awesome startups', 'Start a career', 'We find for you new opportunities everyday', 'Browse jobs and land a career of your dreams', 'We connect the best talent with the most renowned startup companies worldwide.', 'View jobs', 1, 1, 'Employers', 'Hiring? Advertise with us. We connect companies with talented individuals globally', 'Advertise', 'Post jobs & track the performance', 'Interview & shortlist', 'Candidates of your preference', 'Resume database', 'Browse & hire from our talent pool', 'Hire the best talent today', 'Select one of our packages and reach our database of candidates instantly.', 'Post a job', 1, 'About', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nunc risus, faucibus ut ultricies ut, aliquam vitae est.', 'Etiam consectetur sapien, a commodo dui placerat in. Quisque sapien leo, posuere non, pellentesque vitae ante. Nunc a hendrerit purus, a aliquet justo.', 'Donec ut placerat lorem. Nulla facilisi. Ut orci arcu, porttitor a posuere quis, convallis laoreet lacus. Donec sodales ante sed elit posuere condimentum.', 'Read more', 1, 'Testimonials', 1, 'Our trusted partners', 'uploads/images/logo-set.png', 1, 'Sign up Employers', 'Post your jobs and start hiring', 'REGISTER', 'Sign up Candidates', 'Find a career of your dreams', 'REGISTER', 1, 'Our stats', 'JOBS', 'COMPANIES', 'RESUMES', 'DAILY USERS', '750', '110', '1500', '1000', 1, '8%', '20%', '7px 10px 2px 2px', 1, 'uploads/images/subheader.png', '/** EXAMPLE FOR HOMEPAGE LOGO WIDTH CHANGE:\r\n\r\n.navbar-ur-lp img.site-logo {\r\n width: XY% !important;\r\n}\r\nTHIS IS COMMENTED OUT, to use it please remove the starts and slashes in the beginning and end.\r\n\r\n*/\r\n\r\n/** EXAMPLE FOR JOB LISTING LOGO AND OTHER PAGES:\r\n\r\n.navbar-ur .row .nav-menu .site-logo {\r\n width: XY% !important;\r\n}\r\n\r\nTHIS IS COMMENTED OUT, to use it please remove the starts and slashes in the beginning and end.\r\n\r\n*/\r\n\r\n/* live example */\r\n\r\ndiv.filterHeadline {\r\n color:  #46CAC6  !important\r\n}');
 
 -- --------------------------------------------------------
 
@@ -7360,76 +7358,6 @@ CREATE TABLE `notification` (
   `employer_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `notification`
---
-
-INSERT INTO `notification` (`id`, `employer_id`) VALUES
-(155, 112),
-(156, 112),
-(157, 112),
-(158, 112),
-(252, 110),
-(178, 112),
-(166, 112),
-(251, 110),
-(168, 112),
-(177, 112),
-(176, 112),
-(175, 112),
-(172, 112),
-(174, 112),
-(179, 112),
-(180, 112),
-(181, 112),
-(182, 112),
-(183, 112),
-(185, 112),
-(186, 112),
-(187, 112),
-(188, 112),
-(189, 112),
-(190, 112),
-(193, 112),
-(194, 112),
-(195, 112),
-(196, 112),
-(197, 112),
-(198, 112),
-(200, 112),
-(246, 112),
-(203, 112),
-(204, 112),
-(205, 112),
-(206, 112),
-(207, 112),
-(208, 112),
-(209, 112),
-(210, 112),
-(211, 112),
-(212, 112),
-(213, 112),
-(214, 112),
-(215, 112),
-(216, 112),
-(217, 112),
-(218, 112),
-(219, 112),
-(220, 112),
-(221, 112),
-(222, 112),
-(223, 112),
-(224, 112),
-(225, 112),
-(226, 112),
-(227, 112),
-(228, 112),
-(255, 112),
-(254, 110),
-(253, 112),
-(241, 112),
-(250, 110);
-
 -- --------------------------------------------------------
 
 --
@@ -8550,7 +8478,7 @@ ALTER TABLE `invoice`
 -- AUTO_INCREMENT for table `jobs`
 --
 ALTER TABLE `jobs`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=493;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=496;
 --
 -- AUTO_INCREMENT for table `job_applications`
 --

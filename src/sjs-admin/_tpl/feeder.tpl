@@ -19,6 +19,12 @@
 			</a>
 		</div>
 
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mb10 mlpl0">
+			<a href="{$BASE_URL_ADMIN}feeder/import">
+				<button type="button" class="mbtn btn btn-default alizarinBtn">IMPORT JOBS</button>
+			</a>
+		</div>
+		
 		{if $PROFILE_PLUGIN == '1'}
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mb10 mlpl0">
 			<a href="{$BASE_URL_ADMIN}feeder/candidates">
