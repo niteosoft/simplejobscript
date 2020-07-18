@@ -185,56 +185,61 @@ if (intval($new_user) == 1) {
 	}
 }
 
-if ($ERROR == FALSE) {
-
-	 $app = new JobApplication($data);
-	 $app->Apply($APPLICANT_ID, $public_profile);
-
-	 $mailer = new Mailer();
-	 $job = new Job($job_id);
-	 $employer = new Employer();
-
-	 $job_info = $job->GetInfo();
-	 $employer_data = $employer->getEmployerById($job_info['employer_id']);
-
-	 //create new dashboard notification for employer
-	 $employer->createNotification($job_info['employer_id']);
-
-	 //send notification to the person who applied
-	 $mailer->sendAppliedEmail($job_info, $data['email']);
-
-	if (intval($public_profile) == 1 && intval($status) != 1) { 
-
-		if (intval(EMAIL_CONFIRMATION_FLAG) == 0) {
-			$mailer->applicantVerificationEmail($data['email'], $confirmHash);
-		}
-
-	}
-
-	//send notification to employer
-	$mailer->sendEmployerNewApplicationEmail($data, $job_info, $employer_data['email']);
-}
-
-if (strcmp($ERROR, "multiple_accounts_err") == 0) {
+if (is_null($APPLICANT_ID)) {
 	$template = 'err/err-general.tpl';
+	$smarty->assign('error_msg', $translations['apply']['apply_err_msg']);
 } else {
-	//show messsage that this happened
-	if ($ERROR == TRUE) {
-		$template = 'err/err-general.tpl';
-		$smarty->assign('error_msg', $translations['apply']['apply_err_msg']);
-	} else {
+	
+	if ($ERROR == FALSE) {
 
-		if (intval($public_profile) == 1 && intval(EMAIL_CONFIRMATION_FLAG) == 1) {
-			$_SESSION['applicant'] = $APPLICANT_ID;
-			$_SESSION['applicant_name'] = $data['apply_name'];
+		 $app = new JobApplication($data);
+		 $app->Apply($APPLICANT_ID, $public_profile);
 
-			redirect_to(BASE_URL . URL_PROFILE);
-			exit;
+		 $mailer = new Mailer();
+		 $job = new Job($job_id);
+		 $employer = new Employer();
+
+		 $job_info = $job->GetInfo();
+		 $employer_data = $employer->getEmployerById($job_info['employer_id']);
+
+		 //create new dashboard notification for employer
+		 $employer->createNotification($job_info['employer_id']);
+
+		 //send notification to the person who applied
+		 $mailer->sendAppliedEmail($job_info, $data['email']);
+
+		if (intval($public_profile) == 1 && intval($status) != 1) { 
+
+			if (intval(EMAIL_CONFIRMATION_FLAG) == 0) {
+				$mailer->applicantVerificationEmail($data['email'], $confirmHash);
+			}
+
 		}
 
-		$template = 'success/success.tpl';
-		$smarty->assign('success_msg', $translations['apply']['apply_success_msg']);
+		//send notification to employer
+		$mailer->sendEmployerNewApplicationEmail($data, $job_info, $employer_data['email']);
+	}
+
+	if (strcmp($ERROR, "multiple_accounts_err") == 0) {
+		$template = 'err/err-general.tpl';
+	} else {
+		//show messsage that this happened
+		if ($ERROR == TRUE) {
+			$template = 'err/err-general.tpl';
+			$smarty->assign('error_msg', $translations['apply']['apply_err_msg']);
+		} else {
+
+			if (intval($public_profile) == 1 && intval(EMAIL_CONFIRMATION_FLAG) == 1) {
+				$_SESSION['applicant'] = $APPLICANT_ID;
+				$_SESSION['applicant_name'] = $data['apply_name'];
+
+				redirect_to(BASE_URL . URL_PROFILE);
+				exit;
+			}
+
+			$template = 'success/success.tpl';
+			$smarty->assign('success_msg', $translations['apply']['apply_success_msg']);
+		}
 	}
 }
-
 ?>
